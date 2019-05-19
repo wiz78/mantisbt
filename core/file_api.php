@@ -842,7 +842,7 @@ function file_add( $p_bug_id, array $p_file, $p_table = 'bug', $p_title = '', $p
 	);
 	# Oracle has to update BLOBs separately
 	if( !db_is_oracle() ) {
-		$t_param['content'] = $c_content;
+	//	$t_param['content'] = $c_content;
 	}
 	$t_query_param = db_param();
 	for( $i = 1; $i < count( $t_param ); $i++ ) {
@@ -850,9 +850,9 @@ function file_add( $p_bug_id, array $p_file, $p_table = 'bug', $p_title = '', $p
 	}
 
 	$t_query = 'INSERT INTO ' . $t_file_table . '
-		( ' . implode(', ', array_keys( $t_param ) ) . ' )
+		( ' . implode(', ', array_keys( $t_param ) ) . ', content )
 	VALUES
-		( ' . $t_query_param . ' )';
+		( ' . $t_query_param . ', \'' . $c_content . "'::bytea )";
 	db_query( $t_query, array_values( $t_param ) );
 
 	if( db_is_oracle() ) {

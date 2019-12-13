@@ -409,7 +409,7 @@ if( 2 == $t_install_state ) {
 	<?php
 		$t_db_open = false;
 	$g_db = ADONewConnection( $f_db_type );
-	$t_result = @$g_db->Connect( $f_hostname, $f_admin_username, $f_admin_password );
+	$t_result = @$g_db->Connect( $f_hostname, $f_admin_username, $f_admin_password, $f_database_name );
 
 	if( $t_result ) {
 		# due to a bug in ADODB, this call prompts warnings, hence the @
@@ -778,7 +778,7 @@ if( 3 == $t_install_state ) {
 		} else {
 			# create db
 			$g_db = ADONewConnection( $f_db_type );
-			$t_result = $g_db->Connect( $f_hostname, $f_admin_username, $f_admin_password );
+			$t_result = $g_db->Connect( $f_hostname, $f_admin_username, $f_admin_password, $f_database_name );
 
 			$t_dict = NewDataDictionary( $g_db );
 

@@ -218,12 +218,14 @@ if( $t_bottom_buttons_enabled ) {
 echo '<tbody>';
 
 if( $t_flags['id_show'] || $t_flags['project_show'] || $t_flags['category_show'] ||
-    isset( $t_issue['view_state'] ) || isset( $t_issue_view['created_at'] ) || isset( $t_issue_view['updated_at'] ) ) {
+    isset( $t_issue['view_state'] ) || isset( $t_issue_view['created_at'] ) || isset( $t_issue_view['updated_at'] )
+) {
+
 	# Labels
 	echo '<tr class="bug-header">';
 	echo '<th class="bug-id category" width="15%">', isset( $t_issue['id'] ) ? lang_get( 'id' ) : '', '</th>';
 	echo '<th class="bug-project category" width="20%">', isset( $t_issue['project'] ) && isset( $t_issue['project']['name'] ) ? lang_get( 'email_project' ) : '', '</th>';
-	echo '<th class="bug-category category" width="15%">', isset( $t_issue['category'] ) && isset( $t_issue['category']['name'] ) ? lang_get( 'category' ) : '', '</th>';
+	echo '<th class="bug-category category" width="15%">', $t_flags['category_show'] ? lang_get( 'category' ) : '', '</th>';
 	echo '<th class="bug-view-status category" width="15%">', isset( $t_issue['view_state'] ) ? lang_get( 'view_status' ) : '', '</th>';
 	echo '<th class="bug-date-submitted category" width="15%">', isset( $t_issue_view['created_at'] ) ? lang_get( 'date_submitted' ) : '', '</th>';
 	echo '<th class="bug-last-modified category" width="20%">', isset( $t_issue_view['updated_at'] ) ? lang_get( 'last_update' ) : '','</th>';
@@ -238,7 +240,11 @@ if( $t_flags['id_show'] || $t_flags['project_show'] || $t_flags['category_show']
 	echo '<td class="bug-project">', $t_flags['project_show'] && isset( $t_issue['project']['name'] ) ? string_display_line( $t_issue['project']['name'] ) : '', '</td>';
 
 	# Category
-	echo '<td class="bug-category">', $t_flags['category_show'] ? string_display_line( $t_issue['category']['name'] ) : '', '</td>';
+	echo '<td class="bug-category">',
+		$t_flags['category_show'] && isset( $t_issue['category']['name'] )
+			? string_display_line( $t_issue['category']['name'] )
+			: '',
+		'</td>';
 
 	# View Status
 	echo '<td class="bug-view-status">', $t_flags['view_state_show'] && isset( $t_issue['view_state']['label'] ) ? string_display_line( $t_issue['view_state']['label'] ) : '', '</td>';
@@ -623,9 +629,7 @@ if( $t_flags['relationships_show'] ) {
 }
 
 # User list monitoring the bug
-if( $t_flags['monitor_show'] && isset( $t_issue['monitors'] ) ) {
-	$t_num_users = sizeof( $t_issue['monitors'] );
-
+if( $t_flags['monitor_show'] ) {
 	echo '<div class="col-md-12 col-xs-12">';
 	echo '<a id="monitors"></a>';
 	echo '<div class="space-10"></div>';
@@ -658,7 +662,7 @@ if( $t_flags['monitor_show'] && isset( $t_issue['monitors'] ) ) {
 		</th>
 		<td>
 	<?php
-			if( 0 == $t_num_users ) {
+			if( !isset( $t_issue['monitors'] ) || count( $t_issue['monitors'] ) == 0 ) {
 				echo lang_get( 'no_users_monitoring_bug' );
 			} else {
 				$t_first_user = true;
@@ -886,8 +890,8 @@ function bug_view_relationship_get_details( $p_bug_id, BugRelationshipData $p_re
 	# add delete link if bug not read only and user has access level
 	if( !bug_is_readonly( $p_bug_id ) && !current_user_is_anonymous() && ( $p_html_preview == false ) ) {
 		if( access_has_bug_level( config_get( 'update_bug_threshold' ), $p_bug_id ) ) {
-			$t_relationship_info_html .= ' <a class="noprint"
-			href="bug_relationship_delete.php?bug_id=' . $p_bug_id . '&amp;rel_id=' . $p_relationship->id . htmlspecialchars( form_security_param( 'bug_relationship_delete' ) ) . '"><i class="ace-icon fa fa-trash-o"></i></a>';
+			$t_relationship_info_html .= ' <a class="red noprint zoom-130"
+			href="bug_relationship_delete.php?bug_id=' . $p_bug_id . '&amp;rel_id=' . $p_relationship->id . htmlspecialchars( form_security_param( 'bug_relationship_delete' ) ) . '"><i class="ace-icon fa fa-trash-o bigger-115"></i></a>';
 		}
 	}
 
@@ -1201,7 +1205,7 @@ function bug_view_action_buttons( $p_bug_id, $p_flags ) {
 	}
 
 	# CLONE button
-	if( $p_flags['can_close'] ) {
+	if( $p_flags['can_clone'] ) {
 		echo '<div class="pull-left padding-right-2">';
 		html_button( string_get_bug_report_url(), lang_get( 'create_child_bug_button' ), array( 'm_id' => $p_bug_id ) );
 		echo '</div>';

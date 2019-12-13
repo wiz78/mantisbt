@@ -185,6 +185,15 @@ function http_csp_value() {
 
 	$t_csp_value = '';
 
+	# frame-ancestors can't have 'none' together with other values.
+	if( isset( $g_csp['frame-ancestors'] ) ) {
+		$t_frame_ancestors = &$g_csp['frame-ancestors'];
+		if( count( $t_frame_ancestors ) > 1 ) {
+			$t_key_none = array_search( "'none'", $t_frame_ancestors );
+			unset( $t_frame_ancestors[$t_key_none] );
+		}
+	}
+
 	foreach ( $g_csp as $t_key => $t_values ) {
 		$t_csp_value .= $t_key . ' ' . implode( ' ', $t_values ) . '; ';
 	}
@@ -225,15 +234,15 @@ function http_security_headers() {
 		# White list the CDN urls (if enabled)
 		if ( config_get_global( 'cdn_enabled' ) == ON ) {
 			http_csp_add( 'style-src', 'ajax.googleapis.com' );
-			http_csp_add( 'style-src', 'maxcdn.bootstrapcdn.com' );
+			http_csp_add( 'style-src', 'stackpath.bootstrapcdn.com' );
 			http_csp_add( 'style-src', 'fonts.googleapis.com' );
 			http_csp_add( 'style-src', 'cdnjs.cloudflare.com' );
 
 			http_csp_add( 'font-src', 'fonts.gstatic.com' );
-			http_csp_add( 'font-src', 'maxcdn.bootstrapcdn.com' );
+			http_csp_add( 'font-src', 'stackpath.bootstrapcdn.com' );
 
 			http_csp_add( 'script-src', 'ajax.googleapis.com' );
-			http_csp_add( 'script-src', 'maxcdn.bootstrapcdn.com' );
+			http_csp_add( 'script-src', 'stackpath.bootstrapcdn.com' );
 			http_csp_add( 'script-src', 'cdnjs.cloudflare.com' );
 
 			http_csp_add( 'img-src', 'ajax.googleapis.com' );

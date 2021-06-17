@@ -38,11 +38,8 @@
  * @ingroup Language
  * @file
  *
-<<<<<<< HEAD
-=======
  * @author Adsbn
  * @author Andreyyshore
->>>>>>> master
  * @author Danutz
  * @author KlaudiuMihaila
  * @author Minisarm
@@ -331,15 +328,7 @@ $s_add_profile_title = 'Adaugă profilul';
 $s_add_profile_button = 'Adaugă profilul';
 $s_edit_or_delete_profiles_title = 'Modifică sau șterge profile';
 $s_edit_profile = 'Modifică profilul';
-<<<<<<< HEAD
-$s_make_default = 'Implicit';
-$s_delete_profile = 'Şterge profilul';
-$s_select_profile = 'Selectează profilul';
-$s_submit_button = 'OK';
-$s_profile_updated_msg = 'Profil modificat...';
-=======
 $s_delete_profile = 'Șterge profilul';
->>>>>>> master
 $s_my_sponsorship = 'Sponsorizarea mea';
 $s_update_sponsorship_button = 'Schimbă starea plății';
 $s_no_sponsored = 'Nu au fost găsite probleme sponsorizate atribuite dumneavoastră.';

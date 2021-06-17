@@ -346,24 +346,6 @@ $s_reset_prefs_button = 'Скінуць устаноўкі';
 $s_timezone = 'Часавы пояс';
 $s_prefs_reset_msg = 'Устаноўкі былі скінутыя…';
 $s_prefs_updated_msg = 'Устаноўкі былі абноўленыя…';
-<<<<<<< HEAD
-$s_profile_added_msg = 'Профіль дададзены…';
-$s_profile_deleted_msg = 'Профіль выдалены…';
-$s_edit_profile_title = 'Рэдагаваць профіль';
-$s_platform = 'Плятформа';
-$s_additional_description = 'Дадатковае апісаньне';
-$s_update_profile_button = 'Абнавіць профіль';
-$s_profile_defaulted_msg = 'Профіль па змоўчваньні абноўлены…';
-$s_add_profile_title = 'Дадаць профіль';
-$s_add_profile_button = 'Дадаць профіль';
-$s_edit_or_delete_profiles_title = 'Рэдагаваць альбо выдаліць профілі';
-$s_edit_profile = 'Рэдагаваць профіль';
-$s_make_default = 'Зрабіць па змоўчваньні';
-$s_delete_profile = 'Выдаліць профіль';
-$s_select_profile = 'Выбраць профіль';
-$s_submit_button = 'Даслаць';
-$s_profile_updated_msg = 'Профіль абноўлены…';
-=======
 $s_select_profile = 'Выбраць профіль';
 $s_add_profile = 'Дадаць профіль';
 $s_edit_profile = 'Рэдагаваць профіль';
@@ -373,7 +355,6 @@ $s_delete_profile_confirm_msg = 'Вы ўпэўненыя, што хочаце в
 $s_global_profile = 'Глябальны профіль';
 $s_default_profile = 'Дапомны профіль';
 $s_profile_description = 'Апісаньне сыстэмы';
->>>>>>> master
 $s_my_sponsorship = 'Маё спансараваньне';
 $s_update_sponsorship_button = 'Зьмяніць статус аплаты';
 $s_no_sponsored = 'Ня знойдзена спансараваных праблемаў прызначаных Вам.';
@@ -655,13 +636,8 @@ $s_resolved_status = 'Статус, які азначае, што праблем
 $s_readonly_status = 'Статус, у якім праблема будзе даступная толькі для чытаньня';
 $s_reopen_status = 'Статус, які надаецца праблеме адкрываемай зноў';
 $s_reopen_resolution = 'Вырашэньне, якое надаецца праблеме адкрываемай зноў';
-<<<<<<< HEAD
-$s_config_delete_sure = 'Вы ўпэўнены, што жадаеце выдаліць налады для:';
-$s_in_project = 'у праекце';
-=======
 $s_limit_view_unless_threshold_option = 'Паказваць памылкі іншых карыстальнікаў (калі не зададзена, доступ будзе абмяжоўвацца пададзенымі, апрацаванымі ці адсочванымі памылкамі карыстальніка)';
 $s_config_delete_sure = 'Вы ўпэўнены, што жадаеце выдаліць налады для %1$s у праекце %2$s?';
->>>>>>> master
 $s_delete_config_button = 'Выдаліць налады';
 $s_configuration_report = 'Справаздача пра канфігурацыю';
 $s_database_configuration = 'Канфігурацыя базы зьвестак';
@@ -1439,8 +1415,6 @@ $s_persist = 'Запомніць';
 $s_load = 'Загрузіць';
 $s_apply_changes = 'Ужыць зьмены';
 $s_undo = 'Адмена';
-<<<<<<< HEAD
-=======
 $s_edit = 'Рэдагаваць';
 $s_submit = 'Адаслаць';
 $s_update = 'Абнавіць';
@@ -1455,4 +1429,3 @@ $s_move = 'Перанесьці';
 $s_close = 'Закрыць';
 $s_add = 'Дадаць';
 $s_login = 'Увайсьці ў сыстэму';
->>>>>>> master

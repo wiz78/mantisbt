@@ -669,13 +669,8 @@ $s_resolved_status = 'État quand une anomalie est considérée comme résolue';
 $s_readonly_status = 'État dans lequel une anomalie ne peut plus être modifiée';
 $s_reopen_status = 'État à positionner pour une anomalie rouverte';
 $s_reopen_resolution = 'Résolution à positionner pour une anomalie rouverte';
-<<<<<<< HEAD
-$s_config_delete_sure = 'Voulez-vous vraiment supprimer la configuration pour :';
-$s_in_project = 'du projet';
-=======
 $s_limit_view_unless_threshold_option = 'Afficher les problèmes des autres utilisateurs (si non positionné, l’accès sera limité aux problèmes signalés, gérés ou suivis par l’utilisateur)';
 $s_config_delete_sure = 'Voulez-vous vraiment supprimer la configuration pour %1$s dans le projet %2$s ?';
->>>>>>> master
 $s_delete_config_button = 'Supprimer la configuration';
 $s_configuration_report = 'Rapport de configuration';
 $s_database_configuration = 'Configuration de la base de données';
@@ -1146,12 +1141,9 @@ $s_update_readonly_issues = 'Mettre à jour les anomalies en lecture seule';
 $s_update_issue_status = 'Mettre à jour le statut d’une anomalie';
 $s_set_view_status = 'Définir l’état d’affichage lors du rapport d’une nouvelle anomalie ou d’une note';
 $s_update_view_status = 'Mettre à jour la visibilité d’une anomalie ou d’une note existante.';
-<<<<<<< HEAD
-=======
 $s_view_issue_revisions = 'Voir les versions d’un problème ou d’une note.';
 $s_drop_issue_revisions = 'Retirer des versions d’un problème ou d’une note.';
 $s_set_sticky = 'Épingler / Désépingler un problème';
->>>>>>> master
 $s_show_list_of_users_monitoring_issue = 'Afficher la liste des utilisateurs surveillant une anomalie';
 $s_add_users_monitoring_issue = 'Ajouter des surveillants à une anomalie';
 $s_remove_users_monitoring_issue = 'Supprimer des surveillants d’une anomalie';
@@ -1282,12 +1274,8 @@ $s_overdue = 'en retard';
 $s_overdue_since = 'En retard depuis %1$s';
 $s_view_account_title = 'Informations sur l’utilisateur';
 $s_manage_user = 'Gérer l’utilisateur';
-<<<<<<< HEAD
-$s_label = '%1$s :';
-=======
 $s_word_separator = '&#32;';
 $s_label = '%1$s :';
->>>>>>> master
 $s_install_information = 'Informations d’installation de MantisBT';
 $s_database_information = 'Informations sur la base de données MantisBT';
 $s_path_information = 'Informations sur les chemins de MantisBT';
@@ -1487,8 +1475,6 @@ $s_persist = 'Rendre persitant';
 $s_load = 'Charger';
 $s_apply_changes = 'Appliquer les modifications';
 $s_undo = 'Annuler';
-<<<<<<< HEAD
-=======
 $s_edit = 'Modifier';
 $s_submit = 'Soumettre';
 $s_update = 'Mettre à jour';
@@ -1504,4 +1490,3 @@ $s_move = 'Déplacer';
 $s_close = 'Fermer';
 $s_add = 'Ajouter';
 $s_login = 'Se connecter';
->>>>>>> master

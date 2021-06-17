@@ -384,16 +384,6 @@ if ( config_get_global( 'subprojects_enabled') == ON ) {
 						</td>
 						<td class="center">
 							<div class="inline">
-<<<<<<< HEAD
-							<?php print_link_button(
-								'manage_proj_edit_page.php?project_id=' . $t_subproject['id'],
-								lang_get( 'edit_link' ), 'btn-xs' );
-							?>
-							<?php print_link_button(
-								"manage_proj_subproj_delete.php?project_id=$f_project_id&subproject_id=" . $t_subproject['id'] . form_security_param( 'manage_proj_subproj_delete' ),
-								lang_get( 'unlink_link' ), 'btn-xs' );
-							?>
-=======
 <?php
 	print_link_button(
 		'manage_proj_edit_page.php?project_id=' . $t_subproject['id'],
@@ -406,7 +396,6 @@ if ( config_get_global( 'subprojects_enabled') == ON ) {
 		lang_get( 'unlink_link' ), 'btn-xs'
 	);
 ?>
->>>>>>> master
 							</div>
 						</td>
 					</tr>
@@ -495,22 +484,6 @@ if ( config_get_global( 'subprojects_enabled') == ON ) {
 				<td><?php echo prepare_user_name( $t_category['user_id'] ) ?></td>
 				<td class="center">
 					<div class="inline">
-<<<<<<< HEAD
-					<?php if( !$t_inherited ) {
-						$t_id = urlencode( $t_id );
-						$t_project_id = urlencode( $f_project_id );
-						echo '<div class="pull-left">';
-						print_form_button( 'manage_proj_cat_edit_page.php?id=' . $t_id . '&project_id=' . $t_project_id, lang_get( 'edit_link' ),
-							null, null, 'btn btn-xs btn-primary btn-white btn-round' );
-						echo '</div>';
-					} ?>
-					<?php if( !$t_inherited ) {
-						echo '<div class="pull-left">';
-						print_form_button( 'manage_proj_cat_delete.php?id=' . $t_id . '&project_id=' . $t_project_id, lang_get( 'delete_link' ),
-							null, null, 'btn btn-xs btn-primary btn-white btn-round' );
-						echo '</div>';
-					} ?>
-=======
 <?php
 			if( !$t_inherited ) {
 				$t_id = urlencode( $t_id );
@@ -537,7 +510,6 @@ if ( config_get_global( 'subprojects_enabled') == ON ) {
 				echo '</div>';
 			}
 ?>
->>>>>>> master
 					</div>
 				</td>
 			</tr>
@@ -643,13 +615,6 @@ if ( config_get_global( 'subprojects_enabled') == ON ) {
 					$t_version_id = version_get_id( $t_name, $f_project_id );
 					if( !$t_inherited ) {
 						echo '<div class="pull-left">';
-<<<<<<< HEAD
-						print_form_button( 'manage_proj_ver_edit_page.php?version_id=' . $t_version_id, lang_get( 'edit_link' ) );
-						echo '</div>';
-
-						echo '<div class="pull-left">';
-						print_form_button( 'manage_proj_ver_delete.php?version_id=' . $t_version_id, lang_get( 'delete_link' ) );
-=======
 						print_form_button(
 							'manage_proj_ver_edit_page.php?version_id=' . $t_version_id,
 							lang_get( 'edit' )
@@ -661,7 +626,6 @@ if ( config_get_global( 'subprojects_enabled') == ON ) {
 							'manage_proj_ver_delete.php?version_id=' . $t_version_id,
 							lang_get( 'delete' )
 						);
->>>>>>> master
 						echo '</div>';
 					} ?>
 					</div>
@@ -963,13 +927,8 @@ event_signal( 'EVENT_MANAGE_PROJECT_PAGE', array( $f_project_id ) );
 			$t_username =  $t_user['display_name'];
 			$t_can_manage_this_user = $t_can_manage_users
 					&& access_has_project_level( $t_user['access_level'], $f_project_id )
-<<<<<<< HEAD
-					&& ( !$f_show_global_users || $f_show_global_users && isset( $t_local_users[$t_user['id']]) );
-		?>
-=======
 					&& ( !$f_show_global_users || isset( $t_local_users[$t_user['id']]) );
 ?>
->>>>>>> master
 		<tr>
 			<td class="key-name" data-sortvalue="<?php echo $t_username ?>">
 				<a href="manage_user_edit_page.php?user_id=<?php echo $t_user['id'] ?>">

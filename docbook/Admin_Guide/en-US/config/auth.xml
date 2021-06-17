@@ -93,12 +93,6 @@
 
 					<itemizedlist>
 						<listitem>
-<<<<<<< HEAD
-							<para>Protocol can be either
-								<filename>ldap</filename> or
-								<filename>ldaps</filename> (for SSL encryption).
-								If omitted, then an unencrypted connection will be established on port 389.
-=======
 							<para><emphasis>Protocol</emphasis> must be either:
 								<itemizedlist>
 									<listitem>
@@ -113,7 +107,6 @@
 										</para>
 									</listitem>
 								</itemizedlist>
->>>>>>> master
 							</para>
 						</listitem>
 						<listitem>

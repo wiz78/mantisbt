@@ -654,13 +654,8 @@ $s_resolved_status = '解決問題後的狀態';
 $s_readonly_status = '此狀態之後不允許修改問題';
 $s_reopen_status = '重新開啟問題後的預設狀態';
 $s_reopen_resolution = '重新開啟問題後的分析';
-<<<<<<< HEAD
-$s_config_delete_sure = '您確定要刪除以下的設定:';
-$s_in_project = '於專案';
-=======
 $s_limit_view_unless_threshold_option = '檢視其他使用者的問題（若未設定，存取會限制於由使用者回報、處理、或監視的問題）';
 $s_config_delete_sure = '您確定要刪除用於專案%2$s的%1$s設定？';
->>>>>>> master
 $s_delete_config_button = '刪除設定值';
 $s_configuration_report = '設置報表';
 $s_database_configuration = '資料庫設定';
@@ -1130,12 +1125,9 @@ $s_update_readonly_issues = '更新唯讀問題';
 $s_update_issue_status = '更新問題狀態';
 $s_set_view_status = '當回報新問題或說明時設定檢視狀態';
 $s_update_view_status = '更改現有問題或說明的檢視狀態';
-<<<<<<< HEAD
-=======
 $s_view_issue_revisions = '檢視問題或說明修訂';
 $s_drop_issue_revisions = '放棄問題或說明修訂';
 $s_set_sticky = '置頂/取消置頂問題';
->>>>>>> master
 $s_show_list_of_users_monitoring_issue = '顯示追蹤此問題的使用者清單';
 $s_add_users_monitoring_issue = '新增追蹤到問題裡';
 $s_remove_users_monitoring_issue = '從問題上移除追蹤';

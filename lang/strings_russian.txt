@@ -367,24 +367,6 @@ $s_reset_prefs_button = 'Сбросить настройки';
 $s_timezone = 'Часовой пояс';
 $s_prefs_reset_msg = 'Настройки сброшены...';
 $s_prefs_updated_msg = 'Настройки изменены...';
-<<<<<<< HEAD
-$s_profile_added_msg = 'Профиль добавлен...';
-$s_profile_deleted_msg = 'Профиль удалён...';
-$s_edit_profile_title = 'Изменение профиля';
-$s_platform = 'Платформа';
-$s_additional_description = 'Подробное описание';
-$s_update_profile_button = 'Изменить профиль';
-$s_profile_defaulted_msg = 'Профиль по умолчанию изменен...';
-$s_add_profile_title = 'Добавление профиля';
-$s_add_profile_button = 'Добавить профиль';
-$s_edit_or_delete_profiles_title = 'Изменение или удаление профилей';
-$s_edit_profile = 'Изменить профиль';
-$s_make_default = 'Использовать по умолчанию';
-$s_delete_profile = 'Удалить профиль';
-$s_select_profile = 'Выбор профиля';
-$s_submit_button = 'OK';
-$s_profile_updated_msg = 'Профиль изменен...';
-=======
 $s_select_profile = 'Выбор профиля';
 $s_add_profile = 'Добавить профиль';
 $s_edit_profile = 'Изменить профиль';
@@ -394,7 +376,6 @@ $s_delete_profile_confirm_msg = 'Вы уверены, что хотите уда
 $s_global_profile = 'Глобальный профиль';
 $s_default_profile = 'Профиль по умолчанию';
 $s_profile_description = 'Описание системы';
->>>>>>> master
 $s_my_sponsorship = 'Спонсирование';
 $s_update_sponsorship_button = 'Изменить состояние оплаты';
 $s_no_sponsored = 'Не найдено спонсируемых задач, назначенных вам.';
@@ -678,12 +659,7 @@ $s_resolved_status = 'Состояние для решенных задач';
 $s_readonly_status = 'Состояние для перевода задачи в режим "только для чтения"';
 $s_reopen_status = 'Состояние для переоткрытой задачи';
 $s_reopen_resolution = 'Вид решения для переоткрытой задачи';
-<<<<<<< HEAD
-$s_config_delete_sure = 'Вы уверены, что хотите удалить настройки для:';
-$s_in_project = 'в проекте';
-=======
 $s_config_delete_sure = 'Вы уверены, что хотите удалить настройки для %1$s в проекте %2$s?';
->>>>>>> master
 $s_delete_config_button = 'Удалить настройки';
 $s_configuration_report = 'Отчет о конфигурации';
 $s_database_configuration = 'Конфигурация базы данных';
@@ -1468,8 +1444,6 @@ $s_persist = 'Запомнить';
 $s_load = 'Загрузить';
 $s_apply_changes = 'Применить изменения';
 $s_undo = 'Отменить';
-<<<<<<< HEAD
-=======
 $s_edit = 'Изменить';
 $s_submit = 'Отправить';
 $s_update = 'Изменить';
@@ -1484,4 +1458,3 @@ $s_move = 'Переместить';
 $s_close = 'Закрыть';
 $s_add = 'Добавить';
 $s_login = 'Вход';
->>>>>>> master

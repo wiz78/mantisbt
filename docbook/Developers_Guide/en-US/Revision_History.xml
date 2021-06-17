@@ -8,8 +8,6 @@
 	<simpara>
 		<revhistory>
 			<revision>
-<<<<<<< HEAD
-=======
 				<revnumber>2.25-0</revnumber>
 				<date>Mon Mar 8 2021</date>
 				<author>
@@ -52,7 +50,6 @@
 				</revdescription>
 			</revision>
 			<revision>
->>>>>>> master
 				<revnumber>2.23-0</revnumber>
 				<date>Sun Dec 9 2019</date>
 				<author>

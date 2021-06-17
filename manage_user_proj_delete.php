@@ -68,11 +68,6 @@ foreach( $f_projects as $t_project_id ) {
 }
 
 # Confirm with the user
-<<<<<<< HEAD
-helper_ensure_confirmed( lang_get( 'remove_user_sure_msg' ) .
-	'<br />' . lang_get( 'project_name_label' ) . lang_get( 'word_separator' ) . $t_project_name,
-	lang_get( 'remove_user_button' ) );
-=======
 helper_ensure_confirmed(
 	sprintf( lang_get( 'remove_user_sure_msg' ),
 		string_attribute( user_get_name( $f_user_id ) ),
@@ -80,7 +75,6 @@ helper_ensure_confirmed(
 	),
 	lang_get( 'remove_user_button' )
 );
->>>>>>> master
 
 foreach( $f_projects as $t_project_id ) {
 	project_remove_user( $t_project_id, $f_user_id );

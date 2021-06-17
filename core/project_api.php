@@ -861,15 +861,12 @@ function project_remove_users( $p_project_id, array $p_user_ids ) {
 		return;
 	}
 
-<<<<<<< HEAD
-=======
 	# Trigger event for each user deleted from project
 	foreach( $p_user_ids as $t_id ) {
 		event_signal('EVENT_MANAGE_PROJECT_USER_DELETE', array('user_id' => $t_id, 'project_id' => $p_project_id));
 	}
 
 	# Remove users from the project
->>>>>>> master
 	$t_query = new DbQuery();
 	$t_sql = 'DELETE FROM {project_user_list} WHERE project_id = ' . $t_query->param( (int)$p_project_id )
 			. ' AND ' . $t_query->sql_in( 'user_id', $t_user_ids );
@@ -944,15 +941,6 @@ function project_delete_all_files( $p_project_id ) {
 }
 
 /**
-<<<<<<< HEAD
- * Pads the project id with the appropriate number of zeros.
- * @param integer $p_project_id A project identifier.
- * @return string
- */
-function project_format_id( $p_project_id ) {
-	$t_padding = config_get( 'display_project_padding' );
-	return( utf8_str_pad( $p_project_id, $t_padding, '0', STR_PAD_LEFT ) );
-=======
  * Returns the project name as a link formatted for display in menus and buttons.
  *
  * The link is formatted as a link to set_project.php, which can be used to
@@ -1001,5 +989,4 @@ function project_get_bug_count( $p_project_id ) {
 	);
 	$t_query->execute();
 	return $t_query->value();
->>>>>>> master
 }

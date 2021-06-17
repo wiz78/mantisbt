@@ -667,13 +667,8 @@ $s_resolved_status = 'Status no qual uma tarefa é considerada resolvida';
 $s_readonly_status = 'Status no qual uma tarefa se torna somente-leitura';
 $s_reopen_status = 'Status para o qual tarefas reabertas são ajustadas';
 $s_reopen_resolution = 'Resolução para a qual tarefas reabertas são ajustadas';
-<<<<<<< HEAD
-$s_config_delete_sure = 'Você tem certeza que deseja apagar as configurações para:';
-$s_in_project = 'no projeto';
-=======
 $s_limit_view_unless_threshold_option = 'Visualizar os problemas de outros usuários (se não definido, o acesso será limitado aos problemas relatados, manipulados ou monitorados pelo usuário)';
 $s_config_delete_sure = 'Você tem certeza que deseja apagar as configurações para %1$s no projeto %2$s?';
->>>>>>> master
 $s_delete_config_button = 'Apagar Configurações';
 $s_configuration_report = 'Relatório de Configuração';
 $s_database_configuration = 'Configuração de Banco-de-dados';
@@ -1132,12 +1127,9 @@ $s_update_readonly_issues = 'Atualizar tarefas somente-leitura';
 $s_update_issue_status = 'Atualizar status da tarefa';
 $s_set_view_status = 'Estabelecer visibilidade quando estiver reportando um problema ou nota';
 $s_update_view_status = 'Mudar visibilidade de um problema ou nota existente';
-<<<<<<< HEAD
-=======
 $s_view_issue_revisions = 'Ver problemas ou revisões de notas';
 $s_drop_issue_revisions = 'Eliminar revisões de problemas ou notas';
 $s_set_sticky = 'Fixar / desvincular um problema';
->>>>>>> master
 $s_show_list_of_users_monitoring_issue = 'Ver lista de usuários monitorando a tarefa';
 $s_add_users_monitoring_issue = 'Adicione monitores a um problema';
 $s_remove_users_monitoring_issue = 'Remover monitores de um problema';

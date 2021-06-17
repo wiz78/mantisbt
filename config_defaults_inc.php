@@ -4446,27 +4446,6 @@ $g_show_log_threshold = ADMINISTRATOR;
  * @global array $g_global_settings
  */
 $g_global_settings = array(
-<<<<<<< HEAD
-	'global_settings', 'admin_checks', 'allow_signup', 'allow_anonymous_login',
-	'anonymous_account', 'compress_html', 'allow_permanent_cookie',
-	'cookie_time_length', 'cookie_path', 'cookie_domain',
-	'cookie_prefix', 'string_cookie', 'project_cookie', 'view_all_cookie',
-	'manage_config_cookie', 'logout_cookie',
-	'bug_list_cookie', 'crypto_master_salt', 'custom_headers',
-	'database_name', 'db_username', 'db_password', 'db_type',
-	'db_table_prefix','db_table_suffix', 'display_errors', 'form_security_validation',
-	'hostname','html_valid_tags', 'html_valid_tags_single_line', 'default_language',
-	'language_auto_map', 'fallback_language', 'login_method', 'plugins_enabled',
-	'session_save_path', 'session_validation', 'show_detailed_errors', 'show_queries_count',
-	'show_timer', 'show_memory_usage', 'stop_on_errors', 'version_suffix', 'debug_email',
-	'fileinfo_magic_db_file', 'css_include_file', 'css_rtl_include_file',
-	'file_type_icons', 'path', 'short_path', 'absolute_path', 'core_path',
-	'class_path','library_path', 'language_path', 'absolute_path_default_upload_folder',
-	'ldap_simulation_file_path', 'plugin_path', 'bottom_include_page', 'top_include_page',
-	'default_home_page', 'logout_redirect_page', 'manual_url', 'logo_url', 'wiki_engine_url',
-	'cdn_enabled', 'public_config_names', 'email_login_enabled', 'email_ensure_unique',
-	'impersonate_user_threshold', 'email_retry_in_days', 'neato_tool', 'dot_tool'
-=======
 	'absolute_path',
 	'absolute_path_default_upload_folder',
 	'admin_checks',
@@ -4577,7 +4556,6 @@ $g_global_settings = array(
 	'wiki_engine',
 	'wiki_engine_url',
 	'wiki_root_namespace',
->>>>>>> master
 );
 
 /**

@@ -342,24 +342,6 @@ $s_reset_prefs_button = 'Reinitialisar preferentias';
 $s_timezone = 'Fuso horari';
 $s_prefs_reset_msg = 'Le preferentias ha essite reinitialisate...';
 $s_prefs_updated_msg = 'Le preferentias ha essite actualisate...';
-<<<<<<< HEAD
-$s_profile_added_msg = 'Profilo addite...';
-$s_profile_deleted_msg = 'Profilo delite...';
-$s_edit_profile_title = 'Modificar profilo';
-$s_platform = 'Platteforma';
-$s_additional_description = 'Description additional';
-$s_update_profile_button = 'Actualisar profilo';
-$s_profile_defaulted_msg = 'Profilo predefinite actualisate...';
-$s_add_profile_title = 'Adder profilo';
-$s_add_profile_button = 'Adder profilo';
-$s_edit_or_delete_profiles_title = 'Modificar o deler profilos';
-$s_edit_profile = 'Modificar profilo';
-$s_make_default = 'Render predefinite';
-$s_delete_profile = 'Deler profilo';
-$s_select_profile = 'Seliger profilo';
-$s_submit_button = 'Submitter';
-$s_profile_updated_msg = 'Profilo actualisate...';
-=======
 $s_select_profile = 'Seliger profilo';
 $s_add_profile = 'Adder profilo';
 $s_edit_profile = 'Modificar profilo';
@@ -369,7 +351,6 @@ $s_delete_profile_confirm_msg = 'Es tu secur de voler deler le profilo "%1$s"?';
 $s_global_profile = 'Profilo global';
 $s_default_profile = 'Profilo predefinite';
 $s_profile_description = 'Description del systema';
->>>>>>> master
 $s_my_sponsorship = 'Mi sponsorisationes';
 $s_update_sponsorship_button = 'Cambiar stato de pagamento';
 $s_no_sponsored = 'Nulle problemas sponsorisate assignate a te esseva trovate.';
@@ -651,13 +632,8 @@ $s_resolved_status = 'Stato in que un problema es considerate como resolvite';
 $s_readonly_status = 'Stato in que un problema deveni immodificabile';
 $s_reopen_status = 'Stato assignate a un problema reaperite';
 $s_reopen_resolution = 'Resolution assignate a un problema reaperite';
-<<<<<<< HEAD
-$s_config_delete_sure = 'Es tu secur de voler deler le configuration de:';
-$s_in_project = 'in projecto';
-=======
 $s_limit_view_unless_threshold_option = 'Vider le problemas de altere usatores (si non definite, le accesso essera limitate al problemas reportate, gerite, o sequite per le usator)';
 $s_config_delete_sure = 'Es tu secur de voler deler le configuration pro %1$s in le projecto %2$s?';
->>>>>>> master
 $s_delete_config_button = 'Deler configuration';
 $s_configuration_report = 'Reporto de configuration';
 $s_database_configuration = 'Configuration del base de datos';
@@ -1438,8 +1414,6 @@ $s_reset = 'Reinitialisar';
 $s_persist = 'Persister';
 $s_load = 'Cargar';
 $s_apply_changes = 'Applicar modificationes';
-<<<<<<< HEAD
-=======
 $s_undo = 'Disfacer';
 $s_edit = 'Modificar';
 $s_submit = 'Submitter';
@@ -1456,4 +1430,3 @@ $s_move = 'Displaciar';
 $s_close = 'Clauder';
 $s_add = 'Adder';
 $s_login = 'Aperir session';
->>>>>>> master

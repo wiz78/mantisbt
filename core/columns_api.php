@@ -1161,13 +1161,8 @@ function print_column_edit( BugData $p_bug, $p_columns_target = COLUMNS_TARGET_V
 
 	if( !bug_is_readonly( $p_bug->id ) && access_has_bug_level( config_get( 'update_bug_threshold' ), $p_bug->id ) ) {
 		echo '<a href="' . string_get_bug_update_url( $p_bug->id ) . '">';
-<<<<<<< HEAD
-		echo '<i class="fa fa-pencil bigger-130 padding-2 grey"';
-		echo ' title="' . lang_get( 'update_bug_button' ) . '"></i></a>';
-=======
 		print_icon( 'fa-pencil', 'bigger-130 padding-2 grey', lang_get( 'edit' ) );
 		echo '</a>';
->>>>>>> master
 	} else {
 		echo '&#160;';
 	}
@@ -1671,13 +1666,6 @@ function print_column_overdue( BugData $p_bug, $p_columns_target = COLUMNS_TARGE
 	echo '<td class="column-overdue">';
 
 	if( access_has_bug_level( config_get( 'due_date_view_threshold' ), $p_bug->id ) &&
-<<<<<<< HEAD
-		!date_is_null( $p_bug->due_date ) &&
-		bug_is_overdue( $p_bug->id ) ) {
-		$t_overdue_text = lang_get( 'overdue' );
-		$t_overdue_text_hover = sprintf( lang_get( 'overdue_since' ), date( config_get( 'short_date_format' ), $p_bug->due_date ) );
-		echo '<i class="fa fa-times-circle-o" title="' . string_display_line( $t_overdue_text_hover ) . '"></i>';
-=======
 		!date_is_null( $p_bug->due_date )
 	) {
 		$t_level = bug_overdue_level( $p_bug->id );
@@ -1701,7 +1689,6 @@ function print_column_overdue( BugData $p_bug, $p_columns_target = COLUMNS_TARGE
 			}
 		}
 		print_icon( $t_icon, '', string_display_line( $t_overdue_text_hover ) );
->>>>>>> master
 	} else {
 		echo '&#160;';
 	}

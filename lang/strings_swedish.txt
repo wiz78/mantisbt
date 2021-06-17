@@ -521,11 +521,7 @@ $s_warning_default_administrator_account_present = '<strong>Varning:</strong> Du
 $s_warning_admin_directory_present = '<strong>Varning:</strong> Katalogen "admin" bör tas bort eller begränsa dess åtkomst.';
 $s_warning_change_setting = '<strong>Varning:</strong> "%1$s" är inte inställd till sitt standardvärde (%2$s).';
 $s_warning_security_hazard = 'Detta är en potentiell säkerhetsrisk som kan exponera känslig information.';
-<<<<<<< HEAD
-$s_warning_integrity_hazard = 'Detta kommer att leda till att MantisBT fortsätter när fel uppstår och kan leda till system-/dataintegritetsproblem.';
-=======
 $s_warning_integrity_hazard = 'Detta kommer att leda till att MantisBT fortsätter när fel uppstår och kan leda till system-/dataintegritetsärenden.';
->>>>>>> master
 $s_warning_debug_email = '<strong>Varning:</strong> "<code>debug_email</code>" är inte inställd på <code>OFF</code>, alla e-postmeddelanden skickas till "%1$s".';
 $s_error_database_no_schema_version = '<strong>Fel:</strong> Versionen för ditt databasschema är 0. Detta kan inträffa när databasen är korrupt eller värdet för "database_version" inte kunde hämtas från konfigurationstabellen eller när databasstrukturen är från en föråldrad version av MantisBT (pre 1.0.0).';
 $s_error_database_version_out_of_date_2 = '<strong>Varning:</strong> Databasstrukturen kan vara föråldrad. Vänligen uppgradera <a href="admin/install.php">här</a> innan du loggar in.';
@@ -557,13 +553,8 @@ $s_site_information = 'Sidinformation';
 $s_mantis_version = 'Version av MantisBT';
 $s_schema_version = 'Version av schema';
 $s_site_path = 'Sökväg till webbplats';
-<<<<<<< HEAD
-$s_core_path = 'Coresökväg';
-$s_plugin_path = 'Sökväg till insticksmoduler';
-=======
 $s_core_path = 'Kärnsökväg';
 $s_plugin_path = 'Sökväg till insticksprogram';
->>>>>>> master
 $s_created_user_part1 = 'Skapade användare';
 $s_created_user_part2 = 'med en åtkomstnivån av';
 $s_create_new_account_title = 'Skapa ett nytt användarkonto';
@@ -665,13 +656,8 @@ $s_resolved_status = 'Status där ett ärende betraktas som löst';
 $s_readonly_status = 'Status där ett ärende blir skrivskyddat';
 $s_reopen_status = 'Status att sätta ett återöppnat ärende till';
 $s_reopen_resolution = 'Lösning som ett återöppnat ärende sätts till';
-<<<<<<< HEAD
-$s_config_delete_sure = 'Är du säker på att du vill ta bort inställningarna för:';
-$s_in_project = 'i projektet';
-=======
 $s_limit_view_unless_threshold_option = 'Visa andra användares rapporter (om inte inställt kommer åtkomsten att begränsas till rapporter rapporterade, hanterade eller visade av användaren)';
 $s_config_delete_sure = 'Är du säker på att du vill ta bort inställningarna för %1$s i projekt %2$s?';
->>>>>>> master
 $s_delete_config_button = 'Ta bort inställningar';
 $s_configuration_report = 'Konfigurationsrapport';
 $s_database_configuration = 'Databaskonfiguration';
@@ -1179,9 +1165,6 @@ $s_email_on_deleted = 'E-post vid borttagning';
 $s_email_on_sponsorship_changed = 'E-post vid ändring av sponsorskap';
 $s_email_on_relationship_changed = 'E-post vid ändring av förhållande';
 $s_email_on_updated = 'E-post vid uppdatering';
-<<<<<<< HEAD
-$s_create_new_tags = 'Skapa nya taggar';
-=======
 $s_email_on_monitor = 'Skicka e-post när användaren börjar visa';
 $s_view_tags = 'Visa taggar tillagda till en bugg';
 $s_attach_tags = 'Bifoga taggar till en bugg';
@@ -1190,7 +1173,6 @@ $s_detach_own_tags = 'Ta bort taggar tillagda av samma användare';
 $s_create_new_tags = 'Skapa nya taggar';
 $s_edit_tags = 'Redigera taggnamn och -beskrivningar';
 $s_edit_own_tags = 'Redigera taggar skapade av samma användare';
->>>>>>> master
 $s_loading = 'Laddar...';
 $s_between_date = 'Mellan';
 $s_on_or_before_date = 'Till och med';
@@ -1292,18 +1274,6 @@ $s_month_december = 'december';
 $s_timeline_issue_created = '<span class="username">%1$s</span> skapade problemet <span class="issue_id">%2$s</span>';
 $s_timeline_issue_file_added = '<span class="username">%1$s</span> bifogade filen <em>%3$s</em> till ärendet <span class="issue_id">%2$s</span>';
 $s_timeline_issue_file_deleted = '<span class="username">%1$s</span> tog bort filen <em>%3$s</em> från ärendet <span class="issue_id">%2$s</span>';
-<<<<<<< HEAD
-$s_timeline_issue_note_created = '<span class="username">%1$s</span> kommenterade på problemet <span class="issue_id">%2$s</span>';
-$s_timeline_issue_monitor = '<span class="username">%1$s</span> övervakar problemet <span class="issue_id">%2$s</span>';
-$s_timeline_issue_unmonitor = '<span class="username">%1$s</span> slutade övervaka problemet <span class="issue_id">%2$s</span>';
-$s_timeline_issue_tagged = '<span class="username">%1$s</span> taggade problemet <span class="issue_id">%2$s</span> med <span class="tag_name">%3$s</span>';
-$s_timeline_issue_untagged = '<span class="username">%1$s</span> tog bort <span class="tag_name">%3$s</span> från problemet <span class="issue_id">%2$s</span>';
-$s_timeline_issue_resolved = '<span class="username">%1$s</span> löste problemet <span class="issue_id">%2$s</span>';
-$s_timeline_issue_closed = '<span class="username">%1$s</span> stängde problemet <span class="issue_id">%2$s</span>';
-$s_timeline_issue_reopened = '<span class="username">%1$s</span> återöppnade problemet <span class="issue_id">%2$s</span>';
-$s_timeline_issue_assigned = '<span class="username">%1$s</span> tilldelade problemet <span class="issue_id">%2$s</span> till <span class="username">%3$s</span>';
-$s_timeline_issue_assigned_to_self = '<span class="username">%1$s</span> plockade upp problemet <span class="issue_id">%2$s</span>';
-=======
 $s_timeline_issue_note_created = '<span class="username">%1$s</span> kommenterade på ärendet <span class="issue_id">%2$s</span>';
 $s_timeline_issue_monitor = '<span class="username">%1$s</span> övervakar ärendet <span class="issue_id">%2$s</span>';
 $s_timeline_issue_unmonitor = '<span class="username">%1$s</span> slutade övervaka ärendet <span class="issue_id">%2$s</span>';
@@ -1314,7 +1284,6 @@ $s_timeline_issue_closed = '<span class="username">%1$s</span> stängde ärendet
 $s_timeline_issue_reopened = '<span class="username">%1$s</span> återöppnade ärendet <span class="issue_id">%2$s</span>';
 $s_timeline_issue_assigned = '<span class="username">%1$s</span> tilldelade ärendet <span class="issue_id">%2$s</span> till <span class="username">%3$s</span>';
 $s_timeline_issue_assigned_to_self = '<span class="username">%1$s</span> plockade upp ärendet <span class="issue_id">%2$s</span>';
->>>>>>> master
 $s_timeline_issue_unassigned = '<span class="username">%1$s</span> tog bort tilldelningen av ärende <span class="issue_id">%2$s</span>';
 $s_timeline_no_activity = 'Ingen aktivitet inom tidsintervallet.';
 $s_timeline_title = 'Tidslinje';

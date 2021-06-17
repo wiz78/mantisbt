@@ -314,31 +314,12 @@ $s_reset_prefs_button = 'Oletusasetukset';
 $s_timezone = 'Aikavyöhyke';
 $s_prefs_reset_msg = 'Asetukset palautettu oletuksiin...';
 $s_prefs_updated_msg = 'Asetukset päivitetty...';
-<<<<<<< HEAD
-$s_profile_added_msg = 'Profiili lisätty...';
-$s_profile_deleted_msg = 'Profiili poistettu...';
-$s_edit_profile_title = 'Muokkaa profiilia';
-$s_platform = 'Alusta';
-$s_additional_description = 'Lisätietoja';
-$s_update_profile_button = 'Päivitä profiili';
-$s_profile_defaulted_msg = 'Oletusprofiili päivitetty...';
-$s_add_profile_title = 'Lisää profiili';
-$s_add_profile_button = 'Lisää profiili';
-$s_edit_or_delete_profiles_title = 'Muokkaa tai poista profiileja';
-=======
 $s_select_profile = 'Valitse profiili';
 $s_add_profile = 'Lisää profiili';
->>>>>>> master
 $s_edit_profile = 'Muokkaa profiilia';
 $s_make_default = 'Tee oletus';
 $s_delete_profile = 'Poista profiiili';
-<<<<<<< HEAD
-$s_select_profile = 'Valitse profiili';
-$s_submit_button = 'Lähetä';
-$s_profile_updated_msg = 'Profiili päivitetty...';
-=======
 $s_global_profile = 'Globaali profiili';
->>>>>>> master
 $s_my_sponsorship = 'Omat sponsoritapahtumat';
 $s_update_sponsorship_button = 'Muokkaa maksatustilaa';
 $s_no_sponsored = 'Yhtään sinulle osoitettua sponsoroitua tapahtumaa ei löytynyt.';
@@ -462,12 +443,8 @@ $s_hide_content = 'Piilota sisältö';
 $s_show_content = 'Näytä sisältö';
 $s_total_queries_executed = 'Kyselyjä suoritettu yhteensä: %1$d';
 $s_unique_queries_executed = 'Yksilöllisiä kyselyjä suoritettu: %1$d';
-<<<<<<< HEAD
-$s_memory_usage_in_kb = 'Muistin käyttö: %1$s KB';
-=======
 $s_page_execution_time = 'Sivun suoritusaika: %1$s sekuntia';
 $s_memory_usage = 'Muistin käyttö: %1$s KiB';
->>>>>>> master
 $s_log_page_number = 'Numero';
 $s_log_page_event = 'Tapahtuma';
 $s_please_report = 'Ole hyvä, ja raportoi tämä kohteelle %1$s.';
@@ -1253,11 +1230,6 @@ $MANTIS_ERROR[ERROR_INVALID_REQUEST_METHOD] = 'Sivua ei voi ladata käyttämäll
 $MANTIS_ERROR[ERROR_INVALID_SORT_FIELD] = 'Virheellinen lajittelukenttä.';
 $MANTIS_ERROR[ERROR_INVALID_DATE_FORMAT] = 'Virheellinen päivämäärämuoto.';
 $MANTIS_ERROR[ERROR_UPDATING_TIMEZONE] = 'Aikavyöhykettä ei voida päivittää.';
-<<<<<<< HEAD
-$s_dropzone_invalid_file_type = 'Et voi tallentaa tämäntyyppisiä tiedostoja.';
-$s_dropzone_max_files_exceeded = 'Et voi tallentaa enempää tiedostoja.';
-$s_dropzone_not_supported = 'Dropzone.js ei tue vanhempia selaimia!';
-=======
 $s_dropzone_invalid_file_type = 'Et voi puhuroida tämäntyyppisiä tiedostoja.';
 $s_dropzone_remove_file = 'Poista tiedosto';
 $s_dropzone_max_files_exceeded = 'Et voi puhuroida enempää tiedostoja.';
@@ -1279,4 +1251,3 @@ $s_move = 'Siirrä';
 $s_close = 'Sulje';
 $s_add = 'Lisää';
 $s_login = 'Kirjaudu sisään';
->>>>>>> master

@@ -352,24 +352,6 @@ $s_reset_prefs_button = 'Zmazať nastavenia';
 $s_timezone = 'Časové Pásmo';
 $s_prefs_reset_msg = 'Nastavenia boli zmazané...';
 $s_prefs_updated_msg = 'Nastavenia boli aktualizované...';
-<<<<<<< HEAD
-$s_profile_added_msg = 'Profil bol pridaný...';
-$s_profile_deleted_msg = 'Profil bol zmazaný...';
-$s_edit_profile_title = 'Upraviť profil';
-$s_platform = 'Platforma';
-$s_additional_description = 'Další popis';
-$s_update_profile_button = 'Uložiť profil';
-$s_profile_defaulted_msg = 'Defaultný profil aktualizovaný...';
-$s_add_profile_title = 'Pridať profil';
-$s_add_profile_button = 'Pridať';
-$s_edit_or_delete_profiles_title = 'Zmeniť alebo zmazať profily';
-$s_edit_profile = 'Upraviť profil';
-$s_make_default = 'Nastaviť ako default';
-$s_delete_profile = 'Zmazať profil';
-$s_select_profile = 'Vybrať profil';
-$s_submit_button = 'Uložiť';
-$s_profile_updated_msg = 'Profil aktualizovaný...';
-=======
 $s_select_profile = 'Vybrať profil';
 $s_add_profile = 'Pridať profil';
 $s_edit_profile = 'Upraviť profil';
@@ -379,7 +361,6 @@ $s_delete_profile_confirm_msg = 'Naozaj chcete vymazať profil %1$s?';
 $s_global_profile = 'Globálny profil';
 $s_default_profile = 'Prednastavený profil';
 $s_profile_description = 'Popis systému';
->>>>>>> master
 $s_my_sponsorship = 'Môj Sponzoring';
 $s_update_sponsorship_button = 'Zmeniť Stav Platby';
 $s_no_sponsored = 'Neboly nájdené žiadne Vami sponzorované problémy.';
@@ -493,12 +474,8 @@ $s_bugnote_revision_dropped_history = 'Vynechané revízie poznámok';
 $s_all_revisions = 'Všetky Revízie';
 $s_back_to_issue = 'Späť na Problém';
 $s_confirm_revision_drop = 'Ste si istý, že chcete zahodiť túto revíziu problému?';
-<<<<<<< HEAD
-$s_vote_added_msg = 'Hlas bol pridaný...';
-=======
 $s_activities_title = 'Poznámky';
 $s_bugnote_attached_files = 'Pripojené súbory';
->>>>>>> master
 $s_bugnote_deleted_msg = 'Poznámka k problému bola úspešne zmazaná...';
 $s_bug_notes_title = 'Poznámky k problému';
 $s_edit_bugnote_title = 'Upraviť poznámku k problému';
@@ -510,12 +487,6 @@ $s_bugnote_edit_link = 'Upraviť';
 $s_closed_bug_button = 'Uzavrieť problém';
 $s_bugnote_updated_msg = 'Poznámka bola úspešne upravená...';
 $s_last_edited = 'Naposledy upravené:';
-<<<<<<< HEAD
-$s_hide_content = 'Skryť Obsah';
-$s_show_content = 'Zobraziť Obsah';
-$s_total_queries_executed = 'Celkom vykonaných otázok %1$d .';
-$s_unique_queries_executed = 'Vykonaných %1$d unikátnych otázok.';
-=======
 $s_hide_content = 'Skryť obsah';
 $s_show_content = 'Zobraziť obsah';
 $s_file_icon_description = '%1$s ikona súboru';
@@ -524,7 +495,6 @@ $s_webmaster_contact_information = 'Pre pomoc kontaktujte <a href="mailto:%1$s" 
 $s_total_queries_executed = 'Celkový počet vykonaných dopytov: %1$d';
 $s_unique_queries_executed = 'Počet vykonaných unikátnych dopytov: %1$d';
 $s_total_query_execution_time = 'Celkový čas dopytov v sekundách: %1$s';
->>>>>>> master
 $s_page_execution_time = 'Čas realizácie stránky: %1$s sekúnd';
 $s_memory_usage_in_kb = 'Využitie pamäte: %1$s KiB';
 $s_log_page_number = 'Číslo';
@@ -672,13 +642,8 @@ $s_resolved_status = 'Stav pri ktorom je problém považovaný za vyriešený';
 $s_readonly_status = 'Stav pri ktorom bude problém len na čítenie';
 $s_reopen_status = 'Stav na ktorý je nastavený znovuotvorený problém';
 $s_reopen_resolution = 'Riešenie na ktoré je nastavený znovuotvorený problém';
-<<<<<<< HEAD
-$s_config_delete_sure = 'Naozaj chcete odstrániť nastavenia pre:';
-$s_in_project = 'v projekte';
-=======
 $s_limit_view_unless_threshold_option = 'Zobraziť problémy ostatných používateľov (ak nie je nastavené, prístup k nahláseným problémom bude obmedzený)';
 $s_config_delete_sure = 'Naozaj chcete odstrániť nastavenia pre %1$s na projekte %2$s?';
->>>>>>> master
 $s_delete_config_button = 'Zmazať Nastavenia';
 $s_configuration_report = 'Správa o Konfigurácii';
 $s_database_configuration = 'Konfigurácia Databázy';
@@ -729,11 +694,7 @@ $s_plugin_missing_class_status_message = 'Adresár pre tento zásuvný modul sa 
 $s_project_added_msg = 'Projekt bol úspešne pridaný...';
 $s_category_added_msg = 'Kategória bola úspešne pridaná...';
 $s_category_deleted_msg = 'Kategória bola úspešne zmazaná...';
-<<<<<<< HEAD
-$s_category_delete_sure_msg = 'Naozaj chcete zmazať túto kategóriu?<br />Kategória „%1$s“ obsahuje %2$d problémov.';
-=======
 $s_category_delete_confirm_msg = 'Naozaj chcete vymazať kategóriu %1$s?';
->>>>>>> master
 $s_delete_category_button = 'Zmazať kategóriu';
 $s_edit_project_category_title = 'Aktualizácia kategórií projektu';
 $s_update_category_button = 'Aktualizovať kategóriu';
@@ -1024,12 +985,8 @@ $s_close_bug_button = 'Zatvoriť';
 $s_move_bug_button = 'Presunúť';
 $s_attached_files = 'Pripojené súbory';
 $s_publish = 'Poblikovať';
-<<<<<<< HEAD
-$s_add_user_to_monitor = 'Pridať';
-=======
 $s_browser_does_not_support_audio = 'Váš prehliadač nepodporuje zvukové značky.';
 $s_browser_does_not_support_video = 'Váš prehliadač nepodporuje video značky.';
->>>>>>> master
 $s_bug_view_title = 'Zobraziť Detaily Problému';
 $s_no_users_monitoring_bug = 'žiadny užívateľ nesleduje tento problém.';
 $s_users_monitoring_bug = 'Uživatelia sledujú tento problém';
@@ -1130,14 +1087,8 @@ $s_bug_created_from = 'Problém generovaný z';
 $s_copy_from_parent = 'Kopírovať rozšírené údaje z nadradeného záznamu';
 $s_copy_notes_from_parent = 'Kopírovať poznámky k chybám';
 $s_copy_attachments_from_parent = 'Kopírovať prílohy';
-<<<<<<< HEAD
-$s_viewing_bug_relationship_graph_title = 'Graf Vzťahov';
-$s_viewing_bug_dependency_graph_title = 'Graf Závislostí';
-$s_relation_graph = 'Graf Relácií';
-=======
 $s_with = 's';
 $s_relation_graph = 'Graf vzťahov';
->>>>>>> master
 $s_dependency_graph = 'Graf Závislostí';
 $s_vertical = 'Vertikálne';
 $s_horizontal = 'Horizontálne';
@@ -1316,8 +1267,6 @@ $s_month_november = 'November';
 $s_month_december = 'December';
 $s_timeline_issue_created = '<span class="username">%1$s</span> vytvoril záležitosť <span class="issue_id">%2$s</span>';
 $s_timeline_issue_note_created = '<span class="username">%1$s</span> komentoval záležitosť <span class="issue_id">%2$s</span>';
-<<<<<<< HEAD
-=======
 $s_timeline_issue_monitor = '<span class="username">%1$s</span>monitoruje problém<span class="issue_id">%2$s</span>';
 $s_timeline_issue_unmonitor = '<span class="username">%1$s</span> ukončil sledovanie problému <span class="issue_id">%2$s</span>';
 $s_timeline_issue_tagged = '<span class="username">%1$s</span> pridal značku problému <span class="issue_id">%2$s</span> a názvom <span class="tag_name">%3$s</span>';
@@ -1329,7 +1278,6 @@ $s_timeline_issue_assigned = '<span class="username">%1$s</span>priradil/a probl
 $s_timeline_issue_assigned_to_self = '<span class="username">%1$s</span> prijal problém <span class="issue_id">%2$s</span>';
 $s_timeline_issue_unassigned = '<span class="username">%1$s</span> zrusil priradenie problému <span class="issue_id">%2$s</span>';
 $s_timeline_no_activity = 'V rámci časového intervalu nebola žiadna aktivita.';
->>>>>>> master
 $s_timeline_title = 'Časová os';
 $s_timeline_more = 'Viac udalostí...';
 $s_missing_error_string = 'Chýba chybový reťazec: %1$s';
@@ -1469,8 +1417,6 @@ $MANTIS_ERROR[ERROR_INVALID_SORT_FIELD] = 'Neplatné radiace pole.';
 $MANTIS_ERROR[ERROR_INVALID_DATE_FORMAT] = 'Neplatný formát dátumu.';
 $MANTIS_ERROR[ERROR_INVALID_RESOLUTION] = 'Riešenie %1$s nie je pre status %2$s povolené.';
 $MANTIS_ERROR[ERROR_UPDATING_TIMEZONE] = 'Časová zóna sa nedá aktualizovať.';
-<<<<<<< HEAD
-=======
 $MANTIS_ERROR[ERROR_DEPRECATED_SUPERSEDED] = 'Zastaraná funkčnosť: %1$s, namiesto toho použite %2$s.';
 $MANTIS_ERROR[ERROR_DISPLAY_USER_ERROR_INLINE] = 'Varovanie: Systém je nakonfigurovaný, aby zobrazoval chyby MantisBT (E_USER_ERROR) v rade. Vykonanie programu bude pokračovať; môže to viesť k problémom s integritou systému/údajov.';
 $MANTIS_ERROR[ERROR_TYPE_MISMATCH] = 'Nezhoda typu údajov. Povoľte podrobné chybové správy.';
@@ -1511,4 +1457,3 @@ $s_move = 'Presunúť';
 $s_close = 'Zatvoriť';
 $s_add = 'Pridať';
 $s_login = 'Prihlásenie';
->>>>>>> master

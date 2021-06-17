@@ -366,24 +366,6 @@ $s_reset_prefs_button = '重置为默认设置';
 $s_timezone = '时区';
 $s_prefs_reset_msg = '个人设置已经更改...';
 $s_prefs_updated_msg = '个人设置已经更改...';
-<<<<<<< HEAD
-$s_profile_added_msg = '平台配置已添加...';
-$s_profile_deleted_msg = '删除平台配置...';
-$s_edit_profile_title = '编辑平台设置';
-$s_platform = '平台';
-$s_additional_description = '简要说明';
-$s_update_profile_button = '更新平台设置';
-$s_profile_defaulted_msg = '更新默认平台配置...';
-$s_add_profile_title = '添加平台配置';
-$s_add_profile_button = '添加平台配置';
-$s_edit_or_delete_profiles_title = '编辑或删除平台配置';
-$s_edit_profile = '编辑平台配置';
-$s_make_default = '设为默认值';
-$s_delete_profile = '删除平台配置';
-$s_select_profile = '选择平台配置';
-$s_submit_button = '提交';
-$s_profile_updated_msg = '平台配置已更新...';
-=======
 $s_select_profile = '选择平台配置';
 $s_add_profile = '添加平台配置';
 $s_edit_profile = '编辑平台配置';
@@ -393,7 +375,6 @@ $s_delete_profile_confirm_msg = '您确定要删除配置“%1$s”吗？';
 $s_global_profile = '全局平台配置';
 $s_default_profile = '默认平台配置';
 $s_profile_description = '系统说明';
->>>>>>> master
 $s_my_sponsorship = '我的资助';
 $s_update_sponsorship_button = '修改支付状态';
 $s_no_sponsored = '找不到分配给您自己的已资助问题。';
@@ -437,11 +418,7 @@ $s_select_file = '选择文件';
 $s_select_files = '选择文件';
 $s_upload_file_button = '上传文件';
 $s_upload_files_button = '上传文件';
-<<<<<<< HEAD
-$s_max_file_size_label = '最大尺寸：';
-=======
 $s_max_file_size_info = '最大文件大小: %1$s %2$s';
->>>>>>> master
 $s_bug_reopened_msg = '问题已经被重新打开...';
 $s_reopen_add_bugnote_title = '为重启问题添加注释原因';
 $s_bugnote_add_reopen_button = '添加问题注释并重启问题';
@@ -680,13 +657,8 @@ $s_resolved_status = '问题已经被认为已解决的状态';
 $s_readonly_status = '只读问题的状态设置为';
 $s_reopen_status = '重新打开的问题状态设置为';
 $s_reopen_resolution = '重新打开的问题的处理状况设置为';
-<<<<<<< HEAD
-$s_config_delete_sure = '您确实要删除的设置：';
-$s_in_project = '在项目';
-=======
 $s_limit_view_unless_threshold_option = '查看其他用户的问题 (如果没有设置，将仅限显示用户报告、处理或监控的问题)';
 $s_config_delete_sure = '您确实要删除项目 %2$s 中的 %1$s 设置吗？';
->>>>>>> master
 $s_delete_config_button = '删除设置';
 $s_configuration_report = '配置报告';
 $s_database_configuration = '数据库配置';
@@ -1476,8 +1448,6 @@ $s_persist = '持久';
 $s_load = '载入';
 $s_apply_changes = '应用更改';
 $s_undo = '撤销';
-<<<<<<< HEAD
-=======
 $s_edit = '编辑';
 $s_submit = '提交';
 $s_update = '更新';
@@ -1492,4 +1462,3 @@ $s_move = '移动';
 $s_close = '关闭';
 $s_add = '添加';
 $s_login = '登录';
->>>>>>> master

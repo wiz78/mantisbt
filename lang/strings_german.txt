@@ -664,13 +664,8 @@ $s_resolved_status = 'Status, bei dem ein Eintrag als erledigt angesehen wird';
 $s_readonly_status = 'Status, bei dem ein Eintrag schreibgeschützt wird';
 $s_reopen_status = 'Status, auf den ein wiedereröffneter Eintrag gesetzt wird';
 $s_reopen_resolution = 'Lösung, auf die ein wiedereröffneter Eintrag gesetzt wird';
-<<<<<<< HEAD
-$s_config_delete_sure = 'Sind Sie sicher das Sie die Einstellungen löschen möchten für:';
-$s_in_project = 'im Projekt';
-=======
 $s_limit_view_unless_threshold_option = 'Einträge anderer Benutzer ansehen (falls nicht gesetzt, ist der Zugriff auf selbst erfasste, zugewiesene und beobachtete Einträge beschränkt)';
 $s_config_delete_sure = 'Sind Sie sicher, dass Sie die Einstellungen für %1$s in Projekt %2$s löschen möchten?';
->>>>>>> master
 $s_delete_config_button = 'Einstellungen löschen';
 $s_configuration_report = 'Konfigurations-Report';
 $s_database_configuration = 'Datenbank-Konfiguration';
@@ -1057,13 +1052,8 @@ $s_linked_projects_label = 'Verknüpfte Projekte';
 $s_custom_field_sequence = 'Reihenfolge';
 $s_custom_field_sequence_label = 'Reihenfolge';
 $s_custom_field_type_enum_string = '0:Text,1:Zahlen,2:Gleitkommazahlen,3:Aufzählung,4:E-Mail,5:Kontrollkästchen,6:Liste,7:Mehrfachauswahl-Liste,8:Datum,9:Auswahlkästchen,10:Textbereich';
-<<<<<<< HEAD
-$s_confirm_used_custom_field_deletion = 'Dieses Feld wird derzeit von mindestens einem Projekt verwendet. Wenn Sie fortfahren, werden alle Werte für dieses Feld dauerhaft gelöscht. Dieser Vorgang kann nicht rückgängig gemacht werden. Um das Feld nicht zu löschen, klicken Sie bitten den „Zurück“-Knopf in Ihrem Web-Browser. Um fortzufahren, klicken Sie bitten den „Feld löschen“-Knopf.';
-$s_confirm_custom_field_deletion = 'Möchten Sie dieses benutzerdefinierte Feld und alle zugehörigen Werte wirklich löschen?';
-=======
 $s_confirm_used_custom_field_deletion = 'Das Feld "%1$s" wird derzeit mindestens in einem Projekt verwendet. Wenn Sie fortfahren, werden alle Werte für dieses Feld dauerhaft gelöscht. Dieser Vorgang kann nicht rückgängig gemacht werden. Um das Feld nicht zu löschen, klicken Sie den „Zurück“-Knopf in Ihrem Webbrowser. Um fortzufahren, klicken Sie den „Feld löschen“-Knopf.';
 $s_confirm_custom_field_deletion = 'Möchten Sie das benutzerdefinierte Feld "%1$s" und alle zugehörigen Werte wirklich löschen?';
->>>>>>> master
 $s_field_delete_button = 'Feld löschen';
 $s_confirm_custom_field_unlinking = 'Sind Sie sicher, dass Sie das benutzerdefinierte Feld "%1$s" aus dem Projekt entfernen wollen? Die Werte werden nicht gelöscht, solange das benutzerdefinierte Feld selbst nicht gelöscht wird.';
 $s_field_remove_button = 'Feld entfernen';
@@ -1141,16 +1131,11 @@ $s_reopen_issue = 'Eintrag erneut öffnen';
 $s_view_private_issues = 'Private Einträge ansehen';
 $s_update_readonly_issues = 'Schreibgeschützte Einträge aktualisieren';
 $s_update_issue_status = 'Eintragsstatus aktualisieren';
-<<<<<<< HEAD
-$s_set_view_status = 'Sichtbarkeitsstatus beim Berichten eines neuen Problems oder einer Notiz festlegen';
-$s_update_view_status = 'Den Sichtbarkeitsstatus eines vorhandenen Problems oder einer Notiz ändern';
-=======
 $s_set_view_status = 'Sichtbarkeitsstatus beim Erfassen eines neuen Eintrags oder einer Notiz festlegen';
 $s_update_view_status = 'Sichtbarkeitsstatus eines vorhandenen Eintrags oder einer Notiz ändern';
 $s_view_issue_revisions = 'Eintrags- oder Notizüberarbeitungen anzeigen';
 $s_drop_issue_revisions = 'Eintrags- oder Notizüberarbeitungen löschen';
 $s_set_sticky = 'Fixierung setzen / lösen';
->>>>>>> master
 $s_show_list_of_users_monitoring_issue = 'Liste der Benutzer anzeigen, die einen Eintrag beobachten';
 $s_add_users_monitoring_issue = 'Benutzer als Beobachter eines Eintrags hinzufügen';
 $s_remove_users_monitoring_issue = 'Benutzer als Beobachter eines Eintrags entfernen';
@@ -1465,13 +1450,8 @@ $s_dropzone_cancel_upload = 'Hochladen abbrechen';
 $s_dropzone_cancel_upload_confirmation = 'Sind Sie sich sicher, dass Sie diesen Upload abbrechen möchten?';
 $s_dropzone_remove_file = 'Datei entfernen';
 $s_dropzone_max_files_exceeded = 'Sie können keine weiteren Dateien hochladen.';
-<<<<<<< HEAD
-$s_dropzone_not_supported = 'Dropzone.js unterstützt keine älteren Browser!';
-$s_dropzone_multiple_files_too_big = 'Die folgenden Dateien:{{files}}Überschreiten die maximal erlaubte Dateigröße ({{maxFilesize}} MiB)';
-=======
 $s_dropzone_not_supported = 'Dropzone.js unterstützt keine älteren Webbrowser!';
 $s_dropzone_multiple_files_too_big = 'Die folgenden Dateien:{{files}}überschreiten die maximal erlaubte Dateigröße ({{maxFilesize}} MiB)';
->>>>>>> master
 $s_save = 'Speichern';
 $s_reset = 'Zurücksetzen';
 $s_persist = 'Merken';

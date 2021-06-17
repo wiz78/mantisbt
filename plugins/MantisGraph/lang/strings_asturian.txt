@@ -38,11 +38,7 @@
  * @ingroup Language
  * @file
  *
-<<<<<<< HEAD
- * @author Abijeet Patro
-=======
  * @author Fitoschido
->>>>>>> master
  * @author Xuacu
  */
 

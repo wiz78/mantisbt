@@ -1110,11 +1110,7 @@ $s_project_user_added_msg = 'Successfully added user to project.';
 $s_project_removed_user_msg = 'Successfully removed user from project.';
 
 # proj_user_delete_page.php
-<<<<<<< HEAD
-$s_remove_user_sure_msg = 'Are you sure you wish to remove this user?';
-=======
 $s_remove_user_sure_msg = 'Are you sure you wish to remove user "%1$s" from project(s) "%2$s"?';
->>>>>>> master
 $s_remove_user_button = 'Remove User';
 $s_remove_all_users_sure_msg = 'Are you sure you wish to remove all the users of this project?';
 $s_remove_all_users_button = 'Remove All Users';
@@ -1453,12 +1449,9 @@ $s_update_readonly_issues = 'Update readonly issues';
 $s_update_issue_status = 'Update issue status';
 $s_set_view_status = 'Set view state when reporting a new issue or note';
 $s_update_view_status = 'Change view state of existing issue or note';
-<<<<<<< HEAD
-=======
 $s_view_issue_revisions = 'View issue or note revisions';
 $s_drop_issue_revisions = 'Drop issue or note revisions';
 $s_set_sticky = 'Stick / Unstick an issue';
->>>>>>> master
 $s_show_list_of_users_monitoring_issue = 'Show list of users monitoring issue';
 $s_add_users_monitoring_issue = 'Add monitors to an issue';
 $s_remove_users_monitoring_issue = 'Remove monitors from an issue';

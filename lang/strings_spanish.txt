@@ -66,11 +66,8 @@
  * @author VegaDark
  * @author Vivaelcelta
  * @author Wifidel
-<<<<<<< HEAD
-=======
  * @author ZealousBlaze
  * @author Zobook
->>>>>>> master
  */
 
 $s_actiongroup_menu_move = 'Mover';
@@ -84,19 +81,11 @@ $s_actiongroup_menu_update_status = 'Actualizar estado';
 $s_actiongroup_menu_update_severity = 'Actualizar severidad';
 $s_actiongroup_menu_update_view_status = 'Actualizar visibilidad';
 $s_actiongroup_menu_update_category = 'Actualizar categoría';
-<<<<<<< HEAD
-$s_actiongroup_menu_set_sticky = 'Fijar/Desfijar';
-$s_actiongroup_menu_update_field = 'Actualizar %1$s';
-$s_actiongroup_menu_update_product_version = 'Actualizar la versión del producto';
-$s_actiongroup_menu_update_target_version = 'Actualizar Previsto para versión';
-$s_actiongroup_menu_update_fixed_in_version = 'Actualizar Resuelta en Versión';
-=======
 $s_actiongroup_menu_set_sticky = 'Fijar/desfijar';
 $s_actiongroup_menu_update_field = 'Actualizar %1$s';
 $s_actiongroup_menu_update_product_version = 'Actualizar la versión del producto';
 $s_actiongroup_menu_update_target_version = 'Actualizar Previsto para versión';
 $s_actiongroup_menu_update_fixed_in_version = 'Actualizar Resuelto en versión';
->>>>>>> master
 $s_actiongroup_menu_update_product_build = 'Actualizar compilación del producto';
 $s_actiongroup_menu_update_due_date = 'Actualizar fecha límite';
 $s_actiongroup_menu_add_note = 'Añadir nota';
@@ -104,19 +93,11 @@ $s_actiongroup_menu_attach_tags = 'Adjuntar etiquetas';
 $s_actiongroup_bugs = 'Incidencias seleccionadas';
 $s_actiongroup_error_issue_is_readonly = 'La incidencia es de solo lectura.';
 $s_all_projects = 'Todos los proyectos';
-<<<<<<< HEAD
-$s_move_bugs = 'Trasladar incidencias';
-$s_operation_successful = 'Operación exitosa.';
-$s_operation_warnings = 'Operación completada con advertencias.';
-$s_operation_failed = 'La operación no se completó correctamente.';
-$s_date_order = 'Marca de tiempo';
-=======
 $s_move_bugs = 'Mover Incidencias';
 $s_operation_successful = 'Operación exitosa.';
 $s_operation_warnings = 'Operación completada con advertencias.';
 $s_operation_failed = 'La operación no se completó correctamente.';
 $s_date_order = 'Fecha para ordenamiento';
->>>>>>> master
 $s_print_all_bug_page_link = 'Imprimir informes';
 $s_csv_export = 'Exportar a CSV';
 $s_excel_export = 'Exportar a Excel';
@@ -186,20 +167,12 @@ $s_bug_deleted = 'Incidencia eliminada';
 $s_make_private = 'Convertir en privada';
 $s_make_public = 'Convertir en pública';
 $s_create_new_project_link = 'Crear nuevo proyecto';
-<<<<<<< HEAD
-$s_login_link = 'Iniciar sesión';
-=======
->>>>>>> master
 $s_opensearch_id_short = '%s ID';
 $s_opensearch_id_description = '%s: buscar por ID de incidencia';
 $s_opensearch_text_short = '%s Texto';
 $s_opensearch_text_description = '%s: Búsqueda de texto completo';
 $s_select_option = '(seleccionar)';
-<<<<<<< HEAD
-$s_bug_actiongroup_access = 'No posee los permisos necesarios para realizar esta acción.';
-=======
 $s_bug_actiongroup_access = 'No posees los permisos necesarios para realizar esta acción.';
->>>>>>> master
 $s_bug_actiongroup_status = 'El estado de esta incidencia no se puede cambiar al solicitado';
 $s_bug_actiongroup_category = 'La categoría de esta incidencia no se puede cambiar a la solicitada';
 $s_bug_actiongroup_handler = 'El usuario especificado no está autorizado para gestionar esta incidencia';
@@ -211,17 +184,10 @@ $s_copy_bugs_conf_msg = 'Copiar incidencias en';
 $s_assign_bugs_conf_msg = 'Asignar incidencias a';
 $s_resolve_bugs_conf_msg = 'Elegir la resolución de las incidencias';
 $s_priority_bugs_conf_msg = 'Elegir la prioridad de las incidencias';
-<<<<<<< HEAD
-$s_status_bugs_conf_msg = 'Elegir el estado de las incidencias';
-$s_view_status_bugs_conf_msg = 'Elegir la visibilidad de las incidencias';
-$s_category_bugs_conf_msg = 'Elegir la categoría de las incidencias';
-$s_set_sticky_bugs_conf_msg = '¿Confirmas que quieres anclar/desanclar estas incidencias?';
-=======
 $s_status_bugs_conf_msg = 'Seleccionar el estado de las incidencias';
 $s_view_status_bugs_conf_msg = 'Seleccionar la visibilidad de las incidencias';
 $s_category_bugs_conf_msg = 'Selecciomnar la categoría de las incidencias';
 $s_set_sticky_bugs_conf_msg = '¿Confirmas que quieres fijar/desfijar estas incidencias?';
->>>>>>> master
 $s_product_version_bugs_conf_msg = 'Actualizar la versión del producto a';
 $s_fixed_in_version_bugs_conf_msg = 'Actualizar Resuelta en Versión a';
 $s_target_version_bugs_conf_msg = 'Actualizar Prevista para Versión a';
@@ -241,15 +207,9 @@ $s_product_version_group_bugs_button = 'Actualizar la versión del producto';
 $s_fixed_in_version_group_bugs_button = 'Actualizar Resuelta en versión';
 $s_target_version_group_bugs_button = 'Actualizar Prevista para versión';
 $s_due_date_group_bugs_button = 'Actualizar fecha límite';
-<<<<<<< HEAD
-$s_update_severity_title = 'Actualizar severidad';
-$s_update_severity_msg = 'Elegir severidad de incidencia';
-$s_update_severity_button = 'Actualizar severidad';
-=======
 $s_update_severity_title = 'Actualizar gravedad';
 $s_update_severity_msg = 'Seleccionar gravedad de incidencia';
 $s_update_severity_button = 'Actualizar gravedad';
->>>>>>> master
 $s_hide_button = 'Mostrar solo seleccionados';
 $s_printing_preferences_title = 'Seleccione campos a imprimir';
 $s_printing_options_link = 'Opciones de impresión';
@@ -267,11 +227,7 @@ $s_prefix_for_deleted_users = 'usuario';
 $s_administrator = 'administrador';
 $s_myself = 'Mí';
 $s_default_access_level = 'Nivel de acceso predeterminado';
-<<<<<<< HEAD
-$s_issue_status_percentage = 'Porcentaje de Incidencias por Estado';
-=======
 $s_issue_status_percentage = 'Porcentaje de incidencias por estado';
->>>>>>> master
 $s_access_levels_enum_string = '10:espectador,25:informador,40:actualizador,55:desarrollador,70:supervisor,90:administrador';
 $s_no_access = 'sin acceso';
 $s_project_status_enum_string = '10:en desarrollo,30:release,50:estable,70:obsoleto';
@@ -322,11 +278,7 @@ $s_email_notification_title_for_action_duplicate_of_relationship_deleted = 'La s
 $s_email_notification_title_for_action_has_duplicate_relationship_deleted = 'La incidencia %1$s ha sido desmarcada como DUPLICADA de la siguiente incidencia';
 $s_email_notification_title_for_action_related_to_relationship_deleted = 'La siguiente incidencia ha sido desmarcada como RELACIONADA con %1$s';
 $s_email_notification_title_for_action_dependant_on_relationship_deleted = 'La siguiente incidencia ha sido desmarcada como DEPENDE de la incidencia %1$s.';
-<<<<<<< HEAD
-$s_email_notification_title_for_action_blocks_relationship_deleted = 'La siguiente incidencia ha sido marcado como DERIVADA de %1$s';
-=======
 $s_email_notification_title_for_action_blocks_relationship_deleted = 'La siguiente incidencia se ha desmarcado como DERIVADA de %1$s.';
->>>>>>> master
 $s_email_notification_title_for_action_relationship_child_resolved = 'La incidencia RELACIONADA %1$s ha sido RESUELTA.';
 $s_email_notification_title_for_action_relationship_child_closed = 'La incidencia RELACIONADA %1$s ha sido CERRADA';
 $s_email_notification_title_for_action_related_issue_deleted = 'La incidencia RELACIONADA %1$s ha sido ELIMINADA.';
@@ -343,13 +295,8 @@ $s_email_status = 'Estado';
 $s_email_resolution = 'Resolución';
 $s_email_duplicate = 'Duplicada de';
 $s_email_fixed_in_version = 'Resuelta en versión';
-<<<<<<< HEAD
-$s_email_target_version = 'Previsto para Versión';
-$s_email_date_submitted = 'Fecha de Envío';
-=======
 $s_email_target_version = 'Prevista para Versión';
 $s_email_date_submitted = 'Fecha de envío';
->>>>>>> master
 $s_email_last_modified = 'Última modificación';
 $s_email_summary = 'Resumen';
 $s_email_description = 'Descripción';
@@ -432,16 +379,10 @@ $s_edit_or_delete_profiles_title = 'Editar o eliminar perfiles';
 $s_edit_profile = 'Editar perfil';
 $s_make_default = 'Establecer como predeterminado';
 $s_delete_profile = 'Eliminar perfil';
-<<<<<<< HEAD
-$s_select_profile = 'Seleccionar perfil';
-$s_submit_button = 'Enviar';
-$s_profile_updated_msg = 'Perfil actualizado…';
-=======
 $s_delete_profile_confirm_msg = '¿Confirmas que quieres eliminar el perfil «%1$s»?';
 $s_global_profile = 'Perfil global';
 $s_default_profile = 'Perfil predeterminado';
 $s_profile_description = 'Descripción del Sistema';
->>>>>>> master
 $s_my_sponsorship = 'Mis patrocinios';
 $s_update_sponsorship_button = 'Cambiar el estado de pago';
 $s_no_sponsored = 'No hay incidencias patrocinadas asignadas a Ud.';
@@ -461,20 +402,12 @@ $s_email_updated = 'Su dirección de correo electrónico ha sido actualizada';
 $s_realname_updated = 'Nombre real actualizado correctamente';
 $s_password_updated = 'Contraseña actualizada';
 $s_multiple_projects = 'Las incidencias que ha seleccionado pertenecen a diferentes proyectos. Los siguientes parámetros reflejan las opciones para todos los proyectos. Si esto es incorrecto, por favor reintente su cambio con una selección menor de incidencias.';
-<<<<<<< HEAD
-$s_new_bug_title = 'Incidencia nueva';
-=======
 $s_new_bug_title = 'Nueva incidencia';
->>>>>>> master
 $s_feedback_bug_title = 'Solicitar más información sobre la incidencia';
 $s_acknowledged_bug_title = 'Aceptar incidencia';
 $s_confirmed_bug_title = 'Confirmar incidencia';
 $s_assigned_bug_title = 'Asignar incidencia';
-<<<<<<< HEAD
-$s_new_bug_button = 'Incidencia nueva';
-=======
 $s_new_bug_button = 'Nueva incidencia';
->>>>>>> master
 $s_feedback_bug_button = 'Solicitar más información';
 $s_acknowledged_bug_button = 'Aceptar incidencia';
 $s_confirmed_bug_button = 'Confirmar incidencia';
@@ -493,17 +426,10 @@ $s_select_file = 'Seleccionar archivo';
 $s_select_files = 'Seleccionar archivos';
 $s_upload_file_button = 'Subir archivo';
 $s_upload_files_button = 'Subir archivos';
-<<<<<<< HEAD
-$s_max_file_size_label = 'Tamaño máximo:';
-$s_bug_reopened_msg = 'La incidencia ha sido reabierta…';
-$s_reopen_add_bugnote_title = 'Añadir una nota con la razón para reabrir la incidencia';
-$s_bugnote_add_reopen_button = 'Añadir nota y reabrir la incidencia';
-=======
 $s_max_file_size_info = 'Tamaño máximo: %1$s %2$s';
 $s_bug_reopened_msg = 'La incidencia ha sido reabierta…';
 $s_reopen_add_bugnote_title = 'Añadir una nota con la razón para reabrir la incidencia';
 $s_bugnote_add_reopen_button = 'Añadir nota y reabrir incidencia';
->>>>>>> master
 $s_resolved_bug_title = 'Resolver incidencia';
 $s_resolved_bug_button = 'Resolver incidencia';
 $s_bug_resolved_msg = 'La incidencia ha sido resuelta. Escriba una nota a continuación…';
@@ -520,31 +446,18 @@ $s_bug_send_button = 'Enviar';
 $s_reminder = 'Recordatorio';
 $s_reminder_mentions = 'Ahora puedes mencionar a los usuarios para activar notificaciones para ellos en lugar de utilizar la función de recordatorios. Por ejemplo, otros pueden mencionarte escribiendo %1s en los problemas y las notas, y recibirás una notificación por correo electrónico.';
 $s_reminder_explain = 'Esta nota se enviará a los destinatarios seleccionados, solicitando comentarios sobre esta incidencia.';
-<<<<<<< HEAD
-$s_reminder_monitor = 'Esos destinatarios empezarán a monitorizar la incidencia. Los mismos pueden desuscribirse utilizando el botón "Dejar de monitorizar".';
-$s_reminder_store = 'Esta nota se almacenará con la incidencia.';
-=======
 $s_reminder_monitor = 'Esos destinatarios también comenzarán a monitorizar la incidencia. Pueden dejar de hacerlo utilizando el botón "Dejar de monitorizar".';
 $s_reminder_store = 'La nota se almacenará junto con la incidencia.';
->>>>>>> master
 $s_mentioned_you = 'te mencionó en:';
 $s_mentioned_in = 'Mencionado en %1$s';
 $s_confirm_sponsorship = 'Confirme que usted quiere patrocinar la incidencia %1$d para %2$s.';
 $s_stick_bug_button = 'Fijar';
-<<<<<<< HEAD
-$s_unstick_bug_button = 'Desfijar';
-=======
 $s_unstick_bug_button = 'Desanclar';
->>>>>>> master
 $s_bug_updated_msg = 'La incidencia fue actualizada correctamente…';
 $s_back_to_bug_link = 'Volver a la incidencia';
 $s_update_simple_link = 'Actualización simple';
 $s_updating_bug_advanced_title = 'Actualizando información de la incidencia';
-<<<<<<< HEAD
-$s_id = 'ID';
-=======
 $s_id = 'Id.';
->>>>>>> master
 $s_category = 'Categoría';
 $s_severity = 'Severidad';
 $s_reproducibility = 'Reproducibilidad';
@@ -590,15 +503,8 @@ $s_bugnote_deleted_msg = 'La nota ha sido eliminada correctamente…';
 $s_bug_notes_title = 'Notas';
 $s_edit_bugnote_title = 'Editar nota';
 $s_no_bugnotes_msg = 'No hay notas asociadas a esta incidencia.';
-<<<<<<< HEAD
-$s_delete_link = 'Eliminar';
 $s_add_bugnote_title = 'Añadir nota';
 $s_add_bugnote_button = 'Añadir nota';
-$s_bugnote_edit_link = 'Editar';
-=======
-$s_add_bugnote_title = 'Añadir nota';
-$s_add_bugnote_button = 'Añadir nota';
->>>>>>> master
 $s_closed_bug_button = 'Cerrar incidencia';
 $s_bugnote_updated_msg = 'La nota ha sido actualizada correctamente...';
 $s_last_edited = 'Última edición:';
@@ -706,11 +612,7 @@ $s_config_project = 'Nota: Esta configuración afecta sólo al proyecto %1$s';
 $s_colour_coding = 'En la tabla inferior, se aplica el siguiente esquema de colores:';
 $s_colour_project = 'La configuración individual del proyecto tiene prioridad sobre la general de todos los proyectos.';
 $s_colour_global = 'La configuración general de todos los proyectos tiene prioridad sobre la configuración predeterminada.';
-<<<<<<< HEAD
-$s_issue_reporter = 'Usuario que reporta la incidencia';
-=======
 $s_issue_reporter = 'Usuario que reportó la incidencia';
->>>>>>> master
 $s_issue_handler = 'Usuario que gestiona la incidencia';
 $s_users_added_bugnote = 'Usuarios que añaden Notas';
 $s_category_assigned_to = 'Dueño de la categoría';
@@ -747,13 +649,8 @@ $s_access_change_access_label = 'Quién puede cambiar niveles de acceso:';
 $s_default_not_in_flow = 'El Estado por defecto de %1$s no está seleccionado en los siguientes Estados para %2$s. Será ignorado';
 $s_allowed_access_levels = 'Permitido para cualquier usuario con nivel de acceso';
 $s_assign_issue = 'Asignar una incidencia';
-<<<<<<< HEAD
-$s_allow_reporter_close = 'Permitir al Informador Cerrar la Incidencia';
-$s_allow_reporter_reopen = 'Permitir al Informador Reabrir la Incidencia';
-=======
 $s_allow_reporter_close = 'Permitir al informante cerrar la incidencia';
 $s_allow_reporter_reopen = 'Permitir al informante reabrir la incidencia';
->>>>>>> master
 $s_set_status_assigned = 'Definir Estado al realizar la asignación';
 $s_edit_others_bugnotes = 'Editar notas de otros';
 $s_edit_own_bugnotes = 'Editar notas propias';
@@ -764,19 +661,11 @@ $s_limit_access = 'Limitar el acceso de los informadores el acceso únicamente a
 $s_submit_status = 'Estado en el que se establece una nueva incidencia';
 $s_assigned_status = 'Estado en el que se establece una Incidencia auto-asignada';
 $s_resolved_status = 'Estado en el que una incidencia se considera Resuelta';
-<<<<<<< HEAD
-$s_readonly_status = 'Estado en el que una incidencia se establece como de solo lectura';
-$s_reopen_status = 'Estado en el que se establece una incidencia reabierta';
-$s_reopen_resolution = 'Resolución que se establece al reabrir una incidencia';
-$s_config_delete_sure = '¿Confirmas que quieres eliminar la configuración de:';
-$s_in_project = 'en el proyecto';
-=======
 $s_readonly_status = 'Estado en el que una incidencia pasa a ser de solo lectura';
 $s_reopen_status = 'Estado en el que se establece una incidencia reabierta';
 $s_reopen_resolution = 'Resolución que se establece al reabrir una incidencia';
 $s_limit_view_unless_threshold_option = 'Ver incidencias de otros usuarios (si no se establece, el acceso se verá restringido a las incidencias reportadas, asignadas o monitoreadas por el usuario).';
 $s_config_delete_sure = '¿Estás seguro de querer eliminar la configuración de %1$s en el proyecto %2$s?';
->>>>>>> master
 $s_delete_config_button = 'Borrar Configuración';
 $s_configuration_report = 'Reporte de Configuración';
 $s_database_configuration = 'Configuración de la Base de Datos';
@@ -996,11 +885,7 @@ $s_select_severity = 'Seleccione Severidad';
 $s_or_fill_in = 'O complete los siguientes campos';
 $s_assign_to = 'Asignar a';
 $s_additional_information = 'Información adicional';
-<<<<<<< HEAD
-$s_submit_report_button = 'Enviar incidencia';
-=======
 $s_submit_report_button = 'Reportar incidencia';
->>>>>>> master
 $s_check_report_more_bugs = 'Marque para reportar más incidencias';
 $s_report_stay = 'Continuar reportando';
 $s_selected_project = 'Proyecto Seleccionado';
@@ -1058,11 +943,7 @@ $s_any = 'Cualquiera';
 $s_all = 'todas';
 $s_show = 'Ver';
 $s_changed = 'Resaltar modificado (horas)';
-<<<<<<< HEAD
-$s_viewing_bugs_title = 'Mostrando Incidencias';
-=======
 $s_viewing_bugs_title = 'Visualizando incidencias';
->>>>>>> master
 $s_updated = 'Actualizada';
 $s_sticky = 'Ver Incidencias Fijadas';
 $s_sort = 'Ordenar por';
@@ -1129,15 +1010,6 @@ $s_close_bug_button = 'Cerrar';
 $s_move_bug_button = 'Mover';
 $s_attached_files = 'Archivos adjuntos';
 $s_publish = 'Publicar';
-<<<<<<< HEAD
-$s_add_user_to_monitor = 'Agregar';
-$s_bug_view_title = 'Ver detalles de la incidencia';
-$s_no_users_monitoring_bug = 'No hay usuarios monitorizando esta Incidencia.';
-$s_users_monitoring_bug = 'Usuarios monitorizando esta Incidencia.';
-$s_monitoring_user_list = 'Lista de Usuarios';
-$s_no_users_sponsoring_bug = 'No hay usuarios patrocinando esta Incidencia.';
-$s_users_sponsoring_bug = 'Usuarios patrocinando esta Incidencia.';
-=======
 $s_browser_does_not_support_audio = 'Tu navegador no soporta etiquetas de audio.';
 $s_browser_does_not_support_video = 'Tu navegador no admite etiquetas de video.';
 $s_bug_view_title = 'Ver detalles de la incidencia';
@@ -1146,7 +1018,6 @@ $s_users_monitoring_bug = 'Usuarios monitorizando esta incidencia.';
 $s_monitoring_user_list = 'Lista de Usuarios';
 $s_no_users_sponsoring_bug = 'Nadie ha patrocinado esta incidencia.';
 $s_users_sponsoring_bug = 'Usuarios que patrocinan esta incidencia';
->>>>>>> master
 $s_sponsors_list = 'Lista de patrocinadores';
 $s_total_sponsorship_amount = 'Patrocinio total = %1$s';
 $s_add_custom_field_button = 'Nuevo campo personalizado';
@@ -1216,22 +1087,13 @@ $s_changelog = 'Registro de cambios';
 $s_changelog_empty = 'Información de cambios no disponible';
 $s_changelog_empty_manager = 'No hay información disponible del registro de cambios. Las incidencias se incluyen una vez que los proyectos tienen versiones y las incidencias se solucionan asignando "arreglada en la versión".';
 $s_roadmap = 'Hoja de ruta';
-<<<<<<< HEAD
-$s_resolved_progress = '%1$d de %2$d incidencia(s) resuelta(s). Progreso (%3$d %%).';
-=======
 $s_resolved_progress = '%1$d de %2$d incidencia(s) resuelta(s).';
->>>>>>> master
 $s_roadmap_empty = 'No hay información disponible de la hoja de ruta';
 $s_roadmap_empty_manager = 'No hay información disponible de la hoja de ruta. Las incidencias se incluyen una vez que los proyectos tienen versiones y las incidencias tiene asignadas una "versión destino".';
 $s_http_auth_realm = 'Acceso a MantisBT';
 $s_bug = 'incidencia';
 $s_bugs = 'incidencias';
-<<<<<<< HEAD
-$s_add_new_relationship = 'Nueva relación';
-$s_add_new_relationship_button = 'Añadir';
-=======
 $s_add_new_relationship = 'Relación nueva';
->>>>>>> master
 $s_this_bug = 'Incidencia actual';
 $s_relationship_added = 'Relación añadida';
 $s_relationship_deleted = 'Relación eliminada';
@@ -1257,21 +1119,6 @@ $s_dependency_graph = 'Gráfico de Dependencias';
 $s_vertical = 'Vertical';
 $s_horizontal = 'Horizontal';
 $s_view_issue = 'Ver incidencia';
-<<<<<<< HEAD
-$s_perm_rpt_capability = 'Capacidad';
-$s_view = 'Ver';
-$s_issues = 'Incidencias';
-$s_report_issue = 'Reportar una incidencia';
-$s_update_issue = 'Actualizar Incidencia';
-$s_monitor_issue = 'Monitorizar una incidencia';
-$s_handle_issue = 'Gestionar una incidencia';
-$s_move_issue = 'Mover una incidencia';
-$s_delete_issue = 'Borrar Incidencia';
-$s_reopen_issue = 'Reabrir una incidencia';
-$s_view_private_issues = 'Ver Incidencias privadas';
-$s_update_readonly_issues = 'Actualizar incidencias de solo lectura';
-$s_update_issue_status = 'Actualizar estado de incidencia';
-=======
 $s_show_summary = 'Mostrar resumen';
 $s_hide_summary = 'Ocultar resumen';
 $s_perm_rpt_capability = 'Capacidad';
@@ -1287,7 +1134,6 @@ $s_reopen_issue = 'Reabrir una incidencia';
 $s_view_private_issues = 'Ver Incidencias privadas';
 $s_update_readonly_issues = 'Actualizar incidencias de solo lectura';
 $s_update_issue_status = 'Actualizar estado de una incidencia';
->>>>>>> master
 $s_set_view_status = 'Establecer visibilidad al registrar una nueva incidencia o nota';
 $s_update_view_status = 'Cambiar visibilidad de incidencias o notas existentes';
 $s_view_issue_revisions = 'Ver revisiones de la incidencia o de las notas';
@@ -1307,11 +1153,7 @@ $s_download_attachments = 'Descargar adjuntos';
 $s_delete_attachments = 'Borrar adjuntos';
 $s_delete_attachment_button = 'Borrar';
 $s_delete_attachment_sure_msg = '¿Confirmas que quieres eliminar este archivo adjunto?';
-<<<<<<< HEAD
-$s_upload_issue_attachments = 'Subir adjuntos de la incidencia';
-=======
 $s_upload_issue_attachments = 'Adjuntar archivos a la incidencia';
->>>>>>> master
 $s_filters = 'Filtros';
 $s_save_filters = 'Guardar filtros';
 $s_save_filters_as_shared = 'Guardar filtros como compartidos';
@@ -1328,15 +1170,9 @@ $s_link_custom_fields_to_projects = 'Vincular campos personalizados a proyectos'
 $s_sponsorships = 'PATROCINIOS';
 $s_view_sponsorship_details = 'Ver detalle de patrocinios';
 $s_view_sponsorship_total = 'Ver totales de patrocinios';
-<<<<<<< HEAD
-$s_sponsor_issue = 'Patrocinar Incidencia';
-$s_assign_sponsored_issue = 'Asignar Incidencia Patrocinada';
-$s_handle_sponsored_issue = 'Modificar Incidencia Patrocinada';
-=======
 $s_sponsor_issue = 'Patrocinar incidencia';
 $s_assign_sponsored_issue = 'Asignar incidencia patrocinada';
 $s_handle_sponsored_issue = 'Gestionar incidencia patrocinada';
->>>>>>> master
 $s_others = 'Otros';
 $s_see_email_addresses_of_other_users = 'Ver la dirección de correo de otros usuarios';
 $s_send_reminders = 'Enviar recordatorios';
@@ -1450,11 +1286,7 @@ $s_month_december = 'Diciembre';
 $s_timeline_issue_created = '<span class="username">%1$s</span> creó la incidencia <span class="issue_id">%2$s</span>';
 $s_timeline_issue_file_added = '<span class="username">%1$s</span> archivo adjunto <em>%3$s</em> para su emisión <span class="issue_id">%2$s</span>';
 $s_timeline_issue_file_deleted = '<span class="username">%1$s</span> archivo eliminado <em>%3$s</em> de su emisión <span class="issue_id">%2$s</span>';
-<<<<<<< HEAD
-$s_timeline_issue_note_created = '<span class="username">%1$s</span> hizo un comentario sobre la la incidencia <span class="issue_id">%2$s</span>';
-=======
 $s_timeline_issue_note_created = '<span class="username">%1$s</span> realizó un comentario en la incidencia <span class="issue_id">%2$s</span>';
->>>>>>> master
 $s_timeline_issue_monitor = '<span class="username">%1$s</span> está monitorizando la incidencia <span class="issue_id">%2$s</span>';
 $s_timeline_issue_unmonitor = '<span class="username">%1$s</span> dejó de monitorizar la incidencia <span class="issue_id">%2$s</span>';
 $s_timeline_issue_tagged = '<span class="username">%1$s</span> etiquetó la incidencia <span class="issue_id">%2$s</span> con <span class="tag_name">%3$s</span>';
@@ -1522,11 +1354,7 @@ $MANTIS_ERROR[ERROR_FILE_INVALID_UPLOAD_PATH] = 'Ruta de subida no válida.  El 
 $MANTIS_ERROR[ERROR_FILE_NO_UPLOAD_FAILURE] = 'No se ha cargado ningún archivo. Por favor, vuelva atrás y seleccione un archivo antes de presionar Subir';
 $MANTIS_ERROR[ERROR_FILE_MOVE_FAILED] = 'El archivo subido no puede trasladarse al directorio de almacenamiento. El directorio no existe o no puede escribirse en él.';
 $MANTIS_ERROR[ERROR_FILE_NOT_FOUND] = 'No se encuentra el adjunto con identificador "%1$d".';
-<<<<<<< HEAD
-$MANTIS_ERROR[ERROR_BUG_DUPLICATE_SELF] = 'No se puede establecer una incidencia como duplicada de si misma.';
-=======
 $MANTIS_ERROR[ERROR_BUG_DUPLICATE_SELF] = 'No puedes definir una incidencia como duplicada de sí misma.';
->>>>>>> master
 $MANTIS_ERROR[ERROR_BUG_REVISION_NOT_FOUND] = 'Revisión de la incidencia no encontrada';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_NOT_FOUND] = 'Campo personalizado no encontrado';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_NAME_NOT_UNIQUE] = 'Ese nombre está duplicado.';
@@ -1565,11 +1393,7 @@ $MANTIS_ERROR[ERROR_SPONSORSHIP_HANDLER_ACCESS_LEVEL_TOO_LOW] = 'El gestor no ti
 $MANTIS_ERROR[ERROR_SPONSORSHIP_ASSIGNER_ACCESS_LEVEL_TOO_LOW] = 'Acceso denegado: se necesita un nivel de acceso mayor para administrar incidencias patrocinadas.';
 $MANTIS_ERROR[ERROR_SPONSORSHIP_SPONSOR_NO_EMAIL] = 'El patrocinador no ha proporcionado una dirección de correo electrónico. Por favor actualice su perfil.';
 $MANTIS_ERROR[ERROR_CONFIG_OPT_INVALID] = 'La opción de configuración \'%1$s\' tiene un valor \'%2$s\', que no es válido.';
-<<<<<<< HEAD
-$MANTIS_ERROR[ERROR_BUG_READ_ONLY_ACTION_DENIED] = 'La acción no se puede efectuar puesto que la incidencia \'%1$d\' es de sólo lectura';
-=======
 $MANTIS_ERROR[ERROR_BUG_READ_ONLY_ACTION_DENIED] = 'La acción no se puede efectuar puesto que la incidencia «%1$d» es de solo lectura.';
->>>>>>> master
 $MANTIS_ERROR[ERROR_BUG_RESOLVE_DEPENDANTS_BLOCKING] = 'Esta incidencia no puede resolverse hasta que se hayan resuelto todas las incidencias dependientes de ella. Pídele al administrador del sistema acceso al proyecto si no ves ninguna incidencia dependiente.';
 $MANTIS_ERROR[ERROR_RELATIONSHIP_NOT_FOUND] = 'Relación no encontrada.';
 $MANTIS_ERROR[ERROR_RELATIONSHIP_ACCESS_LEVEL_TO_DEST_BUG_TOO_LOW] = 'Acceso denegado: La incidencia  %1$d requiere un nivel de acceso mayor.';
@@ -1636,8 +1460,6 @@ $s_reset = 'Restablecer';
 $s_load = 'Cargar';
 $s_apply_changes = 'Aplicar cambios';
 $s_undo = 'Deshacer';
-<<<<<<< HEAD
-=======
 $s_edit = 'Editar';
 $s_submit = 'Enviar';
 $s_update = 'Actualizar';
@@ -1653,4 +1475,3 @@ $s_move = 'Mover';
 $s_close = 'Cerrar';
 $s_add = 'Agregar';
 $s_login = 'Iniciar sesión';
->>>>>>> master

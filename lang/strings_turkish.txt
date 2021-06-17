@@ -56,11 +56,8 @@
  * @author Korayal
  * @author McAang
  * @author Meelo
-<<<<<<< HEAD
-=======
  * @author Melissadilara
  * @author MuratTheTurkish
->>>>>>> master
  * @author Rapsar
  * @author Sayginer
  * @author Thinkfast
@@ -69,12 +66,7 @@
  * @author Vito Genovese
  */
 
-<<<<<<< HEAD
-$s_directionality = 'soldan sağa';
-$s_actiongroup_menu_move = 'Taşı';
-=======
 $s_directionality = 'ltr';
->>>>>>> master
 $s_actiongroup_menu_copy = 'Kopyala';
 $s_actiongroup_menu_assign = 'Ata';
 $s_actiongroup_menu_close = 'Kapat';
@@ -394,15 +386,9 @@ $s_update_sponsorship_button = 'Ödeme Şeklini Değiştir';
 $s_no_sponsored = 'Üstlenmeniz için atanmış hiç bir sorun bulunamadı.';
 $s_own_sponsored = 'Üstlendiğiniz Sorunlar:';
 $s_issues_handled = 'Üstlenmeniz İçin Size Atanan Sorunlar:';
-<<<<<<< HEAD
-$s_no_own_sponsored = 'Her hangi bir sorun üstlenmediniz.';
-$s_sponsor = 'Üstlenen';
-$s_sponsor_verb = 'Üstlenen';
-=======
 $s_no_own_sponsored = 'Hiçbir konuya sponsor olmadınız.';
 $s_sponsor = 'Destekleyen';
 $s_sponsor_verb = 'Destekleyen';
->>>>>>> master
 $s_amount = 'Miktar';
 $s_total_owing = 'Toplam Borç';
 $s_total_paid = 'Toplam Ödenen';
@@ -678,13 +664,8 @@ $s_resolved_status = 'Çözümlenmiş olarak ayarlanan sorunun durumu';
 $s_readonly_status = 'Sorunun sadece okunabilir olduğu durum';
 $s_reopen_status = 'Yeniden açılan sorunun durumu';
 $s_reopen_resolution = 'Yeniden açılan sorunun çözümlenme durumu';
-<<<<<<< HEAD
-$s_config_delete_sure = 'Bunun ayarları silmek istediğinizden emin misiniz?  :';
-$s_in_project = 'Projede';
-=======
 $s_limit_view_unless_threshold_option = 'Diğer kullanıcıların sorunlarını görüntüle (ayarlanmadıysa, erişim kullanıcı tarafından bildirilen, ele alınan veya izlenen sorunlarla sınırlı olacaktır)';
 $s_config_delete_sure = '%2$s projesindeki %1$s ayarlarını silmek istediğinizden emin misiniz?';
->>>>>>> master
 $s_delete_config_button = 'Ayarları Sil';
 $s_configuration_report = 'Yapılandırma Raporu';
 $s_database_configuration = 'Veritabanı Yapılandırması';
@@ -701,13 +682,9 @@ $s_set_configuration_option_action_clone = 'Yapılandırma Seçeneğini Kopyala'
 $s_set_configuration_option_action_view = 'Yapılandırma Seçeneğini Görüntüle';
 $s_plugin = 'Eklenti';
 $s_plugins_installed = 'Yüklenen Eklentiler';
-<<<<<<< HEAD
-$s_plugins_available = 'Kurulabilir Eklentiler';
-=======
 $s_plugins_available = 'Mevcut Eklentiler';
 $s_plugins_missing = 'Eksik veya Geçersiz Eklentiler';
 $s_plugins_missing_description = 'Aşağıdaki listede bulunan Eklentiler kaydedildi, ancak kaynak kodları "%s" içinde bulunamadı veya yüklenemedi. <br> Bunları yeniden yüklemeyi veya kaldırmayı deneyin.';
->>>>>>> master
 $s_plugin_description = 'Açıklama';
 $s_plugin_problem_description = 'Program açıklaması';
 $s_plugin_author = 'Yazar: %1$s';
@@ -788,21 +765,12 @@ $s_projects_title = 'Projeler';
 $s_projects_title_label = 'Projeler';
 $s_name = 'İsim';
 $s_project_updated_msg = 'Proje başarıyla güncellendi...';
-<<<<<<< HEAD
-$s_version_added_msg = 'Versiyon başarıyla eklendi...';
-$s_version_deleted_msg = 'Versiyon başarıyla silindi...';
-$s_version_delete_sure = 'Bu versiyonu silmek istediginizden emin misiniz? Bu versiyona ilişkin bütün sorunlar da silinecektir.';
-$s_delete_version_button = 'Versiyon Sil';
-$s_edit_project_version_title = 'Proje Versiyonu Düzenle';
-$s_update_version_button = 'Versiyon Güncelle';
-=======
 $s_version_added_msg = 'Sürüm başarıyla eklendi...';
 $s_version_deleted_msg = 'Sürüm başarıyla silindi...';
 $s_version_delete_sure = '"%1$s" sürümü silmek istediğinizden emin misiniz?';
 $s_delete_version_button = 'Sürümü Sil';
 $s_edit_project_version_title = 'Proje Sürümü Düzenle';
 $s_update_version_button = 'Sürümü Güncelle';
->>>>>>> master
 $s_released = 'Sürüldü';
 $s_not_released = 'Henüz Sürülmedi';
 $s_scheduled_release = 'Sürüm için Zamanlanmış';
@@ -810,11 +778,7 @@ $s_obsolete = 'Eski';
 $s_version_updated_msg = 'Versiyon başarıyla güncellendi...';
 $s_account_delete_protected_msg = 'Hesap korumalı. Bu hesap silinemez.';
 $s_account_deleted_msg = 'Hesap silindi...';
-<<<<<<< HEAD
-$s_delete_account_sure_msg = 'Bu hesabı silmek istediginizden emin misiniz?';
-=======
 $s_delete_account_sure_msg = '"%1$s" kullanıcı hesabını silmek istediğinizden emin misiniz?';
->>>>>>> master
 $s_notify_user = 'Bu değişikliği kullanıcıya bildir';
 $s_accounts_pruned_msg = 'Bir haftadan fazla süre önce açılmış oldukları halde hala hiç kullanılmayan kullanıcı hesapları silindi';
 $s_prune_accounts_button = 'Azalt';
@@ -880,34 +844,20 @@ $s_back_link = 'Geri';
 $s_file_uploaded_msg = 'Dosya başarıyla gönderildi';
 $s_upload_file_title = 'Dosya Gönder';
 $s_title = 'Başlık';
-<<<<<<< HEAD
-$s_project_file_deleted_msg = 'Proje dosyası silindi';
-$s_confirm_file_delete_msg = 'Bu dosyayı silmek istediğinizden emin misiniz?';
-$s_filename = 'Dosya Adı';
-=======
 $s_project_file_deleted_msg = 'Proje dosyası silindi.';
 $s_confirm_file_delete_msg = '"%1$s" dosyayı silmek istediğinizden emin misiniz?';
 $s_filename = 'Dosya adı';
->>>>>>> master
 $s_filename_label = 'Dosya adı:';
 $s_file_update_button = 'Dosya güncelle';
 $s_file_delete_button = 'Dosya Sil';
 $s_project_documentation_title = 'Proje Belgeleri';
 $s_user_documentation = 'Kullanıcı Belgeleri';
 $s_project_documentation = 'Proje Belgeleri';
-<<<<<<< HEAD
-$s_add_file = 'Dosya ekle';
-$s_project_document_updated = 'Proje başarıyla güncellendi';
-$s_project_user_added_msg = 'Kullanıcı projeye başarıyla eklendi';
-$s_project_removed_user_msg = 'Kullanıcı projeden başarıyla silindi';
-$s_remove_user_sure_msg = 'Bu kullanıcıyı silmek istediğinizden emin misiniz?';
-=======
 $s_add_file = 'Dosya Ekle';
 $s_project_document_updated = 'Proje güncellemesi başarılı.';
 $s_project_user_added_msg = 'Kullanıcı projeye başarıyla eklendi.';
 $s_project_removed_user_msg = 'Kullanıcı projeden başarıyla kaldırıldı.';
 $s_remove_user_sure_msg = '"%1$s" kullanıcısını "%2$s" projesinden kaldırmak istediğinizden emin misiniz?';
->>>>>>> master
 $s_remove_user_button = 'Kullanıcıyı Kaldır';
 $s_remove_all_users_sure_msg = 'Bu projedeki bütün kullanıcıları silmek istediğinizden emin misiniz?';
 $s_remove_all_users_button = 'Bütün Kullanıcıları Sil';
@@ -1104,17 +1054,10 @@ $s_linked_projects_label = 'Bağlantılı Projeler';
 $s_custom_field_sequence = 'Sıra';
 $s_custom_field_sequence_label = 'Sıra';
 $s_custom_field_type_enum_string = '0:Dizi,1:Sayısal,2:Şamandıra,3:Numaralandırmalar,4:E-posta,5:İşaret Kutusu,6:Liste,7:Çoklu Seçim Listesi,8:Tarih,9:Radyo,10:Textarea';
-<<<<<<< HEAD
-$s_confirm_used_custom_field_deletion = 'Bu alan şu anda en az bir projeye bağlı. Eğer devam ederseniz bu alanın tüm değerleri kalıcı olarak silinecektir. Bu işlem geri alınamaz. Bu alanı silmek istemiyorsanız, tarayıcınızda "Geri" butonuna basın. Devam etmek için aşağıdaki butona tıklayın.';
-$s_confirm_custom_field_deletion = 'Bu özel alan ve tüm ilişkili değerleri silmek istediğinizden emin misiniz?';
-$s_field_delete_button = 'Alanı Sil';
-$s_confirm_custom_field_unlinking = 'Bu projedeki özel alan bağlantısını kaldırmak istediğinizden emin misiniz? Özel alanın kendisi silinmediği sürece içindeki değerler de silinmeyecektir.';
-=======
 $s_confirm_used_custom_field_deletion = '"%1$s" alanı şu anda en az bir projeye bağlı. Devam ederseniz bu alan için tüm değerler kalıcı olarak silinecektir. Bu işlem geri alınamaz. Bu alanı silmek istemiyorsanız, tarayıcınızdaki Geri düğmesine basın. Devam etmek için aşağıdaki düğmeyi tıklayın';
 $s_confirm_custom_field_deletion = '"%1$s" özel alanını ve ilişkili tüm değerleri silmek istediğinizden emin misiniz?';
 $s_field_delete_button = 'Alanı Sil';
 $s_confirm_custom_field_unlinking = '"%1$s" özel alanın projeyle olan bağlantısını kaldırmak istediğinizden emin misiniz? Özel alanın kendisi silinmediği sürece değerler silinmeyecektir.';
->>>>>>> master
 $s_field_remove_button = 'Alanı Kaldır';
 $s_hide_status = 'Durumu Gizle';
 $s_filter_closed = 'Kapalı';
@@ -1143,13 +1086,8 @@ $s_sponsorship_total = 'Toplam Üstlenme';
 $s_changelog = 'Değişiklik Günlüğü';
 $s_changelog_empty = 'Hiç bir değişiklik kayıt bilgisi yok';
 $s_changelog_empty_manager = 'Değişiklik Günlüğü bilgisi yok. Projeler sürümlere sahip olduklarında ve sorunlar "sürümde düzeltildi" setiyle çözüldükten sonra dahil edilmiştir.';
-<<<<<<< HEAD
-$s_roadmap = 'Yol Haritası';
-$s_resolved_progress = '%2$d adet sorundan %1$d tanesi çözümlendi. İlerleme (%3$d%%).';
-=======
 $s_roadmap = 'Yol haritası';
 $s_resolved_progress = '%2$d sorundan %1$d tanesi çözümlendi.';
->>>>>>> master
 $s_roadmap_empty = 'Yol Haritası bilgisi yok';
 $s_roadmap_empty_manager = 'Yol Haritası bilgisi yok. Projeler sürümleri ve sorunlar "hedef sürümleri" belirlendikten sonra sorunlar dahil edilir.';
 $s_http_auth_realm = 'MantisBT Giriş';
@@ -1197,12 +1135,9 @@ $s_update_readonly_issues = 'Sadece okunabilir sorunları güncelle';
 $s_update_issue_status = 'Sorun durumunu güncelle';
 $s_set_view_status = 'Yeni bir sorun veya not bildirirken görünüm durumunu ayarla';
 $s_update_view_status = 'Mevcut sayının veya notun görünüm durumunu değiştir';
-<<<<<<< HEAD
-=======
 $s_view_issue_revisions = 'Sorun veya not revizyonlarını görün';
 $s_drop_issue_revisions = 'Sorun veya not revizyonlarını bırakın';
 $s_set_sticky = 'Bir sorunu yapıştırın / çıkartın';
->>>>>>> master
 $s_show_list_of_users_monitoring_issue = 'Bu sorunu izleyenlerin listesini göster';
 $s_add_users_monitoring_issue = 'Bir soruna monitör ekle';
 $s_remove_users_monitoring_issue = 'Bir sorundan monitörleri kaldırın';

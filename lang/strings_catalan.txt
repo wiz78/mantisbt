@@ -590,12 +590,7 @@ $s_resolved_status = 'Estat on una incidència es considera resolta';
 $s_readonly_status = 'Estat on una incidència només és per lectura';
 $s_reopen_status = 'Estat on s\'estableix una incidència reoberta';
 $s_reopen_resolution = 'Resolució que es posa a una incidència reoberta';
-<<<<<<< HEAD
-$s_config_delete_sure = 'Esta segur que vol eliminar la configuració per:';
-$s_in_project = 'al projecte';
-=======
 $s_config_delete_sure = 'Esta segur que vol eliminar la configuració de %1$s al projecte %2$s?';
->>>>>>> master
 $s_delete_config_button = 'Eliminar Configuració';
 $s_configuration_report = 'Informe de Configuració';
 $s_database_configuration = 'Configuració de la Base de Dades';
@@ -689,13 +684,8 @@ $s_obsolete = 'Obsoleta';
 $s_version_updated_msg = 'La versió ha estat actualitzada...';
 $s_account_delete_protected_msg = 'Compte Protegit. No és possible eliminar aquest compte.';
 $s_account_deleted_msg = 'Compte eliminat...';
-<<<<<<< HEAD
-$s_delete_account_sure_msg = 'Està segur que desitja eliminar aquest compte?';
-$s_notify_user = 'Notifica a l\'Usuari';
-=======
 $s_delete_account_sure_msg = 'Està segur que desitja eliminar el compte"%1$s"?';
 $s_notify_user = 'Notifica a l\'usuari d\'aquest canvi';
->>>>>>> master
 $s_accounts_pruned_msg = 'Tots els comptes que mai s\'han connectat i tenen més d\'una setmana han estat eliminats';
 $s_prune_accounts_button = 'Purgar';
 $s_confirm_account_pruning = 'Està segur que desitja eliminar els comptes antics que mai han iniciat una sessió?';
@@ -895,9 +885,6 @@ $s_query_blank_name = 'No es pot emmagatzemar un filtre sense nom. Si us plau in
 $s_query_name_too_long = 'El nom del filtre no pot tenir més de 64 caràcters. Si us plau poseu\'l-hi un nom més curt.';
 $s_query_store_error = 'S\'ha produït un error al desar el filtre.';
 $s_open_queries = 'Administra filtres';
-<<<<<<< HEAD
-$s_query_delete_msg = 'Està segur que vol eliminar aquest filtre?';
-=======
 $s_query_delete_msg = 'Està segur que vol eliminar el filtre "%1$s"?';
 $s_edit_filter = 'Edita Filtre';
 $s_owner = 'Propietari';
@@ -909,7 +896,6 @@ $s_manage_filter_page_title = 'Administra filtres';
 $s_manage_filter_edit_page_title = 'Edita filtre';
 $s_apply_filter_button = 'Aplica';
 $s_temporary_filter = 'Filtre provisional';
->>>>>>> master
 $s_view_simple_link = 'Canvia a Vista Simple';
 $s_product_build = 'Muntatge del Producte';
 $s_system_profile = 'Descripció del Sistema';
@@ -967,11 +953,7 @@ $s_custom_field_type_enum_string = '0:Cadena,1:Numèric,2:Flotant,3:Enumeració,
 $s_confirm_used_custom_field_deletion = 'El camp "%1$s" està enllaçat al menys a un projecte. Si continua tots els valors per a aquest camp seran esborrats permanentment. Aquesta acció no es pot desfer. Si no desitja eliminar el camp, faci clic sobre el botó Enrere del seu navegador. Per a procedir, faci clic sobre el botó que hi ha sota';
 $s_confirm_custom_field_deletion = 'Està segur que desitja eliminar el camp personalitzat "%1$s" i tots els valors associats?';
 $s_field_delete_button = 'Elimina camp';
-<<<<<<< HEAD
-$s_confirm_custom_field_unlinking = 'Esteu segurs de voler desenllaçar aquest camp personalitzat del projecte? Els valors associats no seran esborrats mentre el camp personalitzat en si no sigui esborrat?';
-=======
 $s_confirm_custom_field_unlinking = 'Esteu segurs de voler desenllaçar el camp personalitzat "%1$s" del projecte? Els valors associats no seran esborrats mentre el camp personalitzat en si no sigui esborrat';
->>>>>>> master
 $s_field_remove_button = 'Elimina camp';
 $s_hide_status = 'Amagar amb Estat';
 $s_filter_closed = 'Tancat';

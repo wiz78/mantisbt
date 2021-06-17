@@ -515,11 +515,6 @@ function user_pref_delete_all( $p_user_id ) {
  * @return void
  */
 function user_pref_db_delete_user( $p_user_id ) {
-<<<<<<< HEAD
-	db_param_push();
-	$t_query = 'DELETE FROM {user_pref} WHERE user_id=' . db_param();
-	db_query( $t_query, array( $p_user_id ) );
-=======
 	$t_query = new DbQuery( 'DELETE FROM {user_pref} WHERE user_id=:user_id' );
 	$t_query->bind( 'user_id', (int)$p_user_id );
 	$t_query->execute();
@@ -582,7 +577,6 @@ function user_pref_clear_invalid_project_default( $p_project_id, array $p_users 
 	if( !empty( $t_users_to_clear ) ) {
 		user_pref_clear_project_default( $p_project_id, $t_users_to_clear );
 	}
->>>>>>> master
 }
 
 /**

@@ -171,12 +171,9 @@ $s_prefix_for_deleted_users = 'karber';
 $s_administrator = 'idarekar';
 $s_myself = 'Xo';
 $s_default_access_level = 'Hesıbyaye sewiyey reştışi';
-<<<<<<< HEAD
-=======
 $s_project_view_state_enum_string = '10:aleni,50:xısusi';
 $s_view_state_enum_string = '10:aleni,50:xısusi';
 $s_new_account_subject = 'Qeydê hesabi';
->>>>>>> master
 $s_new_account_username = 'Namey karberi:';
 $s_new_account_do_not_reply = 'Cewab mede era nê mesaci';
 $s_new_account_email = 'E-poste:';
@@ -215,12 +212,9 @@ $s_current_password = 'Parolaya nıkayêne';
 $s_access_level = 'Sewiyay resayışi';
 $s_access_level_label = 'Sewiyay resayış';
 $s_update_user_button = 'Karberi bırocne';
-<<<<<<< HEAD
-=======
 $s_api_tokens_link = 'Kılitê API';
 $s_api_token_create_form_title = 'Kılitê API vırazê';
 $s_api_token_name = 'Nameyê kıliti';
->>>>>>> master
 $s_api_token_revoke_button = 'Terkne!';
 $s_api_token_never_used = 'Qet mekarne';
 $s_default_account_preferences_title = 'Hesıbyayê tercihê hesabi';
@@ -309,17 +303,11 @@ $s_login_page_info = 'Sistem de mesela taqibi re xeyr ameyê';
 $s_login_title = 'Cıkewtış';
 $s_save_login = 'Parola mı nê cıgeyraoği de bia xo viri';
 $s_secure_session = 'Ronıştışo Emelın';
-<<<<<<< HEAD
-$s_choose_project = 'Proce weçinê';
-$s_login_button = 'Cıkewtış';
-$s_select_project_button = 'Proce weçinê';
-=======
 $s_choose_project = 'Proce weçine';
 $s_signup_link = 'Hesabo newe akerê';
 $s_lost_password_link = 'Şıma parola kerd ho vira?';
 $s_username_or_email = 'Nameyê karberi ya zi adresa eposteyi';
 $s_select_project_button = 'Proce weçine';
->>>>>>> master
 $s_lost_password_title = 'Parolay reset ke';
 $s_archives = 'Arşivi';
 $s_rss = 'RSS';
@@ -352,8 +340,6 @@ $s_plugin_protected = 'Şeveknaye';
 $s_plugin_actions = 'Kerdışi';
 $s_plugin_key_label = 'Kılit:';
 $s_delete_category_button = 'Kategoriye bestere';
-<<<<<<< HEAD
-=======
 $s_update_category_button = 'Kategoriye newe ke';
 $s_project_delete_button = 'Proceyi bestere';
 $s_edit_project_title = 'Proceyi bıvurne';
@@ -362,7 +348,6 @@ $s_project_name_label = 'Nameyê Proceyi:';
 $s_public = 'pêroyi';
 $s_private = 'xısusi';
 $s_delete_project_button = 'Proceyi Bestere';
->>>>>>> master
 $s_categories = 'Kategoriyi';
 $s_add_category_button = 'Kategoriye cı ke';
 $s_edit_link = 'Bıvurne';

@@ -46,11 +46,7 @@
  * @author Macofe
  */
 
-<<<<<<< HEAD
-$s_plugin_XmlImportExport_title = 'Importar/Exportar incidencias';
-=======
 $s_plugin_XmlImportExport_title = 'Importar/exportar incidencias';
->>>>>>> master
 $s_plugin_XmlImportExport_description = 'Añade capacidades de importación y exportación basadas en XML a MantisBT.';
 $s_plugin_XmlImportExport_import = 'Importar incidencias';
 $s_plugin_XmlImportExport_export = 'Exportar XML';

@@ -390,23 +390,6 @@ class InvalidPluginForDisplay extends PluginForDisplay {
 		}
 		echo '</td>', "\n";
 	}
-<<<<<<< HEAD
-	echo '</td></tr>';
-} ?>
-			</tbody>
-		</table>
-		</div>
-		<div class="widget-toolbox padding-8 clearfix">
-			<input type="submit" class="btn btn-sm btn-primary btn-white btn-round" value="<?php echo lang_get('plugin_update') ?>"/>
-		</div>
-	</div>
-</div>
-</div>
-</form>
-</div>
-<?php
-=======
->>>>>>> master
 }
 
 class AvailablePlugin extends PluginForDisplay {

@@ -239,12 +239,8 @@ $s_assigned_to = 'Tildelt til';
 $s_priority = 'Prioritet';
 $s_resolution = 'Løysingsstoda';
 $s_status = 'Stoda';
-<<<<<<< HEAD
-$s_os_version = 'OS-versjon';
-=======
 $s_platform = 'Plattform';
 $s_os_build = 'OS-versjon';
->>>>>>> master
 $s_votes = 'Røyster';
 $s_summary = 'Samandrag';
 $s_description = 'Skildring';

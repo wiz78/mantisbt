@@ -38,11 +38,7 @@
  * @ingroup Language
  * @file
  *
-<<<<<<< HEAD:plugins/MantisGraph/lang/strings_eo.txt
- * @author Abijeet Patro
-=======
  * @author Fitoschido
->>>>>>> master:plugins/MantisGraph/lang/strings_esperanto.txt
  * @author Mirin
  */
 

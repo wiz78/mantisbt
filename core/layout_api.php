@@ -1201,15 +1201,10 @@ function layout_footer() {
 
 	# Print the page memory usage
 	if( $t_show_memory_usage ) {
-<<<<<<< HEAD
-		$t_page_memory_usage = sprintf( lang_get( 'memory_usage_in_kb' ), number_format( memory_get_peak_usage() / 1024 ) );
-		echo '<small><i class="fa fa-bolt"></i> ' . $t_page_memory_usage . '</small>&#160;&#160;&#160;&#160;' . "\n";
-=======
 		$t_page_memory_usage = sprintf( lang_get( 'memory_usage' ), number_format( memory_get_peak_usage() / 1024 ) );
 		echo '<small>';
 		print_icon( 'fa-bolt' );
 		echo ' ' . $t_page_memory_usage . '</small>&#160;&#160;&#160;&#160;' . "\n";
->>>>>>> master
 	}
 
 	# Determine number of unique queries executed

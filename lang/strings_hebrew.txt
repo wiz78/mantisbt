@@ -49,24 +49,15 @@
  * @author Uziel302
  * @author YaronSh
  * @author Yona b
-<<<<<<< HEAD
-=======
  * @author דגש
  * @author דגש חזק
  * @author ישראל קלר
->>>>>>> master
  */
 
 $s_directionality = 'rtl';
 $s_actiongroup_menu_move = 'העברה';
 $s_actiongroup_menu_copy = 'העתקה';
-<<<<<<< HEAD
-$s_actiongroup_menu_assign = 'שיוך';
-$s_actiongroup_menu_close = 'סגירה';
-$s_actiongroup_menu_delete = 'מחיקה';
-=======
 $s_actiongroup_menu_assign = 'הקצאה';
->>>>>>> master
 $s_actiongroup_menu_resolve = 'פתרון';
 $s_actiongroup_menu_update_priority = 'עדכון \'עדיפות\'';
 $s_actiongroup_menu_update_status = 'עדכון \'מצב\'';
@@ -105,13 +96,7 @@ $s_view_submitted_bug_link = 'הצגת הבאג המדווח %1$s';
 $s_assigned_projects = 'פרויקטים מוקצים';
 $s_assigned_projects_label = 'מיזמים מוקצים';
 $s_unassigned_projects_label = 'מיזמים בלתי מוקצים';
-<<<<<<< HEAD
-$s_print = 'הדפסה';
-$s_jump = 'הצגה';
-$s_copy_users = 'העתקת חשבונות';
-=======
 $s_copy_users = 'העתקת משתמשים';
->>>>>>> master
 $s_copy_categories_from = 'העתקה מ';
 $s_copy_categories_to = 'העתקה אל';
 $s_copy_versions_from = 'העתק גרסאות מ';
@@ -124,14 +109,8 @@ $s_old_value = 'ערך ישן';
 $s_new_value = 'ערך חדש';
 $s_date_modified = 'תאריך שינוי';
 $s_bugnote = 'הערה';
-<<<<<<< HEAD
-$s_change = 'שינוי';
-$s_bugnote_view_state = 'הרשאת צפייה בהערה';
-$s_bug_monitor = 'תחילת מעקב';
-=======
 $s_bugnote_view_state = 'מצב מצג הערה';
 $s_bug_monitor = 'סוגיות במעקב';
->>>>>>> master
 $s_bug_end_monitor = 'סיום מעקב';
 $s_announcement = 'הכרזה';
 $s_stays_on_top = 'תמיד מוצג';
@@ -168,13 +147,9 @@ $s_bug_deleted = 'סוגיה נמחקה';
 $s_make_private = 'להגדיר כפרטית';
 $s_make_public = 'להגדיר כציבורית';
 $s_create_new_project_link = 'פרויקט חדש';
-<<<<<<< HEAD
-$s_login_link = 'כניסה';
-=======
 $s_opensearch_id_short = 'מזהה %s';
 $s_opensearch_id_description = '%s: חיפוש על פי מזהה סוגיה';
 $s_opensearch_text_short = 'טקסט %s';
->>>>>>> master
 $s_opensearch_text_description = '%s: חיפוש עבור כל הטקסט';
 $s_select_option = '(בחירה)';
 $s_bug_actiongroup_access = 'אין לך הרשאות מתאימות לבצע את הפעולה.';
@@ -224,16 +199,8 @@ $s_bugnote_description = 'תוכן הערה';
 $s_error_no_proceed = 'נא ללחוץ על כפתור „חזרה” של הדפדפן כדי לחזור לעמוד הקודם. שם עליך לתקן את הדרוש לפי הודעת השגיאה לעיל. כמו־כן באפשרותך לבצע פעולה אחרת או לעבור למסך אחר דרך התפריט הראשי.';
 $s_login_error = 'חשבונך מבוטל או חסום או שהזנת שם והססמה שגויים.';
 $s_login_cookies_disabled = 'הדפדפן שלך אינו תומך ב-Cookies, או שהוגדר לסרב להן.';
-<<<<<<< HEAD
-$s_go_back = 'חזרה';
-$s_proceed = 'המשך';
-$s_switch = 'החלפה';
-$s_logged_in_as = 'זיהוי';
-$s_prefix_for_deleted_users = 'חשבון';
-=======
 $s_logged_in_as = 'התחברות כ-';
 $s_prefix_for_deleted_users = 'משתמש';
->>>>>>> master
 $s_administrator = 'מנהל המערכת';
 $s_myself = 'עצמי';
 $s_default_access_level = 'הרשאת ברירת מחדל';
@@ -378,34 +345,15 @@ $s_reset_prefs_button = 'איפוס העדפות';
 $s_timezone = 'אזור זמן';
 $s_prefs_reset_msg = 'ההעדפות שוחזרו לברירת המחדל';
 $s_prefs_updated_msg = 'ההעדפות עודכנו';
-<<<<<<< HEAD
-$s_profile_added_msg = 'הפרופיל נוסף';
-$s_profile_deleted_msg = 'הפרופיל נמחק';
-$s_edit_profile_title = 'עריכת פרופיל';
-$s_platform = 'פלטפורמה';
-$s_additional_description = 'תיאור נוסף';
-$s_update_profile_button = 'שמירה';
-$s_profile_defaulted_msg = 'פרופיל ברירת מחדל עודכן';
-$s_add_profile_title = 'הוספת פרופיל';
-$s_add_profile_button = 'שמירה';
-$s_edit_or_delete_profiles_title = 'עדכון או מחיקת פרופילים';
-=======
 $s_select_profile = 'בחירת פרופיל';
 $s_add_profile = 'הוספת פרופיל';
->>>>>>> master
 $s_edit_profile = 'עריכת פרופיל';
 $s_make_default = 'ברירת מחדל';
 $s_delete_profile = 'מחיקת פרופיל';
-<<<<<<< HEAD
-$s_select_profile = 'בחירת פרופיל';
-$s_submit_button = 'שלח';
-$s_profile_updated_msg = 'הפרופיל עודכן';
-=======
 $s_delete_profile_confirm_msg = 'למחוק את הפרופיל „%1$s”?';
 $s_global_profile = 'פרופיל גלובלי';
 $s_default_profile = 'פרופיל בררת מחדל';
 $s_profile_description = 'תיאור מערכת';
->>>>>>> master
 $s_my_sponsorship = 'חסויות שלי';
 $s_update_sponsorship_button = 'לשנות מצב תשלום';
 $s_no_sponsored = 'לא נמצאו סוגיות בחסות שמוקצות לי.';
@@ -533,18 +481,12 @@ $s_bugnote_updated_msg = 'ההערה עודכנה';
 $s_last_edited = 'עריכה אחרונה:';
 $s_hide_content = 'להסתיר תוכן';
 $s_show_content = 'הצגת התוכן';
-<<<<<<< HEAD
-$s_total_queries_executed = '%1$d סה״כ שאילתות שבוצעו';
-$s_unique_queries_executed = '%1$d שאילתות ייחודיות שבוצעו';
-$s_memory_usage_in_kb = 'שימוש בזיכרון: %1$s קילובייט';
-=======
 $s_file_icon_description = 'סמל קובץ %1$s';
 $s_unknown_file_extension = 'לא ידוע';
 $s_webmaster_contact_information = 'Contact <a href="mailto:%1$s" title="לקבלת עזרה, צרו קשר עם מנהלן מנהלן המרשתת בדואל.">administrator</>';
 $s_total_queries_executed = 'בוצעו %1$d שאילתות סה״כ';
 $s_unique_queries_executed = ' בוצעו %1$d שאילתות ייחודיות';
 $s_memory_usage = 'שימוש בזיכרון: %1$s קילובייט';
->>>>>>> master
 $s_log_page_number = 'מספר';
 $s_log_page_time = 'זמן ההפעלה';
 $s_log_page_event = 'אירוע';
@@ -729,16 +671,9 @@ $s_plugin_missing_status_message = 'המתקע מותקן במסד נתוני מ
 $s_project_added_msg = 'הפרויקט נוסף בהצלחה...';
 $s_category_added_msg = 'סוג־האב נוסף בהצלחה...';
 $s_category_deleted_msg = 'הקטגוריה נמחקה בהצלחה...';
-<<<<<<< HEAD
-$s_category_delete_sure_msg = 'האם ברצונך למחוק את הקטגוריה?<br />בקטגוריה „%1$s” יש %2$d באגים.';
-$s_category_delete_confirm_msg = 'האם ברצונך למחוק את הקטגוריה "%1$s"?';
-$s_delete_category_button = 'מחיקת קטגוריה';
-$s_edit_project_category_title = 'עריכת קטגורייה';
-=======
 $s_category_delete_confirm_msg = 'האם למחוק את סוג־האב "%1$s"?';
 $s_delete_category_button = 'מחיקת סוג־אב';
 $s_edit_project_category_title = 'עריכת סוג־אב';
->>>>>>> master
 $s_update_category_button = 'שמירה';
 $s_category_updated_msg = 'סוג־אב עודכן';
 $s_add_subproject_title = 'הוספת תת־פרויקט';
@@ -1017,13 +952,7 @@ $s_temporary_filter = 'מסנן זמני';
 $s_set_as_persistent_filter = 'הגדרת מסנן קבוע';
 $s_view_simple_link = 'הצגה מקוצרת';
 $s_product_build = 'גרסת מוצר';
-<<<<<<< HEAD
-$s_system_profile = 'תיאור מערכת';
-$s_update_bug_button = 'עריכה';
-$s_bug_assign_to_button = 'שיוך ל:';
-=======
 $s_bug_assign_to_button = 'הקצאה ל:';
->>>>>>> master
 $s_bug_status_to_button = 'שינוי מצב ל:';
 $s_reopen_bug_button = 'פתיחה מחדש';
 $s_close_bug_button = 'סגירה';
@@ -1109,12 +1038,7 @@ $s_http_auth_realm = 'כניסה למנטיס';
 $s_bug = 'סוגיה';
 $s_bugs = 'באגים';
 $s_add_new_relationship = 'קשר חדש';
-<<<<<<< HEAD
-$s_add_new_relationship_button = 'הוספה';
-$s_this_bug = 'הבאג הנוכחי';
-=======
 $s_this_bug = 'הסוגיה הנוכחית';
->>>>>>> master
 $s_relationship_added = 'קשר נוסף';
 $s_relationship_deleted = 'קשר נמחק';
 $s_no_relationship = 'אין קשר';
@@ -1132,13 +1056,7 @@ $s_copy_from_parent = 'העתקת נתונים מורחבים מסוגית הה�
 $s_copy_notes_from_parent = 'העתקת הערות סוגיה';
 $s_copy_attachments_from_parent = 'העתקת צרופות';
 $s_with = 'עם';
-<<<<<<< HEAD
-$s_viewing_bug_relationship_graph_title = 'מפת יחסים';
-$s_viewing_bug_dependency_graph_title = 'תרשים תלויות';
-$s_relation_graph = 'קשרים';
-=======
 $s_relation_graph = 'תרשים קשרי-גומלין';
->>>>>>> master
 $s_dependency_graph = 'תלויות';
 $s_vertical = 'אנכי';
 $s_horizontal = 'אופקי';
@@ -1432,8 +1350,6 @@ $s_dropzone_cancel_upload_confirmation = 'לבטל העלאה זו?';
 $s_dropzone_remove_file = 'הסרת הקובץ';
 $s_dropzone_max_files_exceeded = 'לא ניתן להעלות קבצים נוספים.';
 $s_dropzone_not_supported = 'Dropzone.js אינו תומך בדפדפנים ישנים!';
-<<<<<<< HEAD
-=======
 $s_dropzone_multiple_files_too_big = 'הקבצים הבאים:{{files}}חורגים מגודל הקובץ המרבי המותר ({{maxFilesize}} MiB)';
 $s_save = 'שמירה';
 $s_reset = 'איפוס';
@@ -1456,4 +1372,3 @@ $s_move = 'העברה';
 $s_close = 'סגירה';
 $s_add = 'להוסיף';
 $s_login = 'כניסה';
->>>>>>> master

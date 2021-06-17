@@ -352,13 +352,9 @@ for( $i = 0;$i < $t_count; $i++ ) {
 			echo ' ';
 
 			if( !bug_is_readonly( $t_bug->id ) && access_has_bug_level( $t_update_bug_threshold, $t_bug->id ) ) {
-<<<<<<< HEAD
-				echo '<a class="edit" href="' . string_get_bug_update_url( $t_bug->id ) . '"><i class="fa fa-pencil bigger-130 padding-2 grey" title="' . lang_get( 'update_bug_button' ) . '"></i></a>';
-=======
 				echo '<a class="edit" href="' . string_get_bug_update_url( $t_bug->id ) . '">';
 				print_icon( 'fa-pencil', 'bigger-130 padding-2 grey', lang_get( 'edit' ) );
 				echo '</a>';
->>>>>>> master
 			}
 
 			if( ON == config_get( 'show_priority_text' ) ) {

@@ -25,7 +25,7 @@
  * **                                                                  **
  * **                      DO NOT UPDATE MANUALLY                      **
  * **                                                                  **
- * ** To improve a translation please visit http://translatewiki.net   **
+ * ** To improve a translation please visit https://translatewiki.net  **
  * ** Detailed instructions on how to create or update translations at **
  * ** http://www.mantisbt.org/wiki/doku.php/mantisbt:translationshowto **
  * **********************************************************************
@@ -33,7 +33,7 @@
 /** Italian (italiano)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
- * To improve a translation please visit http://translatewiki.net
+ * To improve a translation please visit https://translatewiki.net
  *
  * @ingroup Language
  * @file
@@ -50,7 +50,7 @@ $s_plugin_XmlImportExport_config_title = 'Configurazione livelli di accesso impo
 $s_plugin_XmlImportExport_import_threshold = 'Importa anomalie';
 $s_plugin_XmlImportExport_export_threshold = 'Esporta anomalie';
 $s_plugin_XmlImportExport_action_update = 'Aggiorna';
-$s_plugin_XmlImportExport_importing_in_project = 'Importa anomalia nel progetto:';
+$s_plugin_XmlImportExport_importing_in_project = 'Importa anomalia nel progetto: \'%s\'';
 $s_plugin_XmlImportExport_import_options = 'Opzioni di importazione';
 $s_plugin_XmlImportExport_cross_references = 'Riferimenti incrociati';
 $s_plugin_XmlImportExport_default_strategy = 'Strategia standard di conversione:';

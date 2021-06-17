@@ -60,8 +60,9 @@ function ldap_connect_bind( $p_binddn = '', $p_password = '' ) {
 
 	$t_ldap_server = config_get( 'ldap_server' );
 
-	log_event( LOG_LDAP, 'Attempting connection to LDAP server/URI \'' . $t_ldap_server . '\'.' );
+	log_event( LOG_LDAP, 'Checking syntax of LDAP server URI \'' . $t_ldap_server . '\'.' );
 	$t_ds = @ldap_connect( $t_ldap_server );
+<<<<<<< HEAD
 	if( $t_ds !== false && $t_ds > 0 ) {
 		log_event( LOG_LDAP, 'Connection accepted by LDAP server' );
 
@@ -73,6 +74,16 @@ function ldap_connect_bind( $p_binddn = '', $p_password = '' ) {
 				ldap_log_error( $t_ds );
 			}
 		}
+=======
+	if( $t_ds === false ) {
+		log_event( LOG_LDAP, 'LDAP server URI syntax check failed, make sure its in URI form' );
+		trigger_error( ERROR_LDAP_SERVER_CONNECT_FAILED, ERROR );
+		# Return required as function may be called with error suppressed
+		return false;
+	}
+
+	log_event( LOG_LDAP, 'LDAP server URI syntax check succeeded' );
+>>>>>>> master
 
 		$t_protocol_version = config_get( 'ldap_protocol_version' );
 		if( $t_protocol_version > 0 ) {
@@ -97,6 +108,7 @@ function ldap_connect_bind( $p_binddn = '', $p_password = '' ) {
 			$p_password = config_get( 'ldap_bind_passwd', '' );
 		}
 
+<<<<<<< HEAD
 		if( !is_blank( $p_binddn ) && !is_blank( $p_password ) ) {
 			log_event( LOG_LDAP, 'Attempting bind to ldap server with username and password' );
 			$t_br = @ldap_bind( $t_ds, $p_binddn, $p_password );
@@ -105,6 +117,45 @@ function ldap_connect_bind( $p_binddn = '', $p_password = '' ) {
 			log_event( LOG_LDAP, 'Attempting anonymous bind to ldap server' );
 			$t_br = @ldap_bind( $t_ds );
 		}
+=======
+	# Set minimum TLS protocol version flag (ex: LDAP_OPT_X_TLS_PROTOCOL_TLS1_2).
+	if( version_compare( PHP_VERSION, '7.1.0', '>=' ) ) {
+		$t_tls_protocol_min = config_get_global( 'ldap_tls_protocol_min' );
+		if( $t_tls_protocol_min > 0 ) {
+			log_event( LOG_LDAP, 'Attempting to set minimum TLS protocol' );
+			$t_result = @ldap_set_option( $t_ds, LDAP_OPT_X_TLS_PROTOCOL_MIN, $t_tls_protocol_min );
+			if( !$t_result ) {
+				ldap_log_error( $t_ds );
+				log_event( LOG_LDAP, "Error: Failed to set minimum TLS version on LDAP server" );
+				trigger_error( ERROR_LDAP_UNABLE_TO_SET_MIN_TLS, ERROR );
+
+				# Return required as function may be called with error suppressed
+				return false;
+			}
+		}
+	}
+
+	$t_use_starttls = config_get_global( 'ldap_use_starttls' );
+	if ( $t_use_starttls ) {
+		log_event( LOG_LDAP, 'Attempting StartTLS' );
+		$t_result = @ldap_start_tls( $t_ds );
+		if( !$t_result ) {
+			ldap_log_error( $t_ds );
+			log_event( LOG_LDAP, "Error: Cannot initiate StartTLS on LDAP server" );
+			trigger_error( ERROR_LDAP_UNABLE_TO_STARTTLS, ERROR );
+
+			# Return required as function may be called with error suppressed
+			return false;
+		}
+	}
+	
+	# If no Bind DN and Password is set, attempt to login as the configured
+	# Bind DN.
+	if( is_blank( $p_binddn ) && is_blank( $p_password ) ) {
+		$p_binddn = config_get_global( 'ldap_bind_dn', '' );
+		$p_password = config_get_global( 'ldap_bind_passwd', '' );
+	}
+>>>>>>> master
 
 		if( !$t_br ) {
 			ldap_log_error( $t_ds );
@@ -222,7 +273,14 @@ function ldap_get_field_from_username( $p_username, $p_field ) {
 	$t_ldap_root_dn         = config_get( 'ldap_root_dn' );
 	$t_ldap_uid_field		= config_get( 'ldap_uid_field' );
 
+<<<<<<< HEAD
 	$c_username = ldap_escape_string( $p_username );
+=======
+	# Return cached data if available
+	if( isset( $g_cache_ldap_data[$p_username] ) ) {
+		return $g_cache_ldap_data[$p_username];
+	}
+>>>>>>> master
 
 	log_event( LOG_LDAP, 'Retrieving field \'' . $p_field . '\' for \'' . $p_username . '\'' );
 

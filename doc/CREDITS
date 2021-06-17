@@ -20,7 +20,6 @@ Developers
 ----------
 
 Damien Regad (dregad)
-Robert Munteanu (rombert)
 Roland Becker (atrol)
 Carlos Proensa (cproensa)
 Rafik Robeal (syncguru)
@@ -43,6 +42,7 @@ Gianluca Sforna (giallu)
 Glenn Henshaw (thraxisp)
 John Reese (jreese, nuclear_eclipse)
 Paul Richards (grangeway, paulr, minimoo, prichards)
+Robert Munteanu (rombert)
 Siebrand Mazeland (siebrand)
 
 
@@ -51,16 +51,17 @@ Contributors
 People who contributed code to MantisBT, listed in reverse order of the
 number of commits authored.
 
-Victor Boctor
 Damien Regad
+Victor Boctor
 Paul Richards
 Kenzaburo Ito
 Carlos Proensa
 Glenn Henshaw
+Roland Becker
 Julian Fitzell
 David Hicks
 John Reese
-Roland Becker
+translatewiki.net
 Rafik Robeal
 Jeroen Latour
 Siebrand Mazeland
@@ -74,6 +75,12 @@ Lincoln Maskey
 Marcello Scata
 Alexey Chumakov
 beerfrick
+<<<<<<< HEAD
+=======
+dependabot[bot]
+Bastian Pfenningschmidt
+Joel C. Llano
+>>>>>>> master
 Kornel Lesinski
 Bastian Pfenningschmidt
 Vladimir Shulev
@@ -84,6 +91,10 @@ zakman
 jbrugger
 jctrosset
 Kirill Krasnov
+<<<<<<< HEAD
+=======
+Bob Le Bricodeur
+>>>>>>> master
 ryandesign
 Bob Le Bricodeur
 rufinus
@@ -113,6 +124,11 @@ luzpaz
 Daniel Tschinder
 James Crickmere
 Manilal
+<<<<<<< HEAD
+=======
+Sean McBride
+Stefan Pettersson
+>>>>>>> master
 Vincent Sels
 Stéphane Veyret
 torija
@@ -137,6 +153,7 @@ Sebastian Limbach
 Matt McCutchen
 Raimund Herbert
 Saga Musix
+<<<<<<< HEAD
 Grigoriy Ermolaev
 Anders Sandblad
 Christian Weiske
@@ -145,6 +162,15 @@ Alexander Ishmuradov
 Cas Nuy
 Justin Theberge
 naveenbali
+=======
+Sebastian Limbach
+Tarik Sedlarevic
+elmarculino
+jeckyhl
+mfoXen
+puklos
+Albert ARIBAUD
+>>>>>>> master
 Alexander Maringer
 Andreas Schopper
 Andreas Stieger
@@ -165,6 +191,7 @@ Ian MacKenzie
 Jacky Alcine
 Jacob Hoover
 Jadran Josimovic
+Jean-Sébastien B
 Jeremy Vriens
 Jingshao Chen
 Jonas Nockert
@@ -174,6 +201,7 @@ Larry Lewis
 Laszlo Kovacs
 LeoZandvliet
 MS-Astra
+Marc-Antoine TURBET-DELOF
 Marcin Kłeczek
 Marco Dings
 Marco Ribeiro
@@ -206,6 +234,7 @@ dwethell
 elen-ayanyan
 elpoutro
 epenet
+fuyun
 gcompagnon
 greenius
 l2m83
@@ -216,6 +245,7 @@ rk4n3
 spidgorny
 talentant
 tfromm
+tsz
 wapznw
 watergad
 Adrian Spinei

@@ -25,7 +25,7 @@
  * **                                                                  **
  * **                      DO NOT UPDATE MANUALLY                      **
  * **                                                                  **
- * ** To improve a translation please visit http://translatewiki.net   **
+ * ** To improve a translation please visit https://translatewiki.net  **
  * ** Detailed instructions on how to create or update translations at **
  * ** http://www.mantisbt.org/wiki/doku.php/mantisbt:translationshowto **
  * **********************************************************************
@@ -33,7 +33,7 @@
 /** Spanish (español)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
- * To improve a translation please visit http://translatewiki.net
+ * To improve a translation please visit https://translatewiki.net
  *
  * @ingroup Language
  * @file
@@ -46,7 +46,11 @@
  * @author Macofe
  */
 
+<<<<<<< HEAD
 $s_plugin_XmlImportExport_title = 'Importar/Exportar incidencias';
+=======
+$s_plugin_XmlImportExport_title = 'Importar/exportar incidencias';
+>>>>>>> master
 $s_plugin_XmlImportExport_description = 'Añade capacidades de importación y exportación basadas en XML a MantisBT.';
 $s_plugin_XmlImportExport_import = 'Importar incidencias';
 $s_plugin_XmlImportExport_export = 'Exportar XML';

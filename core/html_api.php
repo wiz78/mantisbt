@@ -362,7 +362,7 @@ function html_head_end() {
  */
 function html_print_logo( $p_logo = null ) {
 	if( !$p_logo ) {
-		$p_logo = config_get( 'logo_image' );
+		$p_logo = config_get_global( 'logo_image' );
 	}
 
 	if( !is_blank( $p_logo ) ) {
@@ -388,7 +388,7 @@ function html_print_logo( $p_logo = null ) {
  */
 function html_top_banner() {
 	$t_page = config_get_global( 'top_include_page' );
-	$t_logo_image = config_get( 'logo_image' );
+	$t_logo_image = config_get_global( 'logo_image' );
 
 	if( !is_blank( $t_page ) && file_exists( $t_page ) && !is_dir( $t_page ) ) {
 		include( $t_page );
@@ -557,6 +557,7 @@ function print_subproject_menu_bar( $p_current_project_id, $p_parent_project_id,
 	$t_subprojects = current_user_get_accessible_subprojects( $p_parent_project_id );
 
 	foreach( $t_subprojects as $t_subproject_id ) {
+<<<<<<< HEAD
 		$t_active = $p_current_project_id == $t_subproject_id ? 'active' : '';
 		echo '<a class="btn btn-xs btn-white btn-default ' . $t_active .
 			'" href="' . helper_mantis_url( 'set_project.php?project_id=' . $p_parents . $t_subproject_id ) .
@@ -565,6 +566,23 @@ function print_subproject_menu_bar( $p_current_project_id, $p_parent_project_id,
 
 		# Render this subproject's subprojects ... passing current project id to highlight selected project
 		print_subproject_menu_bar( $p_current_project_id, $t_subproject_id, $p_parents . $t_subproject_id . ';' );
+=======
+		echo project_link_for_menu(
+				$t_subproject_id,
+				$t_subproject_id == $p_current_project_id,
+				'btn btn-xs btn-white btn-info',
+				$p_parents,
+				icon_get( 'fa-angle-double-right', 'ace-icon' )
+			);
+		echo "\n";
+
+		# Recursive call to render this subproject's subprojects
+		print_subproject_menu_bar(
+			$p_current_project_id,
+			$t_subproject_id,
+			array_merge( $p_parents, array( $t_subproject_id) )
+		);
+>>>>>>> master
 	}
 }
 
@@ -583,7 +601,9 @@ function print_menu( array $p_menu_items, $p_current_page = '', $p_event = null 
 
 		echo '<li class="' . $t_active .  '">';
 		if( $t_item['label'] == '' ) {
-			echo '<a href="'. lang_get_defaulted( $t_item['url'] ) .'"><i class="blue ace-icon fa fa-info-circle"></i> </a>';
+			echo '<a href="'. lang_get_defaulted( $t_item['url'] ) .'">';
+			print_icon( 'fa-info-circle', 'blue ace-icon' );
+			echo '</a>';
 		} else {
 			echo '<a href="'. helper_mantis_url( $t_item['url'] ) .'">' . lang_get_defaulted( $t_item['label'] ) . '</a>';
 		}
@@ -624,7 +644,7 @@ function print_submenu( array $p_menu_items, $p_current_page = '', $p_event = nu
 				$t_active = $p_current_page && strpos( $t_item['url'], $p_current_page ) !== false
 					? 'active' : '';
 				$t_icon = array_key_exists( 'icon', $t_item )
-					? '<i class="fa ' . $t_item['icon'] . '"></i>&nbsp;'
+					? icon_get( $t_item['icon'] ) . '&nbsp;'
 					: '';
 
 				printf( $t_btn_template,
@@ -888,7 +908,7 @@ function print_summary_menu( $p_page = '', array $p_filter = null ) {
  */
 function print_admin_menu_bar( $p_page ) {
 	# Build array with admin menu items, add Upgrade tab if necessary
-	$t_menu_items['index.php'] = '<i class="blue ace-icon fa fa-info-circle"></i>';
+	$t_menu_items['index.php'] = icon_get( 'fa-info-circle', 'blue ace-icon' );
 
 	# At the beginning of admin checks, the DB is not yet loaded so we can't
 	# check the schema to inform user that an upgrade is needed

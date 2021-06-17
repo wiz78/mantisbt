@@ -25,7 +25,7 @@
  * **                                                                  **
  * **                      DO NOT UPDATE MANUALLY                      **
  * **                                                                  **
- * ** To improve a translation please visit http://translatewiki.net   **
+ * ** To improve a translation please visit https://translatewiki.net  **
  * ** Detailed instructions on how to create or update translations at **
  * ** http://www.mantisbt.org/wiki/doku.php/mantisbt:translationshowto **
  * **********************************************************************
@@ -33,7 +33,7 @@
 /** Urdu (اردو)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
- * To improve a translation please visit http://translatewiki.net
+ * To improve a translation please visit https://translatewiki.net
  *
  * @ingroup Language
  * @file
@@ -800,7 +800,6 @@ $s_sponsorship_deleted = ' سپانسر شپ خارج ھو گی ھے';
 $s_sponsorship_paid = ' سپانسر شپ ادا ھو گی ھے';
 $s_sponsorship_more_info = '  سپانسر شپ سے متعلق اور معلومات';
 $s_sponsorship_total = 'مجموعی اسپانسر شپ';
-$s_sponsorship_process_url = ' سپانسر شپ کا یو آر ایل';
 $s_changelog = 'لاگ کو بدلو';
 $s_roadmap = 'روڈ میپ';
 $s_resolved_progress = '  ایشوذ حل ھو چکے ھیں پراگریس( ڈی)%ڈی کا %ڈی .';

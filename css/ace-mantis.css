@@ -341,6 +341,18 @@ textarea.input-xs, select.input-xs[multiple] {
     padding: 1px 3px;
 }
 
+<<<<<<< HEAD
+=======
+th > label,
+td > label {
+    font-size: 13px;
+}
+
+th > label {
+    font-weight: bold;
+}
+
+>>>>>>> master
 .scrollable-menu {
     height: auto;
     max-height: 435px;
@@ -546,6 +558,26 @@ input.typeahead.scrollable ~ .tt-menu {
 	font-size: 60%;
 	vertical-align: top;
 }
+<<<<<<< HEAD
+=======
+
+.progress {
+    background:#bbb;
+}
+.progress.progress-large {
+    height: 32px;
+}
+.progress.progress-large[data-percent]:after {
+    line-height:32px;
+    font-size:18px;
+}
+
+hr {
+    /* Set to match body text color */
+    border-color: #393939;
+}
+
+>>>>>>> master
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .page-content {

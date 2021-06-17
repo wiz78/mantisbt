@@ -25,7 +25,7 @@
  * **                                                                  **
  * **                      DO NOT UPDATE MANUALLY                      **
  * **                                                                  **
- * ** To improve a translation please visit http://translatewiki.net   **
+ * ** To improve a translation please visit https://translatewiki.net  **
  * ** Detailed instructions on how to create or update translations at **
  * ** http://www.mantisbt.org/wiki/doku.php/mantisbt:translationshowto **
  * **********************************************************************
@@ -33,7 +33,7 @@
 /** Danish (dansk)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
- * To improve a translation please visit http://translatewiki.net
+ * To improve a translation please visit https://translatewiki.net
  *
  * @ingroup Language
  * @file
@@ -491,6 +491,7 @@ $s_bugnote_updated_msg = 'Bemærkning er blevet opdateret ...';
 $s_last_edited = 'Sidst redigeret:';
 $s_hide_content = 'Skjul indhold';
 $s_show_content = 'Vis indhold';
+$s_unknown_file_extension = 'ukendt';
 $s_webmaster_contact_information = 'Kontakt <a href="mailto:%1$s" title="Kontakt administratoren via e-post.">administrator</a> for assistance';
 $s_total_queries_executed = 'Samlet antal udførte forespørgsler: %1$d';
 $s_unique_queries_executed = 'Antal udførte forespørgsler: %1$d';
@@ -731,7 +732,7 @@ $s_name = 'Navn';
 $s_project_updated_msg = 'Projektet er blevet opdateret...';
 $s_version_added_msg = 'Version er blevet tilføjet...';
 $s_version_deleted_msg = 'Version er blevet slettet...';
-$s_version_delete_sure = 'Er du sikker på du vil slette denne version?';
+$s_version_delete_sure = 'Er du sikker på du vil slette versionen "%1$s"?';
 $s_delete_version_button = 'Slet version';
 $s_edit_project_version_title = 'Rediger projekt-version';
 $s_update_version_button = 'Opdater version';
@@ -742,7 +743,7 @@ $s_obsolete = 'Forældet';
 $s_version_updated_msg = 'Version er blevet opdateret...';
 $s_account_delete_protected_msg = 'Beskyttet konto. Kan ikke slette denne konto.';
 $s_account_deleted_msg = 'Konto slettet...';
-$s_delete_account_sure_msg = 'Er du sikker på at du vil slette denne konto?';
+$s_delete_account_sure_msg = 'Er du sikker på at du vil slette brugerkontoen "%1$s"?';
 $s_notify_user = 'Underret bruger om denne ændring';
 $s_accounts_pruned_msg = 'Alle konti der aldrig har været logget på og som er ældre end 1 uge er blevet slettet';
 $s_prune_accounts_button = 'Beskær';
@@ -809,7 +810,7 @@ $s_file_uploaded_msg = 'Fil overført.';
 $s_upload_file_title = 'Overfør fil';
 $s_title = 'Titel';
 $s_project_file_deleted_msg = 'Projektfil er slettet';
-$s_confirm_file_delete_msg = 'Er du sikker på du vil slette denne fil?';
+$s_confirm_file_delete_msg = 'Er du sikker på du vil slette filen "%1$s"?';
 $s_filename = 'Filnavn';
 $s_filename_label = 'Filnavn:';
 $s_file_update_button = 'Opdater fil';
@@ -821,7 +822,7 @@ $s_add_file = 'Tilføj fil';
 $s_project_document_updated = 'Projektet er blevet opdateret';
 $s_project_user_added_msg = 'Bruger tilføjet projektet.';
 $s_project_removed_user_msg = 'Bruger fjernet fra projektet.';
-$s_remove_user_sure_msg = 'Er du sikker på at du vil fjerne denne bruger?';
+$s_remove_user_sure_msg = 'Er du sikker på at du vil fjerne brugeren "%1$s" fra projekt(et/erne) "%2$s"?';
 $s_remove_user_button = 'Fjern brugeren';
 $s_remove_all_users_sure_msg = 'Er du sikker på at du vil fjerne alle brugere fra dette projekt?';
 $s_remove_all_users_button = 'Fjern alle brugere';
@@ -946,7 +947,7 @@ $s_query_blank_name = 'Du kan ikke gemme et filter uden et navn. Navngiv filtere
 $s_query_name_too_long = 'Du kan ikke gemme et filternavn med mere end 64 tegn. Giv venligst dette filter et kortere navn.';
 $s_query_store_error = 'Der opstod en fejl under lagring af dette filter.';
 $s_open_queries = 'Håndter filtre';
-$s_query_delete_msg = 'Er du sikker på du vil slette dette filter?';
+$s_query_delete_msg = 'Er du sikker på du vil slette filteret "%1$s"?';
 $s_edit_filter = 'Rediger filter';
 $s_owner = 'Ejer';
 $s_update_filter = 'Opdater filter';
@@ -1044,7 +1045,7 @@ $s_changelog = 'Ændringslog';
 $s_changelog_empty = 'Ingen versionshistorik tilgængelig';
 $s_changelog_empty_manager = 'Ingen tilgængelig information om ændringsloggen. Fejlrapporter inkluderes når projekter har versioner og fejlrapporter registreres med »rettet i version« angivet.';
 $s_roadmap = 'Køreplan';
-$s_resolved_progress = '%1$d af %2$d rapport(er) løst. Fremskridt (%3$d%%).';
+$s_resolved_progress = '%1$d af %2$d rapport(er) løst.';
 $s_roadmap_empty = 'Ingen køreplansinformation er tilgængelig';
 $s_roadmap_empty_manager = 'Ingen køreplansinformation er tilgængelige. Fejlrapporter inkluderes når projekter har versioner og fejlrapporter har »target version« angivet.';
 $s_http_auth_realm = 'Log på MantisBT';

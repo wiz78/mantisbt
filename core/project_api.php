@@ -817,6 +817,9 @@ function project_add_users( $p_project_id, array $p_changes ) {
 			$t_params = array( 'project_id' => $t_project_id, 'user_id' => (int)$t_id, 'new_value' => $t_changes[$t_id] );
 			$t_update->execute( $t_params );
 			unset( $t_changes[$t_id] );
+
+			# Trigger event for user access modification on project
+			event_signal('EVENT_MANAGE_PROJECT_USER_UPDATE', array('user_id' => $t_id, 'project_id' => $p_project_id));
 		}
 	}
 	# remaining items are for insert
@@ -825,6 +828,9 @@ function project_add_users( $p_project_id, array $p_changes ) {
 		foreach( $t_changes as $t_id => $t_value ) {
 			$t_insert->bind( 'params', array( $t_project_id, $t_id, $t_value ) );
 			$t_insert->execute();
+
+			# Trigger event for user added on project
+			event_signal('EVENT_MANAGE_PROJECT_USER_CREATE', array('user_id' => $t_id, 'project_id' => $p_project_id));
 		}
 	}
 }
@@ -855,6 +861,15 @@ function project_remove_users( $p_project_id, array $p_user_ids ) {
 		return;
 	}
 
+<<<<<<< HEAD
+=======
+	# Trigger event for each user deleted from project
+	foreach( $p_user_ids as $t_id ) {
+		event_signal('EVENT_MANAGE_PROJECT_USER_DELETE', array('user_id' => $t_id, 'project_id' => $p_project_id));
+	}
+
+	# Remove users from the project
+>>>>>>> master
 	$t_query = new DbQuery();
 	$t_sql = 'DELETE FROM {project_user_list} WHERE project_id = ' . $t_query->param( (int)$p_project_id )
 			. ' AND ' . $t_query->sql_in( 'user_id', $t_user_ids );
@@ -929,6 +944,7 @@ function project_delete_all_files( $p_project_id ) {
 }
 
 /**
+<<<<<<< HEAD
  * Pads the project id with the appropriate number of zeros.
  * @param integer $p_project_id A project identifier.
  * @return string
@@ -936,4 +952,54 @@ function project_delete_all_files( $p_project_id ) {
 function project_format_id( $p_project_id ) {
 	$t_padding = config_get( 'display_project_padding' );
 	return( utf8_str_pad( $p_project_id, $t_padding, '0', STR_PAD_LEFT ) );
+=======
+ * Returns the project name as a link formatted for display in menus and buttons.
+ *
+ * The link is formatted as a link to set_project.php, which can be used to
+ * display project selection menus:
+ * - projects list in navbar {@see layout_navbar_projects_menu()}
+ * - project menu bar {@see print_project_menu_bar()}
+ *
+ * @param integer $p_project_id Project Id to display
+ * @param bool    $p_active     True if it's the currently active project
+ * @param string  $p_class      CSS classes to apply
+ * @param array   $p_parents    Array of parent projects (empty if top-level)
+ * @param string  $p_indent     String to use to indent the subprojects
+ *
+ * @return string Fully formatted HTML link to the project
+ */
+function project_link_for_menu( $p_project_id, $p_active = false, $p_class = '', array $p_parents = array(), $p_indent = '' ) {
+	if( $p_parents ) {
+		$t_full_id = implode( ";", $p_parents ) . ';' . $p_project_id;
+		$t_indent = str_repeat( $p_indent, count( $p_parents ) ) . '&nbsp;';
+	} else {
+		$t_full_id = $p_project_id;
+		$t_indent = '';
+	}
+
+	$t_url = helper_mantis_url( 'set_project.php?project_id=' . $t_full_id );
+	$t_label = $t_indent . string_html_specialchars( project_get_name( $p_project_id ) );
+
+	if( $p_active ) {
+		$p_class .= ' active';
+	}
+
+	return sprintf('<a class="%s" href="%s">%s</a>', $p_class, $t_url, $t_label );
+}
+
+/**
+ * Returns the number of issues associated with the given Project.
+ *
+ * @param int $p_project_id A project identifier.
+ *
+ * @return int
+ */
+function project_get_bug_count( $p_project_id ) {
+	$t_query = new DbQuery();
+	$t_query->sql( 'SELECT COUNT(*) FROM {bug} WHERE project_id='
+		. $t_query->param( $p_project_id )
+	);
+	$t_query->execute();
+	return $t_query->value();
+>>>>>>> master
 }

@@ -25,7 +25,7 @@
  * **                                                                  **
  * **                      DO NOT UPDATE MANUALLY                      **
  * **                                                                  **
- * ** To improve a translation please visit http://translatewiki.net   **
+ * ** To improve a translation please visit https://translatewiki.net  **
  * ** Detailed instructions on how to create or update translations at **
  * ** http://www.mantisbt.org/wiki/doku.php/mantisbt:translationshowto **
  * **********************************************************************
@@ -33,7 +33,7 @@
 /** French (français)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
- * To improve a translation please visit http://translatewiki.net
+ * To improve a translation please visit https://translatewiki.net
  *
  * @ingroup Language
  * @file
@@ -44,6 +44,7 @@
  * @author Crochet.david
  * @author DavidL
  * @author Dregad
+ * @author Fujimaru-kun
  * @author Gomoko
  * @author Hashar
  * @author Hercule
@@ -58,6 +59,7 @@
  * @author Od1n
  * @author Peter17
  * @author Philou2024
+ * @author Seudo
  * @author Sherbrooke
  * @author Thibaut120094
  * @author Urhixidur
@@ -513,6 +515,8 @@ $s_bugnote_updated_msg = 'La note a été mise à jour avec succès...';
 $s_last_edited = 'Dernière modification :';
 $s_hide_content = 'Masquer le contenu';
 $s_show_content = 'Afficher le contenu';
+$s_file_icon_description = 'icône de fichier %1$s';
+$s_unknown_file_extension = 'inconnu';
 $s_webmaster_contact_information = 'Contactez <a href="mailto:%1$s"title ="Contacter le webmaster par courriel.">l’administrateur</a> pour une assistance.';
 $s_total_queries_executed = 'Requêtes exécutées au total : %1$d';
 $s_unique_queries_executed = 'Requêtes uniques exécutées : %1$d';
@@ -665,8 +669,13 @@ $s_resolved_status = 'État quand une anomalie est considérée comme résolue';
 $s_readonly_status = 'État dans lequel une anomalie ne peut plus être modifiée';
 $s_reopen_status = 'État à positionner pour une anomalie rouverte';
 $s_reopen_resolution = 'Résolution à positionner pour une anomalie rouverte';
+<<<<<<< HEAD
 $s_config_delete_sure = 'Voulez-vous vraiment supprimer la configuration pour :';
 $s_in_project = 'du projet';
+=======
+$s_limit_view_unless_threshold_option = 'Afficher les problèmes des autres utilisateurs (si non positionné, l’accès sera limité aux problèmes signalés, gérés ou suivis par l’utilisateur)';
+$s_config_delete_sure = 'Voulez-vous vraiment supprimer la configuration pour %1$s dans le projet %2$s ?';
+>>>>>>> master
 $s_delete_config_button = 'Supprimer la configuration';
 $s_configuration_report = 'Rapport de configuration';
 $s_database_configuration = 'Configuration de la base de données';
@@ -684,7 +693,10 @@ $s_set_configuration_option_action_view = 'Afficher l’option de configuration'
 $s_plugin = 'Greffon';
 $s_plugins_installed = 'Greffons installés';
 $s_plugins_available = 'Greffons disponibles';
+$s_plugins_missing = 'Greffons absents ou non valides';
+$s_plugins_missing_description = 'Les greffons dans la liste ci-dessous sont enregistrés, mais leur code source n’a pas pu être trouvé dans « %s », ni chargé à partir de là.<br> Essayez de les réinstaller ou de les supprimer.';
 $s_plugin_description = 'Description';
+$s_plugin_problem_description = 'Description du problème';
 $s_plugin_author = 'Auteur : %1$s';
 $s_plugin_url = 'Site web :';
 $s_plugin_depends = 'Dépendances';
@@ -696,12 +708,20 @@ $s_plugin_actions = 'Actions';
 $s_plugin_install = 'Installer';
 $s_plugin_upgrade = 'Mettre à niveau';
 $s_plugin_uninstall = 'Désinstaller';
+$s_plugin_manual_fix = 'Intervention manuelle nécessaire';
 $s_plugin_uninstall_message = 'Voulez-vous vraiment désinstaller le greffon « %1$s » ?';
+$s_plugin_remove_message = 'Êtes-vous sûr de vouloir supprimer le greffon « %1$s » non valide ou manquant ?';
 $s_plugin_key_label = 'Clé :';
 $s_plugin_key_met = 'greffon prêt';
 $s_plugin_key_unmet = 'dépendances non satisfaites';
 $s_plugin_key_dated = 'dépendances périmées';
 $s_plugin_key_upgrade = 'mise à niveau requise';
+$s_plugin_invalid_description = 'Greffon non valide';
+$s_plugin_invalid_status_message = 'Les propriétés obligatoires suivantes ne sont pas définies dans la classe du greffon : %s.';
+$s_plugin_missing_description = 'Greffon absent';
+$s_plugin_missing_status_message = 'Le greffon est installé dans la base de données de Mantis, mais n’a pas pu être chargé.';
+$s_plugin_missing_class_description = 'Classe de base du greffon absente';
+$s_plugin_missing_class_status_message = 'Un répertoire pour ce greffon a été trouvé, mais il n’y avait pas de code correspondant au greffon dedans. Assurez-vous que le nom du répertoire correspond au nom de base du greffon (sensible à la casse).';
 $s_project_added_msg = 'Nouveau projet installé avec succès...';
 $s_category_added_msg = 'Nouvelle catégorie créée avec succès...';
 $s_category_deleted_msg = 'Catégorie effacée avec succès...';
@@ -714,7 +734,7 @@ $s_category_updated_msg = 'La catégorie a été modifiée avec succès...';
 $s_create_first_project = 'Créer un projet afin d’inventorier les anomalies.';
 $s_add_subproject_title = 'Ajouter un sous-projet';
 $s_project_deleted_msg = 'Le projet a été supprimé avec succès...';
-$s_project_delete_msg = 'Voulez-vous vraiment supprimer ce projet et tous les rapports d’anomalies associés ?';
+$s_project_delete_msg = 'Voulez-vous vraiment supprimer le projet « %1$s » ?<br>Cela supprimera aussi les %2$s rapports d’anomalies associés.';
 $s_project_delete_button = 'Supprimer le projet';
 $s_edit_project_title = 'Modifier le  projet';
 $s_project_name = 'Nom du projet';
@@ -757,7 +777,7 @@ $s_name = 'Nom';
 $s_project_updated_msg = 'Le projet a été mis à jour avec succès...';
 $s_version_added_msg = 'La version a été enregistrée avec succès...';
 $s_version_deleted_msg = 'La version a été supprimée avec succès...';
-$s_version_delete_sure = 'Voulez-vous vraiment supprimer cette version ?';
+$s_version_delete_sure = 'Voulez-vous vraiment supprimer la version « %1$s » ?';
 $s_delete_version_button = 'Supprimer la version';
 $s_edit_project_version_title = 'Modifier la version du projet';
 $s_update_version_button = 'Mettre à jour la version';
@@ -768,7 +788,7 @@ $s_obsolete = 'Périmée';
 $s_version_updated_msg = 'La version a été mise à jour avec succès...';
 $s_account_delete_protected_msg = 'Ce compte est protégé. Vous ne pouvez pas le supprimer.';
 $s_account_deleted_msg = 'Compte supprimé...';
-$s_delete_account_sure_msg = 'Voulez-vous vraiment supprimer ce compte ?';
+$s_delete_account_sure_msg = 'Voulez-vous vraiment supprimer le compte « %1$s » ?';
 $s_notify_user = 'Notifier l’utilisateur de cette modification';
 $s_accounts_pruned_msg = 'Tous les comptes qui datent de plus d’une semaine et qui ne se sont jamais connectés ont été effacés.';
 $s_prune_accounts_button = 'Supprimer';
@@ -835,7 +855,7 @@ $s_file_uploaded_msg = 'Le fichier a bien été envoyé.';
 $s_upload_file_title = 'Téléverser un fichier';
 $s_title = 'Titre';
 $s_project_file_deleted_msg = 'Fichier projet supprimé.';
-$s_confirm_file_delete_msg = 'Voulez-vous vraiment supprimer ce fichier ?';
+$s_confirm_file_delete_msg = 'Voulez-vous vraiment supprimer le fichier « %1$s » ?';
 $s_filename = 'Nom du fichier';
 $s_filename_label = 'Nom du fichier :';
 $s_file_update_button = 'Modifier le fichier';
@@ -847,7 +867,7 @@ $s_add_file = 'Ajouter un fichier';
 $s_project_document_updated = 'Le projet a été modifié.';
 $s_project_user_added_msg = 'L’utilisateur a bien été ajouté au projet.';
 $s_project_removed_user_msg = 'L’utilisateur a bien été retiré du projet.';
-$s_remove_user_sure_msg = 'Souhaitez-vous vraiment retirer cet utilisateur du projet’?';
+$s_remove_user_sure_msg = 'Souhaitez-vous vraiment retirer le compte « %1$s » utilisateur des projets « %2$s » ?';
 $s_remove_user_button = 'Retirer un utilisateur';
 $s_remove_all_users_sure_msg = 'Souhaitez-vous vraiment retirer tous les utilisateurs du projet ?';
 $s_remove_all_users_button = 'Retirer tous les utilisateurs';
@@ -976,7 +996,7 @@ $s_query_blank_name = 'Vous ne pouvez pas enregistrer un filtre sans nom. Merci 
 $s_query_name_too_long = 'Vous ne pouvez pas enregistrer un filtre avec un nom de plus de 64 caractères. Veuillez choisir un nom plus court.';
 $s_query_store_error = 'Une erreur s’est produite durant l’enregistrement de ce filtre.';
 $s_open_queries = 'Gérer les filtres';
-$s_query_delete_msg = 'Êtes-vous sûr de vouloir supprimer ce filtre ?';
+$s_query_delete_msg = 'Voulez-vous vraiment supprimer le filtre « %1$s » ?';
 $s_edit_filter = 'Modifier le filtre';
 $s_owner = 'Propriétaire';
 $s_update_filter = 'Mettre à jour le filtre';
@@ -1045,10 +1065,10 @@ $s_linked_projects_label = 'Projets liés';
 $s_custom_field_sequence = 'Séquence';
 $s_custom_field_sequence_label = 'Séquence';
 $s_custom_field_type_enum_string = '0:Chaîne de caractères,1:Nombre entier,2:Nombre réel,3:Énumération,4:Courriel,5:Case à cocher,6:Liste,7:Liste à sélection multiple,8:Date,9:Bouton radio, 10:Zone de texte';
-$s_confirm_used_custom_field_deletion = 'Ce champ est actuellement lié à au moins un projet.  Si vous continuez, toutes les valeurs de ce champ seront supprimées.  Cette action ne peut être annulée.  Si vous ne voulez pas supprimer ce champ, cliquez sur le bouton Retour de votre navigateur.  Sinon pour supprimer ce champ, cliquez sur le bouton ci dessous.';
-$s_confirm_custom_field_deletion = 'Êtes-vous sûr{{GENDER:||e}} de vouloir supprimer ce champ personnalisé et toutes les valeurs associées ?';
+$s_confirm_used_custom_field_deletion = 'Le champ « %1$s » est actuellement lié à au moins un projet.  Si vous continuez, toutes les valeurs de ce champ seront supprimées.  Cette action ne peut être annulée.  Si vous ne voulez pas supprimer ce champ, cliquez sur le bouton Retour de votre navigateur.  Sinon pour supprimer ce champ, cliquez sur le bouton ci dessous.';
+$s_confirm_custom_field_deletion = 'Voulez-vous vraiment supprimer le champ personnalisé « %1$s » et toutes les valeurs associées ?';
 $s_field_delete_button = 'Supprimer le champ';
-$s_confirm_custom_field_unlinking = 'Êtes-vous sûr{{GENDER:||e}} de vouloir dissocier ce champ personnalisé du projet ? Les valeurs ne seront pas supprimées tant que le champ personnalisé lui-même ne sera pas supprimé.';
+$s_confirm_custom_field_unlinking = 'Voulez-vous vraiment dissocier le champ personnalisé « %1$s » du projet ? Les valeurs ne seront pas supprimées tant que le champ personnalisé ne sera pas lui-même supprimé.';
 $s_field_remove_button = 'Retirer le champ';
 $s_hide_status = 'Masquer l’état';
 $s_filter_closed = 'Close';
@@ -1078,7 +1098,7 @@ $s_changelog = 'Liste des changements';
 $s_changelog_empty = 'Liste des changements indisponible';
 $s_changelog_empty_manager = 'Aucune information du journal de modifications disponible. Les anomalies sont incluses une fois que les projets ont des versions et qu’elles sont résolues et définies à l’état « corrigé dans la version ».';
 $s_roadmap = 'Feuille de route';
-$s_resolved_progress = '%1$d anomalie(s) résolue(s) sur %2$d (progrès : %3$d %%).';
+$s_resolved_progress = '%1$d anomalie(s) résolue(s) sur %2$d';
 $s_roadmap_empty = 'Aucune information de feuille de route disponible';
 $s_roadmap_empty_manager = 'Aucune information de feuille de route disponible. Les anomalies sont incluses une fois que les projets ont des versions et que les anomalies ont une « version cible » indiquée.';
 $s_http_auth_realm = 'Accès à MantisBT';
@@ -1126,6 +1146,12 @@ $s_update_readonly_issues = 'Mettre à jour les anomalies en lecture seule';
 $s_update_issue_status = 'Mettre à jour le statut d’une anomalie';
 $s_set_view_status = 'Définir l’état d’affichage lors du rapport d’une nouvelle anomalie ou d’une note';
 $s_update_view_status = 'Mettre à jour la visibilité d’une anomalie ou d’une note existante.';
+<<<<<<< HEAD
+=======
+$s_view_issue_revisions = 'Voir les versions d’un problème ou d’une note.';
+$s_drop_issue_revisions = 'Retirer des versions d’un problème ou d’une note.';
+$s_set_sticky = 'Épingler / Désépingler un problème';
+>>>>>>> master
 $s_show_list_of_users_monitoring_issue = 'Afficher la liste des utilisateurs surveillant une anomalie';
 $s_add_users_monitoring_issue = 'Ajouter des surveillants à une anomalie';
 $s_remove_users_monitoring_issue = 'Supprimer des surveillants d’une anomalie';
@@ -1256,7 +1282,12 @@ $s_overdue = 'en retard';
 $s_overdue_since = 'En retard depuis %1$s';
 $s_view_account_title = 'Informations sur l’utilisateur';
 $s_manage_user = 'Gérer l’utilisateur';
+<<<<<<< HEAD
 $s_label = '%1$s :';
+=======
+$s_word_separator = '&#32;';
+$s_label = '%1$s :';
+>>>>>>> master
 $s_install_information = 'Informations d’installation de MantisBT';
 $s_database_information = 'Informations sur la base de données MantisBT';
 $s_path_information = 'Informations sur les chemins de MantisBT';
@@ -1352,6 +1383,7 @@ $MANTIS_ERROR[ERROR_BUG_DUPLICATE_SELF] = 'Impossible de marquer cette anomalie 
 $MANTIS_ERROR[ERROR_BUG_REVISION_NOT_FOUND] = 'Version d’anomalie introuvable.';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_NOT_FOUND] = 'Champ personnalisé introuvable.';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_NAME_NOT_UNIQUE] = 'Ceci est un nom dupliqué.';
+$MANTIS_ERROR[ERROR_CUSTOM_FIELD_NAME_INVALID] = 'Nom de champ personnalisé « %1$s » non valide : les virgules ne sont pas autorisées. Voir la section « Localisation des noms de champ personnalisés » dans le Guide d’administration pour un palliatif.';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_IN_USE] = 'Au moins un projet utilise encore ce champ.';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_INVALID_VALUE] = 'Valeur non valide pour le champ « %1$s ».';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_INVALID_DEFINITION] = 'Définition de champ personnalisé non valide.';
@@ -1362,6 +1394,8 @@ $MANTIS_ERROR[ERROR_LDAP_SERVER_CONNECT_FAILED] = 'Échec de connexion au serveu
 $MANTIS_ERROR[ERROR_LDAP_UPDATE_FAILED] = 'Échec de mise à jour de l’enregistrement LDAP.';
 $MANTIS_ERROR[ERROR_LDAP_USER_NOT_FOUND] = 'Enregistrement d’utilisateur LDAP introuvable.';
 $MANTIS_ERROR[ERROR_LDAP_EXTENSION_NOT_LOADED] = 'Extension LDAP non chargée.';
+$MANTIS_ERROR[ERROR_LDAP_UNABLE_TO_SET_MIN_TLS] = 'Échec lors de la définition de la version minimum de TLS sur le serveur LDAP.';
+$MANTIS_ERROR[ERROR_LDAP_UNABLE_TO_STARTTLS] = 'Impossible de lancer StartTLS sur le serveur LDAP.';
 $MANTIS_ERROR[ERROR_DB_CONNECT_FAILED] = 'Échec de connexion à la base de données. L’erreur renvoyée était #%1$d : %2$s.';
 $MANTIS_ERROR[ERROR_DB_QUERY_FAILED] = 'Échec de la requête de base de données. L’erreur renvoyée par la base de données était nº %1$d : %2$s pour la requête : %3$s.';
 $MANTIS_ERROR[ERROR_DB_SELECT_FAILED] = 'Échec de sélection de la base de données. L’erreur renvoyée par la base de données était nº %1$d : %2$s.';
@@ -1374,7 +1408,7 @@ $MANTIS_ERROR[ERROR_CATEGORY_CANNOT_DELETE_DEFAULT] = 'Cette catégorie ne peut 
 $MANTIS_ERROR[ERROR_CATEGORY_CANNOT_DELETE_HAS_ISSUES] = 'La catégorie « %1$s » n’a pas pu être supprimée, parce qu’elle est associée avec une ou plusieurs questions.';
 $MANTIS_ERROR[ERROR_VERSION_DUPLICATE] = 'Une version avec ce nom existe déjà.';
 $MANTIS_ERROR[ERROR_VERSION_NOT_FOUND] = 'Version « %1$s » introuvable.';
-$MANTIS_ERROR[ERROR_USER_NAME_INVALID] = 'Nom d’utilisateur non valide. Le nom d’utilisateur ne peut contenir que les lettres latines, chiffres, espaces, traits d’union, points, signes plus et traits de soulignement.';
+$MANTIS_ERROR[ERROR_USER_NAME_INVALID] = 'Nom d’utilisateur incorrect. Le nom d’utilisateur ne peut contenir que les lettres latines, chiffres, espaces, traits d’union, points, signes plus et traits de soulignement.';
 $MANTIS_ERROR[ERROR_USER_REAL_NAME_INVALID] = 'Nom réel non valide.';
 $MANTIS_ERROR[ERROR_USER_DOES_NOT_HAVE_REQ_ACCESS] = 'L\'utilisateur n’a pas le niveau d’accès requis';
 $MANTIS_ERROR[ERROR_SPONSORSHIP_NOT_ENABLED] = 'Prise en charge des commandites non activée.';
@@ -1453,3 +1487,21 @@ $s_persist = 'Rendre persitant';
 $s_load = 'Charger';
 $s_apply_changes = 'Appliquer les modifications';
 $s_undo = 'Annuler';
+<<<<<<< HEAD
+=======
+$s_edit = 'Modifier';
+$s_submit = 'Soumettre';
+$s_update = 'Mettre à jour';
+$s_delete = 'Supprimer';
+$s_make_default = 'En faire le profil par défaut';
+$s_clear_default = 'Effacer les valeurs par défaut';
+$s_print = 'Imprimer';
+$s_jump = 'Aller';
+$s_change = 'Changement';
+$s_go_back = 'Retour';
+$s_proceed = 'Poursuivre';
+$s_move = 'Déplacer';
+$s_close = 'Fermer';
+$s_add = 'Ajouter';
+$s_login = 'Se connecter';
+>>>>>>> master

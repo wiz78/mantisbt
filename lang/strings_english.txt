@@ -635,6 +635,8 @@ $s_last_edited = 'Last edited:';
 # file_api.php
 $s_hide_content = 'Hide Content';
 $s_show_content = 'Show Content';
+$s_file_icon_description = '%1$s file icon';
+$s_unknown_file_extension = 'unknown';
 
 # html_api.php
 $s_webmaster_contact_information = 'Contact <a href="mailto:%1$s" title="Contact the webmaster via e-mail.">administrator</a> for assistance';
@@ -848,7 +850,10 @@ $s_set_configuration_option_action_view = 'View Configuration Option';
 $s_plugin = 'Plugin';
 $s_plugins_installed = 'Installed Plugins';
 $s_plugins_available = 'Available Plugins';
+$s_plugins_missing = 'Missing or Invalid Plugins';
+$s_plugins_missing_description = 'The Plugins in the list below are registered, but their source code could not be found in, or loaded from "%s".<br>Try reinstalling or removing them.';
 $s_plugin_description = 'Description';
+$s_plugin_problem_description = 'Problem Description';
 $s_plugin_author = 'Author: %1$s';
 $s_plugin_url = 'Website:';
 $s_plugin_depends = 'Dependencies';
@@ -860,12 +865,20 @@ $s_plugin_actions = 'Actions';
 $s_plugin_install = 'Install';
 $s_plugin_upgrade = 'Upgrade';
 $s_plugin_uninstall = 'Uninstall';
+$s_plugin_manual_fix = 'Manual intervention required';
 $s_plugin_uninstall_message = 'Are you sure you want to uninstall the "%1$s" plugin?';
+$s_plugin_remove_message = 'Are you sure you want to remove the invalid or missing "%1$s" plugin?';
 $s_plugin_key_label = 'Key:';
 $s_plugin_key_met = 'plugin ready';
 $s_plugin_key_unmet = 'unmet dependencies';
 $s_plugin_key_dated = 'outdated dependencies';
 $s_plugin_key_upgrade = 'upgrade needed';
+$s_plugin_invalid_description = 'Invalid Plugin';
+$s_plugin_invalid_status_message = 'The following required properties are not defined in the Plugin\'s Class: %s.';
+$s_plugin_missing_description = 'Missing Plugin';
+$s_plugin_missing_status_message = 'The plugin is installed in the Mantis database, but could not be loaded.';
+$s_plugin_missing_class_description = 'Missing Plugin Base Class';
+$s_plugin_missing_class_status_message = 'A directory for this Plugin was found, but there was no corresponding Plugin code inside of it. Make sure the directory\'s name matches the Plugin\'s base name (case sensitive)';
 
 # manage_proj_add.php
 $s_project_added_msg = 'Project has been successfully added...';
@@ -1097,7 +1110,11 @@ $s_project_user_added_msg = 'Successfully added user to project.';
 $s_project_removed_user_msg = 'Successfully removed user from project.';
 
 # proj_user_delete_page.php
+<<<<<<< HEAD
 $s_remove_user_sure_msg = 'Are you sure you wish to remove this user?';
+=======
+$s_remove_user_sure_msg = 'Are you sure you wish to remove user "%1$s" from project(s) "%2$s"?';
+>>>>>>> master
 $s_remove_user_button = 'Remove User';
 $s_remove_all_users_sure_msg = 'Are you sure you wish to remove all the users of this project?';
 $s_remove_all_users_button = 'Remove All Users';
@@ -1381,7 +1398,7 @@ $s_changelog_empty_manager = 'No Change Log information available.  Issues are i
 
 # Roadmap
 $s_roadmap = 'Roadmap';
-$s_resolved_progress = '%1$d of %2$d issue(s) resolved. Progress (%3$d%%).';
+$s_resolved_progress = '%1$d of %2$d issue(s) resolved';
 $s_roadmap_empty = 'No Roadmap information available';
 $s_roadmap_empty_manager = 'No Roadmap information available.  Issues are included once projects have versions and issues have "target version" set.';
 
@@ -1436,6 +1453,12 @@ $s_update_readonly_issues = 'Update readonly issues';
 $s_update_issue_status = 'Update issue status';
 $s_set_view_status = 'Set view state when reporting a new issue or note';
 $s_update_view_status = 'Change view state of existing issue or note';
+<<<<<<< HEAD
+=======
+$s_view_issue_revisions = 'View issue or note revisions';
+$s_drop_issue_revisions = 'Drop issue or note revisions';
+$s_set_sticky = 'Stick / Unstick an issue';
+>>>>>>> master
 $s_show_list_of_users_monitoring_issue = 'Show list of users monitoring issue';
 $s_add_users_monitoring_issue = 'Add monitors to an issue';
 $s_remove_users_monitoring_issue = 'Remove monitors from an issue';
@@ -1701,6 +1724,7 @@ $MANTIS_ERROR[ERROR_BUG_DUPLICATE_SELF] = 'You cannot set an issue as a duplicat
 $MANTIS_ERROR[ERROR_BUG_REVISION_NOT_FOUND] = 'Issue revision not found.';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_NOT_FOUND] = 'Custom field not found.';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_NAME_NOT_UNIQUE] = 'This is a duplicate name.';
+$MANTIS_ERROR[ERROR_CUSTOM_FIELD_NAME_INVALID] = 'Invalid custom field name "%1$s": commas are not allowed. See "Localizing Custom Field Names" section in the Admin Guide as a workaround.';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_IN_USE] = 'At least one project still uses this field.';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_INVALID_VALUE] = 'Invalid value for field "%1$s".';
 $MANTIS_ERROR[ERROR_CUSTOM_FIELD_INVALID_DEFINITION] = 'Invalid custom field definition.';
@@ -1711,6 +1735,8 @@ $MANTIS_ERROR[ERROR_LDAP_SERVER_CONNECT_FAILED] = 'LDAP Server Connection Failed
 $MANTIS_ERROR[ERROR_LDAP_UPDATE_FAILED] = 'LDAP Record Update has failed.';
 $MANTIS_ERROR[ERROR_LDAP_USER_NOT_FOUND] = 'LDAP User Record Not Found.';
 $MANTIS_ERROR[ERROR_LDAP_EXTENSION_NOT_LOADED] = 'LDAP Extension Not Loaded.';
+$MANTIS_ERROR[ERROR_LDAP_UNABLE_TO_SET_MIN_TLS] = 'Failed to set minimum TLS version on LDAP server.';
+$MANTIS_ERROR[ERROR_LDAP_UNABLE_TO_STARTTLS] = 'Cannot initiate StartTLS on LDAP server.';
 $MANTIS_ERROR[ERROR_DB_CONNECT_FAILED] = 'Database connection failed. Error received from database was #%1$d: %2$s.';
 $MANTIS_ERROR[ERROR_DB_QUERY_FAILED] = 'Database query failed. Error received from database was #%1$d: %2$s for the query: %3$s.';
 $MANTIS_ERROR[ERROR_DB_SELECT_FAILED] = 'Database selection failed. Error received from database was #%1$d: %2$s.';

@@ -757,6 +757,54 @@ $g_email_dkim_passphrase = '';
 $g_email_dkim_identity = 'noreply@example.com';
 
 /**
+ * Enable S/MIME signature.
+ *
+ * @global integer $g_email_smime_enable
+ */
+$g_email_smime_enable = OFF;
+
+/**
+ * Path to the S/MIME certificate.
+ *
+ * The file must contain a PEM-encoded certificate.
+ *
+ * @global string $g_email_smime_cert_file
+ */
+$g_email_smime_cert_file = '';
+
+/**
+ * Path to the S/MIME private key file.
+ *
+ * The file must contain a PEM-encoded private key matching the S/MIME certificate.
+ *
+ * @see $g_email_smime_cert_file
+ *
+ * @global string $g_email_smime_key_file
+ */
+$g_email_smime_key_file = '';
+
+/**
+ * Password for the S/MIME private key.
+ *
+ * Leave blank if the private key is not protected by a passphrase.
+ * @see $g_email_smime_key_file
+ *
+ * @global string $g_email_smime_key_password
+ */
+$g_email_smime_key_password = '';
+
+/**
+ * Optional path to S/MIME extra certificates.
+ *
+ * The file must contain one (or more) PEM-encoded certificates, which will be
+ * included in the signature to help the recipient verify the certificate
+ * specified in {@see $g_email_smime_cert_file} ("CA Chain").
+ *
+ * @global string $g_email_smime_extracerts_file
+ */
+$g_email_smime_extracerts_file = '';
+
+/**
  * It is recommended to use a cronjob or a scheduler task to send emails. The
  * cronjob should typically run every 5 minutes.  If no cronjob is used,then
  * user will have to wait for emails to be sent after performing an action
@@ -846,6 +894,7 @@ $g_language_choices_arr = array(
 	'dutch',
 	'english',
 	'estonian',
+	'esperanto',
 	'finnish',
 	'french',
 	'galician',
@@ -853,6 +902,7 @@ $g_language_choices_arr = array(
 	'german',
 	'greek',
 	'hebrew',
+	'hindi',
 	'hungarian',
 	'icelandic',
 	'interlingua',
@@ -911,12 +961,15 @@ $g_language_auto_map = array(
 	'da' => 'danish',
 	'nl-be, nl' => 'dutch',
 	'en-us, en-gb, en-au, en' => 'english',
+	'eo' => 'esperanto',
 	'et' => 'estonian',
 	'fi' => 'finnish',
 	'fr-ca, fr-be, fr-ch, fr' => 'french',
 	'gl' => 'galician',
 	'de-de, de-at, de-ch, de' => 'german',
+	'el' => 'greek',
 	'he' => 'hebrew',
+	'hi' => 'hindi',
 	'hu' => 'hungarian',
 	'is' => 'icelandic',
 	'ia' => 'interlingua',
@@ -948,6 +1001,7 @@ $g_language_auto_map = array(
 	'tl' => 'tagalog',
 	'tr' => 'turkish',
 	'uk' => 'ukrainian',
+	'ur' => 'urdu',
 	'vi' => 'vietnamese',
 	'vo' => 'volapuk',
 	'diq' => 'zazaki',
@@ -1794,7 +1848,7 @@ $g_mentions_enabled = ON;
 
 /**
  * The tag to use for mentions.
- * @var string $g_mentions_tag
+ * @global string $g_mentions_tag
  */
 $g_mentions_tag = '@';
 
@@ -2034,51 +2088,90 @@ $g_reauthentication_expiry = TOKEN_EXPIRY_AUTHENTICATED;
 
 
 /**
- * Specifies the LDAP or Active Directory server to connect to.
+ * Specifies the LDAP or Active Directory server(s) to connect to.
  *
  * This must be a full LDAP URI (ldap[s]://hostname:port)
- * - Protocol can be either ldap or ldaps (for SSL encryption). If omitted,
- *   then an unencrypted connection will be established on port 389.
+ * - Protocol must be either:
+ *   - ldap - unencrypted or opportunistic TLS (STARTTLS) {@see $g_ldap_use_starttls}
+ *   - ldaps - for TLS encryption
  * - Port number is optional, and defaults to 389. If this doesn't work, try
  *   using one of the following standard port numbers: 636 (ldaps); for Active
  *   Directory Global Catalog forest-wide search, use 3268 (ldap) or 3269 (ldaps)
  *
  * Examples of valid URI:
- *   ldap.example.com
  *   ldap://ldap.example.com
  *   ldaps://ldap.example.com:3269/
  *
+ * Multiple servers can be specified as a space-separated list.
+ *
  * @global string $g_ldap_server
  */
-$g_ldap_server = 'ldaps://ldap.example.com/';
+$g_ldap_server = 'ldap://ldap.example.com/';
 
 /**
- * The root distinguished name for LDAP searches
+ * Determines whether the connection will attempt an opportunistic upgrade
+ * to a TLS connection (STARTTLS).
+ *
+ * For security, a failure aborts the entire connection, so make sure your
+ * server supports StartTLS if this setting is ON, and use the ldap:// scheme
+ * (not ldaps://).
+ *
+ * @global integer $g_ldap_use_starttls
+ */
+$g_ldap_use_starttls = ON;
+
+/**
+ * The minimum version of the TLS protocol to allow.
+ *
+ * This maps to the LDAP_OPT_X_TLS_PROTOCOL_MIN ldap library option.
+ * For example, LDAP_OPT_X_TLS_PROTOCOL_TLS1_2. If OFF (default), then the
+ * protocol version is not set.
+ *
+ * Requires PHP 7.1 or later.
+ * For security, a failure aborts the entire connection.
+ *
+ * @see https://www.php.net/manual/en/ldap.constants.php#constant.ldap-opt-x-tls-protocol-min
+ *
+ * @global int $g_ldap_tls_protocol_min
+ */
+$g_ldap_tls_protocol_min = OFF;
+
+/**
+ * The root distinguished name for LDAP searches.
  * @global string $g_ldap_root_dn
  */
 $g_ldap_root_dn = 'dc=example,dc=com';
 
 /**
- * LDAP search filter for the organization
+ * LDAP search filter for the organization.
  * e.g. '(organizationname=*Traffic)'
  * @global string $g_ldap_organization
  */
 $g_ldap_organization = '';
 
 /**
- * The LDAP Protocol Version, if 0, then the protocol version is not set.
- * For Active Directory use version 3.
+ * The LDAP Protocol Version.
+ *
+ * This maps to the LDAP_OPT_PROTOCOL_VERSION ldap library option.
+ *
+ * Possible values are 2, 3 (default) or 0. If 0, then the protocol version is
+ * not set, and you get whatever default the underlying ldap library uses.
+ * In almost all cases you should use 3. LDAPv3 was introduced back in 1997.
+ * LDAPv2 was deprecated in 2003 by RFC3494.
  *
  * @global integer $g_ldap_protocol_version
  */
-$g_ldap_protocol_version = 0;
+$g_ldap_protocol_version = 3;
 
 /**
  * Duration of the timeout for TCP connection to the LDAP server (in seconds).
+ *
+ * This maps to the LDAP_OPT_NETWORK_TIMEOUT ldap library option.
+ *
  * Set this to a low value when the hostname defined in $g_ldap_server resolves
  * to multiple IP addresses, allowing rapid failover to the next available LDAP
  * server.
- * Defaults to 0 (infinite)
+ * Defaults to 0 (infinite).
  *
  * @global int $g_ldap_network_timeout
  */
@@ -2086,8 +2179,13 @@ $g_ldap_network_timeout = 0;
 
 /**
  * Determines whether the LDAP library automatically follows referrals returned
- * by LDAP servers or not. This maps to LDAP_OPT_REFERRALS ldap library option.
+ * by LDAP servers or not.
+ *
+ * This maps to the LDAP_OPT_REFERRALS ldap library option.
+ *
  * For Active Directory, this should be set to OFF.
+ * If you have only one LDAP server, setting to this to OFF is advisable to prevent
+ * any man-in-the-middle attacks.
  *
  * @global integer $g_ldap_follow_referrals
  */
@@ -2096,7 +2194,8 @@ $g_ldap_follow_referrals = ON;
 /**
  * The distinguished name of the service account to use for binding to the
  * LDAP server.
- * For example, 'CN=ldap,OU=Administrators,DC=example,DC=com'.
+ * For anonymous binding, leave empty.
+ * For example, 'cn=ldap,ou=Administrators,dc=example,dc=com'.
  *
  * @global string $g_ldap_bind_dn
  */
@@ -2105,14 +2204,15 @@ $g_ldap_bind_dn = '';
 /**
  * The password for the service account used to establish the connection to
  * the LDAP server.
+ * For anonymous binding, leave empty.
  *
  * @global string $g_ldap_bind_passwd
  */
 $g_ldap_bind_passwd = '';
 
 /**
- * The LDAP field for username
- * Use 'sAMAccountName' for Active Directory
+ * The LDAP field for username.
+ * Use 'sAMAccountName' for Active Directory.
  * @global string $g_ldap_uid_field
  */
 $g_ldap_uid_field = 'uid';
@@ -2126,6 +2226,8 @@ $g_ldap_realname_field = 'cn';
 /**
  * Use the realname specified in LDAP (ON) rather than the one stored in the
  * database (OFF).
+ * Note that MantisBT will update the database with the data retrieved
+ * from LDAP when ON.
  * @global integer $g_use_ldap_realname
  */
 $g_use_ldap_realname = OFF;
@@ -2133,12 +2235,14 @@ $g_use_ldap_realname = OFF;
 /**
  * Use the email address specified in LDAP (ON) rather than the one stored
  * in the database (OFF).
+ * Note that MantisBT will update the database with the data retrieved
+ * from LDAP when ON.
  * @global integer $g_use_ldap_email
  */
 $g_use_ldap_email = OFF;
 
 /**
- * This configuration option allows replacing the ldap server with a comma-
+ * This configuration option allows replacing the LDAP server with a comma-
  * delimited text file for development or testing purposes.
  * The LDAP simulation file format is as follows:
  *   - One line per user
@@ -2149,7 +2253,7 @@ $g_use_ldap_email = OFF;
  *        - password
  *   - Any extra fields are ignored
  * On production systems, this option should be set to ''.
- * @global integer $g_ldap_simulation_file_path
+ * @global string $g_ldap_simulation_file_path
  */
 $g_ldap_simulation_file_path = '';
 
@@ -3202,13 +3306,6 @@ $g_status_colors = array(
 );
 
 /**
- * The padding level when displaying project ids
- *  The project id will be padded with 0's up to the size given
- * @global integer $g_display_project_padding
- */
-$g_display_project_padding = 3;
-
-/**
  * The padding level when displaying bug ids
  *  The bug id will be padded with 0's up to the size given
  * @global integer $g_display_bug_padding
@@ -4103,7 +4200,7 @@ $g_plugins_enabled = ON;
 $g_plugin_path = $g_absolute_path . 'plugins' . DIRECTORY_SEPARATOR;
 
 /**
- * management threshold.
+ * Threshold needed to manage plugins
  * @global integer $g_manage_plugin_threshold
  */
 $g_manage_plugin_threshold = ADMINISTRATOR;
@@ -4342,10 +4439,14 @@ $g_show_log_threshold = ADMINISTRATOR;
 
 /**
  * The following list of variables should never be in the database.
- * It is used to bypass the database lookup and look here for appropriate global settings.
+ *
+ * It is used to bypass the database lookup and look in this or the
+ * config_inc.php files for appropriate global settings.
+ *
  * @global array $g_global_settings
  */
 $g_global_settings = array(
+<<<<<<< HEAD
 	'global_settings', 'admin_checks', 'allow_signup', 'allow_anonymous_login',
 	'anonymous_account', 'compress_html', 'allow_permanent_cookie',
 	'cookie_time_length', 'cookie_path', 'cookie_domain',
@@ -4365,6 +4466,118 @@ $g_global_settings = array(
 	'default_home_page', 'logout_redirect_page', 'manual_url', 'logo_url', 'wiki_engine_url',
 	'cdn_enabled', 'public_config_names', 'email_login_enabled', 'email_ensure_unique',
 	'impersonate_user_threshold', 'email_retry_in_days', 'neato_tool', 'dot_tool'
+=======
+	'absolute_path',
+	'absolute_path_default_upload_folder',
+	'admin_checks',
+	'allow_anonymous_login',
+	'allow_permanent_cookie',
+	'allow_signup',
+	'anonymous_account',
+	'bottom_include_page',
+	'bug_list_cookie',
+	'cdn_enabled',
+	'class_path',
+	'compress_html',
+	'cookie_domain',
+	'cookie_path',
+	'cookie_prefix',
+	'cookie_time_length',
+	'copyright_statement',
+	'core_path',
+	'crypto_master_salt',
+	'css_include_file',
+	'css_rtl_include_file',
+	'custom_headers',
+	'database_name',
+	'db_password',
+	'db_table_prefix',
+	'db_table_suffix',
+	'db_type',
+	'db_username',
+	'debug_email',
+	'default_home_page',
+	'default_language',
+	'display_errors',
+	'dot_tool',
+	'email_dkim_domain',
+	'email_dkim_enable',
+	'email_dkim_identity',
+	'email_dkim_passphrase',
+	'email_dkim_private_key_file_path',
+	'email_dkim_private_key_string',
+	'email_dkim_selector',
+	'email_ensure_unique',
+	'email_login_enabled',
+	'email_retry_in_days',
+	'email_smime_cert_file',
+	'email_smime_enable',
+	'email_smime_extracerts_file',
+	'email_smime_key_file',
+	'email_smime_key_password',
+	'fallback_language',
+	'favicon_image',
+	'file_type_icons',
+	'fileinfo_magic_db_file',
+	'form_security_validation',
+	'global_settings',
+	'hostname',
+	'html_valid_tags',
+	'html_valid_tags_single_line',
+	'impersonate_user_threshold',
+	'language_auto_map',
+	'language_path',
+	'ldap_bind_dn',
+	'ldap_bind_passwd',
+	'ldap_follow_referrals',
+	'ldap_network_timeout',
+	'ldap_organization',
+	'ldap_protocol_version',
+	'ldap_realname_field',
+	'ldap_root_dn',
+	'ldap_server',
+	'ldap_simulation_file_path',
+	'ldap_tls_protocol_min',
+	'ldap_uid_field',
+	'ldap_use_starttls',
+	'library_path',
+	'login_method',
+	'logo_image',
+	'logo_url',
+	'logout_cookie',
+	'logout_redirect_page',
+	'long_process_timeout',
+	'manage_config_cookie',
+	'manual_url',
+	'neato_tool',
+	'path',
+	'plugin_path',
+	'plugins_enabled',
+	'project_cookie',
+	'public_config_names',
+	'session_save_path',
+	'session_validation',
+	'short_path',
+	'show_detailed_errors',
+	'show_memory_usage',
+	'show_queries_count',
+	'show_timer',
+	'show_version',
+	'stop_on_errors',
+	'string_cookie',
+	'subprojects_enabled',
+	'top_include_page',
+	'use_ldap_email',
+	'use_ldap_realname',
+	'validate_email',
+	'version_suffix',
+	'view_all_cookie',
+	'webmaster_email',
+	'wiki_enable',
+	'wiki_engine',
+	'wiki_engine_url',
+	'wiki_root_namespace',
+>>>>>>> master
 );
 
 /**
@@ -4418,6 +4631,7 @@ $g_public_config_names = array(
 	'bug_resolution_not_fixed_threshold',
 	'bug_resolved_status_threshold',
 	'bug_revision_drop_threshold',
+	'bug_revision_view_threshold',
 	'bug_submit_status',
 	'bug_update_page_fields',
 	'bug_view_page_fields',
@@ -4502,7 +4716,6 @@ $g_public_config_names = array(
 	'display_bug_padding',
 	'display_bugnote_padding',
 	'display_errors',
-	'display_project_padding',
 	'download_attachments_threshold',
 	'due_date_default',
 	'due_date_update_threshold',

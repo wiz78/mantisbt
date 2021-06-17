@@ -25,7 +25,7 @@
  * **                                                                  **
  * **                      DO NOT UPDATE MANUALLY                      **
  * **                                                                  **
- * ** To improve a translation please visit http://translatewiki.net   **
+ * ** To improve a translation please visit https://translatewiki.net  **
  * ** Detailed instructions on how to create or update translations at **
  * ** http://www.mantisbt.org/wiki/doku.php/mantisbt:translationshowto **
  * **********************************************************************
@@ -33,7 +33,7 @@
 /** Luxembourgish (Lëtzebuergesch)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
- * To improve a translation please visit http://translatewiki.net
+ * To improve a translation please visit https://translatewiki.net
  *
  * @ingroup Language
  * @file
@@ -100,7 +100,7 @@ $s_description_updated = 'Beschreiwung aktualiséiert';
 $s_additional_information_updated = 'Zousatzinformatioun aktuliséiert';
 $s_file_added = 'Fichier derbäigesat';
 $s_file_deleted = 'Fichier geläscht';
-$s_bug_deleted = 'Problem geläscht';
+$s_bug_deleted = 'Probleem geläscht';
 $s_make_private = 'Privat maachen';
 $s_make_public = 'Ëffentlech maachen';
 $s_create_new_project_link = 'Neie Projet uleeën';
@@ -225,6 +225,7 @@ $s_add_bugnote_button = 'Notiz derbäisetzen';
 $s_bugnote_edit_link = 'Änneren';
 $s_hide_content = 'Inhalt verstoppen';
 $s_show_content = 'Inhalt weisen';
+$s_unknown_file_extension = 'onbekannt';
 $s_log_page_number = 'Zuel';
 $s_click_to_login = 'Aloggen';
 $s_login_title = 'Aloggen';
@@ -259,6 +260,7 @@ $s_all_users = 'All Benotzer';
 $s_set_configuration_option_action_edit = 'Optioun vun der Konfiguratioun änneren';
 $s_plugin = 'Plugin';
 $s_plugin_description = 'Beschreiwung';
+$s_plugin_problem_description = 'Beschreiwung vum Probleem';
 $s_plugin_author = 'Auteur: %1$s';
 $s_plugin_url = 'Internetsite:';
 $s_plugin_priority = 'Prioritéit';
@@ -266,6 +268,8 @@ $s_plugin_update = 'Aktualiséierung';
 $s_plugin_actions = 'Aktiounen';
 $s_plugin_install = 'Installéieren';
 $s_plugin_upgrade = 'Aktualiséieren';
+$s_plugin_invalid_description = 'Plugin net valabel';
+$s_plugin_missing_description = 'Plugin feelt';
 $s_category_delete_confirm_msg = 'Sidd Dir sécher datt Dir d\'Kategorie "%1$s" läsche wëllt?';
 $s_delete_category_button = 'Kategorie läschen';
 $s_update_category_button = 'Kategorie aktualiséieren';

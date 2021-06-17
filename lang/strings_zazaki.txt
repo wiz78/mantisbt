@@ -25,7 +25,7 @@
  * **                                                                  **
  * **                      DO NOT UPDATE MANUALLY                      **
  * **                                                                  **
- * ** To improve a translation please visit http://translatewiki.net   **
+ * ** To improve a translation please visit https://translatewiki.net  **
  * ** Detailed instructions on how to create or update translations at **
  * ** http://www.mantisbt.org/wiki/doku.php/mantisbt:translationshowto **
  * **********************************************************************
@@ -33,7 +33,7 @@
 /** Zazaki (Zazaki)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
- * To improve a translation please visit http://translatewiki.net
+ * To improve a translation please visit https://translatewiki.net
  *
  * @ingroup Language
  * @file
@@ -116,12 +116,17 @@ $s_empty_password_button = 'Parolaya Veng Bıkarn';
 $s_reauthenticate_title = 'Raştkerdışê kamiye';
 $s_no_category = '(Kategori Çınyo)';
 $s_global_categories = 'Kategoriyê Globali';
+$s_duplicate_of = 'kopyay';
+$s_has_duplicate = 'kopyay cı esta';
+$s_related_to = 'pêyiye';
+$s_dependant_on = 'seraniya';
 $s_blocks = 'Bınênê cı';
 $s_new_bug = 'Mesela newiye';
 $s_bugnote_added = 'Not Debyê de';
 $s_bugnote_edited = 'Not  Vuriya';
 $s_bugnote_deleted = 'Not besterneyê';
 $s_summary_updated = 'Xısisiyet newenya';
+$s_description_updated = 'İzahat rocaneya';
 $s_file_added = 'Dosya Debyê de';
 $s_file_deleted = 'Dosya Besterneyê';
 $s_bug_deleted = 'Mesele Esteriya';
@@ -166,7 +171,14 @@ $s_prefix_for_deleted_users = 'karber';
 $s_administrator = 'idarekar';
 $s_myself = 'Xo';
 $s_default_access_level = 'Hesıbyaye sewiyey reştışi';
+<<<<<<< HEAD
+=======
+$s_project_view_state_enum_string = '10:aleni,50:xısusi';
+$s_view_state_enum_string = '10:aleni,50:xısusi';
+$s_new_account_subject = 'Qeydê hesabi';
+>>>>>>> master
 $s_new_account_username = 'Namey karberi:';
+$s_new_account_do_not_reply = 'Cewab mede era nê mesaci';
 $s_new_account_email = 'E-poste:';
 $s_email_reporter = 'Vacayoğ';
 $s_email_handler = 'Eleqeyın';
@@ -199,10 +211,16 @@ $s_email_label = 'E-poste';
 $s_password = 'Parola';
 $s_new_password = 'Parolaya newiye';
 $s_confirm_password = 'Parola tesdiq ke';
-$s_current_password = 'Parolaya newkên';
+$s_current_password = 'Parolaya nıkayêne';
 $s_access_level = 'Sewiyay resayışi';
 $s_access_level_label = 'Sewiyay resayış';
 $s_update_user_button = 'Karberi bırocne';
+<<<<<<< HEAD
+=======
+$s_api_tokens_link = 'Kılitê API';
+$s_api_token_create_form_title = 'Kılitê API vırazê';
+$s_api_token_name = 'Nameyê kıliti';
+>>>>>>> master
 $s_api_token_revoke_button = 'Terkne!';
 $s_api_token_never_used = 'Qet mekarne';
 $s_default_account_preferences_title = 'Hesıbyayê tercihê hesabi';
@@ -284,15 +302,24 @@ $s_delete_link = 'Bestere';
 $s_bugnote_edit_link = 'Bıvurne';
 $s_hide_content = 'Tedeesteyi binımne';
 $s_show_content = 'Tedeesteyi bimocne';
+$s_unknown_file_extension = 'nêzanaye';
 $s_log_page_number = 'Numre';
 $s_click_to_login = 'Cıkewtış';
 $s_login_page_info = 'Sistem de mesela taqibi re xeyr ameyê';
 $s_login_title = 'Cıkewtış';
 $s_save_login = 'Parola mı nê cıgeyraoği de bia xo viri';
 $s_secure_session = 'Ronıştışo Emelın';
+<<<<<<< HEAD
 $s_choose_project = 'Proce weçinê';
 $s_login_button = 'Cıkewtış';
 $s_select_project_button = 'Proce weçinê';
+=======
+$s_choose_project = 'Proce weçine';
+$s_signup_link = 'Hesabo newe akerê';
+$s_lost_password_link = 'Şıma parola kerd ho vira?';
+$s_username_or_email = 'Nameyê karberi ya zi adresa eposteyi';
+$s_select_project_button = 'Proce weçine';
+>>>>>>> master
 $s_lost_password_title = 'Parolay reset ke';
 $s_archives = 'Arşivi';
 $s_rss = 'RSS';
@@ -317,6 +344,7 @@ $s_message = 'Mesac';
 $s_current_status = 'Weziyetê Newki';
 $s_status_level = 'Weziyet';
 $s_configuration_option_value = 'Erc';
+$s_all_users = 'Heme karberi';
 $s_plugin = 'Oleken';
 $s_plugin_description = 'Şınasnayış';
 $s_plugin_priority = 'Sıfteyıniye';
@@ -324,6 +352,17 @@ $s_plugin_protected = 'Şeveknaye';
 $s_plugin_actions = 'Kerdışi';
 $s_plugin_key_label = 'Kılit:';
 $s_delete_category_button = 'Kategoriye bestere';
+<<<<<<< HEAD
+=======
+$s_update_category_button = 'Kategoriye newe ke';
+$s_project_delete_button = 'Proceyi bestere';
+$s_edit_project_title = 'Proceyi bıvurne';
+$s_project_name = 'Nameyê Proceyi';
+$s_project_name_label = 'Nameyê Proceyi:';
+$s_public = 'pêroyi';
+$s_private = 'xısusi';
+$s_delete_project_button = 'Proceyi Bestere';
+>>>>>>> master
 $s_categories = 'Kategoriyi';
 $s_add_category_button = 'Kategoriye cı ke';
 $s_edit_link = 'Bıvurne';
@@ -445,7 +484,7 @@ $s_delete_attachment_button = 'Bestere';
 $s_filters = 'Parzûni';
 $s_save_filters = 'Parzûnan qeyd ke';
 $s_create_project = 'Proci vırazê';
-$s_delete_project = 'Proce bestere';
+$s_delete_project = 'Proceyi bestere';
 $s_manage_project = 'İdariya proci';
 $s_others = 'Sewbi';
 $s_email_notification = 'E-posta rıştiye';
@@ -476,7 +515,7 @@ $s_tag_updated = 'Resnayışo Peyên';
 $s_tag_description = 'Şınasiya etiketi';
 $s_tag_statistics = 'İstatistikê Karkerdışi';
 $s_tag_update = 'Etiketi Anewen ke: %1$s';
-$s_tag_update_return = 'Peyser şo Etiket';
+$s_tag_update_return = 'Peyser şo etiket';
 $s_tag_update_button = 'Etiketi anewen ke';
 $s_tag_delete_button = 'Etiket Bestere';
 $s_tag_invalid_name = 'Namey etiketi ravêrde niyo';
@@ -503,7 +542,7 @@ $s_month_october = 'Tışrino Verên';
 $s_month_november = 'Tışrino Peyên';
 $s_month_december = 'Kanun';
 $MANTIS_ERROR[ERROR_USER_PROFILE_NOT_FOUND] = 'Profil nê vineya.';
-$MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND] = 'Kategori nêvineya.';
+$MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND] = 'Kategoriye nêvêniye.';
 $MANTIS_ERROR[ERROR_PLUGIN_NOT_REGISTERED] = '"%$1s" ya oleken qeyd nêbiyo';
 $MANTIS_ERROR[ERROR_PLUGIN_ALREADY_INSTALLED] = 'Oleken de "%$1s" xo ra bar kerde yo.';
 $MANTIS_ERROR[ERROR_PLUGIN_PAGE_NOT_FOUND] = 'Pela „%2$s“ Plugin „%1$s“ de nêvêniye.';
